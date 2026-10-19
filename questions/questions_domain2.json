@@ -1,0 +1,233 @@
+[
+  {
+    "id": "D2-Q001",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "Generative AI - Transformer Architecture",
+    "key_concept": "Generative AI - Transformer Architecture, 트랜스포머의 셀프 어텐션(Self-Attention) 메커니즘",
+    "question_en": "What architectural innovation allows Transformer models to process sequences in parallel and capture relationships between all words in a sentence regardless of their distance?",
+    "question_kr": "트랜스포머(Transformer) 모델이 단어들을 순차적으로 처리하지 않고 병렬로 처리할 수 있게 하며, 문장 내 단어 간의 거리와 무관하게 모든 단어 사이의 의미적 연관성을 동시에 포착할 수 있도록 만든 핵심 아키텍처 혁신은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Convolutional feature maps",
+        "text_kr": "합성곱 특성 맵 (Convolutional feature maps)"
+      },
+      {
+        "key": "B",
+        "text_en": "Self-attention mechanism",
+        "text_kr": "셀프 어텐션 메커니즘 (Self-Attention)"
+      },
+      {
+        "key": "C",
+        "text_en": "Markov decision process",
+        "text_kr": "마르코프 결정 과정 (MDP)"
+      },
+      {
+        "key": "D",
+        "text_en": "Recurrent hidden gates",
+        "text_kr": "순환 은닉 게이트 (LSTM Gates)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: 트랜스포머의 '셀프 어텐션(Self-Attention)' 메커니즘은 문장 내 모든 단어 쌍 간의 상호작용 가중치를 한 번에 계산하여 장거리 의존성(Long-range dependency)을 효과적으로 파악하고 병렬 처리를 가능하게 합니다."
+  },
+  {
+    "id": "D2-Q002",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "Inference Parameters - Temperature",
+    "key_concept": "Inference Parameters - Temperature, Temperature 하이퍼파라미터 조절과 결정론적 출력",
+    "question_en": "A company is using an LLM to generate precise JSON structures for financial transactions where creativity and randomness must be strictly minimized. How should the temperature parameter be configured?",
+    "question_kr": "금융 거래 데이터를 처리하기 위해 LLM을 사용하여 엄격한 JSON 구조를 생성하려 합니다. 모델의 창의성이나 무작위성을 극도로 배제하고 가장 일관되고 예측 가능한 답변을 얻으려면 Temperature 파라미터를 어떻게 설정해야 합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Set temperature to a value close to 0 (e.g., 0.0 to 0.2)",
+        "text_kr": "온도(Temperature)를 0에 가까운 값(예: 0.0~0.2)으로 설정한다"
+      },
+      {
+        "key": "B",
+        "text_en": "Set temperature to the maximum supported value (e.g., 1.0 or 2.0)",
+        "text_kr": "온도를 지원되는 최댓값(예: 1.0~2.0)으로 설정한다"
+      },
+      {
+        "key": "C",
+        "text_en": "Increase Top-P to 1.0 while leaving temperature unset",
+        "text_kr": "온도는 비워두고 Top-P만 1.0으로 높인다"
+      },
+      {
+        "key": "D",
+        "text_en": "Decrease the context window size to 10 tokens",
+        "text_kr": "컨텍스트 윈도우 크기를 10토큰으로 줄인다"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Temperature 파라미터는 모델의 무작위성(창의성)을 제어합니다. 값이 0에 가까울수록(0.0~0.2) 가장 확률이 높은 단어만 선택하는 결정론적(Deterministic)이고 사실적인 출력을 생성하므로, JSON 파싱이나 금융/법률 작업에 필수적입니다."
+  },
+  {
+    "id": "D2-Q003",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "Prompt Engineering - Chain of Thought",
+    "key_concept": "Prompt Engineering - Chain of Thought, 복잡한 다단계 추론을 위한 Chain-of-Thought (CoT)",
+    "question_en": "An AI practitioner needs a foundation model to solve complex multi-step math word problems accurately. Which prompt engineering technique instructs the model to break down its reasoning step-by-step before producing the final answer?",
+    "question_kr": "AI 프랙티셔너가 파운데이션 모델을 사용하여 복잡한 다단계 수학 서술형 문제를 정확히 풀도록 유도하고자 합니다. 모델이 최종 정답을 내놓기 전에 중간 논리 추론 과정을 단계별로 풀어서 설명하도록 유도하는 프롬프트 엔지니어링 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Zero-shot prompting",
+        "text_kr": "제로샷 프롬프팅 (Zero-shot)"
+      },
+      {
+        "key": "B",
+        "text_en": "Chain-of-Thought (CoT) prompting",
+        "text_kr": "생각의 사슬 프롬프팅 (Chain-of-Thought)"
+      },
+      {
+        "key": "C",
+        "text_en": "Low-Rank Adaptation (LoRA)",
+        "text_kr": "저차원 적응 기법 (LoRA)"
+      },
+      {
+        "key": "D",
+        "text_en": "Gradient accumulation",
+        "text_kr": "그래디언트 누적 (Gradient Accumulation)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: Chain-of-Thought (CoT) 프롬프팅은 모델에게 \"단계별로 생각하라(Let's think step by step)\"는 지침을 주거나 단계별 풀이 예시를 제공하여, 복잡한 논리 및 수학 문제에서 추론 오류를 극적으로 줄이는 기법입니다."
+  },
+  {
+    "id": "D2-Q004",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "Prompt Engineering - Few-Shot",
+    "key_concept": "Prompt Engineering - Few-Shot, Few-Shot 프롬프팅을 통한 출력 형식 통제",
+    "question_en": "A developer wants an LLM to categorize customer feedback into specific tags formatted strictly as valid JSON. Without updating model weights, how can the developer best guide the model to follow this exact format?",
+    "question_kr": "개발자가 모델의 가중치를 변경하지 않고, 고객 피드백을 분류하여 엄격하게 유효한 JSON 형식으로만 응답을 생성하도록 유도하려 합니다. 모델이 정확한 형식을 따르도록 지침을 제공하는 가장 효과적인 방법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Pre-train a new foundation model from scratch",
+        "text_kr": "기초 모델을 처음부터 사전 훈련한다"
+      },
+      {
+        "key": "B",
+        "text_en": "Provide 2-3 exemplar input/output pairs in the prompt (Few-shot prompting)",
+        "text_kr": "프롬프트 내에 2~3개의 모범 입/출력 예시를 제공한다 (Few-shot 프롬프팅)"
+      },
+      {
+        "key": "C",
+        "text_en": "Fine-tune all model weights using reinforcement learning",
+        "text_kr": "강화학습을 사용해 전체 모델 가중치를 파인튜닝한다"
+      },
+      {
+        "key": "D",
+        "text_en": "Increase the learning rate hyperparameter during inference",
+        "text_kr": "추론 시 학습률(Learning Rate) 하이퍼파라미터를 높인다"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: Few-shot 프롬프팅은 프롬프트 안에 원하는 입력과 출력 예시(Exemplars)를 몇 개 포함시켜 모델이 가중치 변경 없이도 원하는 출력 스타일과 JSON 구조를 정확히 따르도록 유도하는 가장 비용 효율적인 기법입니다."
+  },
+  {
+    "id": "D2-Q005",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "Model Customization - RAG Architecture",
+    "key_concept": "Model Customization - RAG Architecture, RAG (Retrieval-Augmented Generation) 도입 목적",
+    "question_en": "A legal firm wants an AI assistant that can answer questions based on internal proprietary contracts that are updated daily. The firm must avoid costly re-training and ensure answers cite exact source clauses. Which approach is best?",
+    "question_kr": "법률 사무소에서 매일 새롭게 업데이트되는 사내 독점 계약서 문서를 바탕으로 질문에 정확히 답변하는 AI 비서를 도입하고자 합니다. 비용이 많이 드는 재학습을 피하고, 답변 시 참조한 정확한 계약 조항 출처(Citation)를 인용해야 합니다. 가장 적합한 접근 방식은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Pre-training a foundation model from scratch weekly",
+        "text_kr": "매주 기초 파운데이션 모델을 처음부터 사전 학습한다"
+      },
+      {
+        "key": "B",
+        "text_en": "Retrieval-Augmented Generation (RAG) using a vector store",
+        "text_kr": "벡터 스토어를 활용한 검색 증강 생성 (RAG)"
+      },
+      {
+        "key": "C",
+        "text_en": "Full parameter fine-tuning on public datasets",
+        "text_kr": "공개 데이터셋을 활용한 전체 파라미터 파인튜닝"
+      },
+      {
+        "key": "D",
+        "text_en": "Increasing the model temperature parameter to 1.0",
+        "text_kr": "모델 Temperature 파라미터를 1.0으로 상향 조정"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: RAG(검색 증강 생성)는 수시로 변경되는 비공개 사내 문서를 벡터 DB에 저장해두고, 질문과 관련된 문서 조각을 실시간으로 검색하여 프롬프트의 컨텍스트로 제공함으로써 모델 재학습 없이도 최신 정보 기반 답변과 원문 인용(Citation)을 제공하는 최적의 아키텍처입니다."
+  },
+  {
+    "id": "D2-Q006",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "PEFT / LoRA",
+    "key_concept": "PEFT / LoRA, 매개변수 효율적 미세조정(PEFT)과 LoRA",
+    "question_en": "A company wants to fine-tune a 70B parameter open-source LLM for medical terminology. Due to GPU memory and budget constraints, they cannot update all 70B weights. Which technique should they use to freeze the original weights and train only small adapter layers?",
+    "question_kr": "기업에서 의학 전문 용어를 학습시키기 위해 700억(70B) 파라미터의 오픈소스 LLM을 미세조정하려 합니다. GPU 메모리와 예산 제약으로 인해 700억 개의 가중치 전체를 학습시킬 수 없습니다. 원본 가중치는 고정(Freeze)하고 소형 어댑터 계층만 학습시키는 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Parameter-Efficient Fine-Tuning (PEFT) using LoRA",
+        "text_kr": "LoRA를 활용한 매개변수 효율적 미세조정 (PEFT)"
+      },
+      {
+        "key": "B",
+        "text_en": "Unsupervised pre-training",
+        "text_kr": "비지도 사전 훈련 (Pre-training)"
+      },
+      {
+        "key": "C",
+        "text_en": "Chain of Thought prompting",
+        "text_kr": "생각의 사슬 프롬프팅"
+      },
+      {
+        "key": "D",
+        "text_en": "K-means clustering on embeddings",
+        "text_kr": "임베딩에 대한 K-means 군집화"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: PEFT(Parameter-Efficient Fine-Tuning)의 대표 기법인 LoRA(Low-Rank Adaptation)는 대형 기반 모델의 기존 가중치는 동결하고 소형 저차원 분해 행렬(어댑터)만 학습시켜 컴퓨팅 자원과 GPU 메모리를 90% 이상 절감하면서도 높은 성능을 달성합니다."
+  },
+  {
+    "id": "D2-Q007",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "Hallucination Mitigation",
+    "key_concept": "Hallucination Mitigation, 생성형 AI 환각(Hallucination) 완화 전략",
+    "question_en": "A customer service chatbot occasionally invents non-existent return policy rules with high confidence. Which combination of strategies directly reduces these hallucinations?",
+    "question_kr": "고객 서비스 챗봇이 존재하지 않는 반품 정책 규정을 지어내어 확신을 가지고 답변하는 환각(Hallucination) 현상이 발생하고 있습니다. 이러한 환각을 직접적으로 줄이기 위한 가장 효과적인 전략 조합은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Implement RAG with authoritative policy docs and lower the temperature",
+        "text_kr": "공식 정책 문서를 연동한 RAG를 구축하고 Temperature를 낮춘다"
+      },
+      {
+        "key": "B",
+        "text_en": "Increase the temperature and top-p to maximize creative variance",
+        "text_kr": "창의적 다양성을 극대화하기 위해 Temperature와 Top-P를 높인다"
+      },
+      {
+        "key": "C",
+        "text_en": "Switch to an unsupervised clustering algorithm",
+        "text_kr": "비지도 군집화 알고리즘으로 전환한다"
+      },
+      {
+        "key": "D",
+        "text_en": "Disable system prompts and guardrails completely",
+        "text_kr": "시스템 프롬프트와 가드레일을 완전히 비활성화한다"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: 환각(Hallucination)을 줄이기 위해서는 공식적인 원천 문서(Ground Truth)를 검색하여 컨텍스트로 제공하는 RAG를 구축하고, 무작위성을 줄이기 위해 Temperature를 0.0~0.2 수준으로 낮추며 시스템 프롬프트로 근거에 기반한 답변만을 지시해야 합니다."
+  }
+]

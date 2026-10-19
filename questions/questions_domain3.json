@@ -1,0 +1,266 @@
+[
+  {
+    "id": "D3-Q001",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Amazon Bedrock - Core Capability",
+    "key_concept": "Amazon Bedrock - Core Capability, Amazon Bedrock의 완전관리형 서버리스 API 특성",
+    "question_en": "A startup wants to integrate multiple leading foundation models (Claude, Llama, Titan) into their web app using a single, unified API without provisioning or managing underlying GPU servers. Which AWS service fulfills this requirement?",
+    "question_kr": "스타트업에서 기본 GPU 서버 인프라를 프로비저닝하거나 관리하지 않고, 단일 통합 API를 통해 여러 업계 최고의 파운데이션 모델(Claude, Llama, Titan 등)을 웹 애플리케이션에 통합하고자 합니다. 이 요구사항을 충족하는 완전관리형 AWS 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon EC2 G5 GPU instances",
+        "text_kr": "Amazon EC2 G5 GPU 인스턴스"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Bedrock",
+        "text_kr": "Amazon Bedrock"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon SageMaker HyperPod",
+        "text_kr": "Amazon SageMaker HyperPod"
+      },
+      {
+        "key": "D",
+        "text_en": "AWS Elastic Beanstalk",
+        "text_kr": "AWS Elastic Beanstalk"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: Amazon Bedrock은 인프라 관리 없이 단일 API 호출을 통해 주요 AI 기업들의 파운데이션 모델(Anthropic Claude, Meta Llama, Amazon Titan 등)을 서버리스 형태로 제공하는 완전관리형 서비스입니다."
+  },
+  {
+    "id": "D3-Q002",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Bedrock Knowledge Bases",
+    "key_concept": "Bedrock Knowledge Bases, Bedrock Knowledge Bases를 활용한 완전관리형 RAG",
+    "question_en": "An enterprise stores thousands of technical product manuals as PDFs in Amazon S3. They want to enable a chatbot to answer user queries grounded in these PDFs without writing custom chunking, embedding, or sync pipelines. Which feature should they use?",
+    "question_kr": "기업에서 수천 건의 기술 제품 매뉴얼 PDF를 Amazon S3에 저장하고 있습니다. 맞춤형 청킹, 임베딩, 동기화 파이프라인을 직접 코딩하지 않고, 이 PDF 문서에 기반하여 질문에 답변하는 챗봇을 구현하고자 합니다. 어떤 기능을 사용해야 합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Knowledge Bases for Amazon Bedrock",
+        "text_kr": "Amazon Bedrock Knowledge Bases (지식 베이스)"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Polly Speech Synthesis",
+        "text_kr": "Amazon Polly 음성 합성"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS Glue ETL with Spark Streaming",
+        "text_kr": "Spark Streaming 기반 AWS Glue ETL"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Rekognition Custom Labels",
+        "text_kr": "Amazon Rekognition Custom Labels"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Knowledge Bases for Amazon Bedrock은 S3에 저장된 문서를 지정하기만 하면 문서 파싱, 청킹(Chunking), 임베딩 생성 및 벡터 스토어(OpenSearch Serverless 등) 색인과 쿼리 검색을 모두 자동으로 처리해 주는 완전관리형 RAG 솔루션입니다."
+  },
+  {
+    "id": "D3-Q003",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Bedrock Agents",
+    "key_concept": "Bedrock Agents, Bedrock Agents와 AWS Lambda를 통한 자율 작업 오케스트레이션",
+    "question_en": "A travel company needs an AI assistant that can understand customer requests in natural language, break down actions into multiple steps, and interact with internal flight booking databases via APIs. Which Bedrock feature provides this capability?",
+    "question_kr": "여행사에서 고객의 자연어 요청을 이해하고 실행 계획을 다단계로 수립한 후, API를 통해 사내 항공권 예약 데이터베이스와 직접 상호작용할 수 있는 AI 어시스턴트를 구축하고자 합니다. 이 기능을 제공하는 Amazon Bedrock의 핵심 기능은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Bedrock Guardrails",
+        "text_kr": "Bedrock Guardrails"
+      },
+      {
+        "key": "B",
+        "text_en": "Agents for Amazon Bedrock",
+        "text_kr": "Agents for Amazon Bedrock (베드록 에이전트)"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon SageMaker Canvas",
+        "text_kr": "Amazon SageMaker Canvas"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Textract Queries",
+        "text_kr": "Amazon Textract Queries"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: Agents for Amazon Bedrock은 파운데이션 모델의 추론 능력을 바탕으로 사용자의 요청을 분석하여 다단계 실행 계획을 오케스트레이션하고, OpenAPI 스키마로 정의된 Action Groups를 통해 백엔드 AWS Lambda 함수를 호출하여 외부 비즈니스 로직을 자율적으로 수행합니다."
+  },
+  {
+    "id": "D3-Q004",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Amazon Q Business",
+    "key_concept": "Amazon Q Business, 엔터프라이즈 사내 문서 검색 및 IAM/RBAC 권한 유지",
+    "question_en": "An enterprise wants an AI assistant that connects to corporate data sources (SharePoint, Jira, Salesforce) to answer employee questions while strictly enforcing existing user access permissions (RBAC). Which service is designed for this purpose?",
+    "question_kr": "기업에서 사내 데이터 소스(SharePoint, Jira, Salesforce 등)에 연결하여 직원의 질문에 답변하면서도, 기존의 사내 사용자 접근 권한(RBAC)을 엄격히 준수하여 권한이 없는 문서는 열람되지 않도록 보장하는 엔터프라이즈 AI 어시스턴트를 원합니다. 어떤 서비스가 가장 적합합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Q Developer",
+        "text_kr": "Amazon Q Developer"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Q Business",
+        "text_kr": "Amazon Q Business"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon Lex",
+        "text_kr": "Amazon Lex"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon SageMaker Studio",
+        "text_kr": "Amazon SageMaker Studio"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: Amazon Q Business는 기업의 다양한 사내 데이터 저장소에 사전 구축된 커넥터로 연결되어 사내 지식 기반 질의응답을 제공하며, 기업의 기존 IAM 및 역할 기반 접근 제어(RBAC)를 그대로 적용하여 각 직원이 권한을 가진 문서에 대해서만 답변을 생성합니다."
+  },
+  {
+    "id": "D3-Q005",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Amazon Q Developer",
+    "key_concept": "Amazon Q Developer, 개발자를 위한 IDE 코드 생성 및 취약점 스캔",
+    "question_en": "A software engineering team wants to accelerate development inside their IDEs by getting inline code recommendations, generating unit tests, and scanning code for security vulnerabilities. Which tool should they adopt?",
+    "question_kr": "소프트웨어 엔지니어링 팀이 IDE 환경 내에서 실시간 인라인 코드 추천, 단위 테스트 자동 생성, 보안 취약점 스캔을 통해 개발 생산성을 높이고자 합니다. 어떤 도구를 도입해야 합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Q Developer",
+        "text_kr": "Amazon Q Developer"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Comprehend",
+        "text_kr": "Amazon Comprehend"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon SageMaker Canvas",
+        "text_kr": "Amazon SageMaker Canvas"
+      },
+      {
+        "key": "D",
+        "text_en": "AWS CloudTrail",
+        "text_kr": "AWS CloudTrail"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Amazon Q Developer(구 CodeWhisperer 발전형)는 개발자 IDE에서 실시간 코드 자동완성, 리팩토링, 보안 취약점 검사 및 수정 제안, 레거시 언어(Java 등) 변환을 지원하는 생성형 AI 개발 도우미입니다."
+  },
+  {
+    "id": "D3-Q006",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Amazon SageMaker Canvas",
+    "key_concept": "Amazon SageMaker Canvas, 비즈니스 분석가를 위한 No-code 머신러닝",
+    "question_en": "A business analyst with no coding or ML engineering experience needs to build a churn prediction model from spreadsheet data and test generative AI text summarization visually. Which tool is specifically built for this user?",
+    "question_kr": "코딩이나 머신러닝 엔지니어링 경험이 없는 비즈니스 분석가가 스프레드시트 엑셀 데이터를 바탕으로 고객 이탈 예측 모델을 만들고, 시각적 인터페이스에서 생성형 AI 텍스트 요약을 직접 테스트해 보고자 합니다. 이 사용자를 위해 특화된 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon SageMaker Canvas",
+        "text_kr": "Amazon SageMaker Canvas"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon SageMaker Studio Code Editor",
+        "text_kr": "Amazon SageMaker Studio Code Editor"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS Deep Learning AMIs",
+        "text_kr": "AWS Deep Learning AMIs"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon EMR Serverless",
+        "text_kr": "Amazon EMR Serverless"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Amazon SageMaker Canvas는 비즈니스 분석가를 위한 시각적 노코드(No-code) 머신러닝 도구로, 코드 한 줄 없이 정형 데이터 분류/회귀 모델을 생성하거나 파운데이션 모델을 시각적으로 테스트할 수 있습니다."
+  },
+  {
+    "id": "D3-Q007",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Turnkey AI Services - Textract",
+    "key_concept": "Turnkey AI Services - Textract, Amazon Textract를 통한 양식(Form) 및 표(Table) 추출",
+    "question_en": "A mortgage company processes millions of scanned loan applications. They need to extract structured Key-Value pairs from form fields and tabular data from mortgage statements accurately. Which service should they choose?",
+    "question_kr": "대출 금융 기업에서 수백만 건의 스캔된 대출 신청서 문서를 처리하고 있습니다. 단순 텍스트뿐만 아니라 양식(Form) 필드의 Key-Value 쌍과 대출 명세서의 표(Table) 구조를 정확히 추출해야 합니다. 가장 적합한 AWS 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Rekognition",
+        "text_kr": "Amazon Rekognition"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Textract",
+        "text_kr": "Amazon Textract"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon Transcribe",
+        "text_kr": "Amazon Transcribe"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Polly",
+        "text_kr": "Amazon Polly"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: Amazon Textract는 단순 OCR을 넘어 양식(Forms, Key-Value 쌍)과 표(Tables) 구조를 문서의 레이아웃을 보존하면서 정확하게 추출하는 전문 문서 인텔리전스 서비스입니다."
+  },
+  {
+    "id": "D3-Q008",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "GenAI Evaluation Metrics - ROUGE vs BLEU",
+    "key_concept": "GenAI Evaluation Metrics - ROUGE vs BLEU, 문서 요약 평가(ROUGE)와 기계 번역 평가(BLEU)",
+    "question_en": "An AI team is evaluating the performance of multiple foundation models on a text summarization task against human reference summaries. Which metric measures n-gram recall between generated summaries and reference summaries?",
+    "question_kr": "AI 팀이 인간이 작성한 모범 요약문과 비교하여 여러 파운데이션 모델의 텍스트 요약(Summarization) 성능을 평가하고 있습니다. 생성된 요약문과 참조 요약문 간의 n-gram 재현율(Recall)을 주로 측정하는 지표는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "BLEU score",
+        "text_kr": "BLEU 점수"
+      },
+      {
+        "key": "B",
+        "text_en": "ROUGE score",
+        "text_kr": "ROUGE 점수"
+      },
+      {
+        "key": "C",
+        "text_en": "Mean Squared Error (MSE)",
+        "text_kr": "평균 제곱 오차 (MSE)"
+      },
+      {
+        "key": "D",
+        "text_en": "Area Under the ROC Curve (AUC)",
+        "text_kr": "ROC 곡선 아래 면적 (AUC)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: ROUGE(Recall-Oriented Understudy for Gisting Evaluation)는 생성된 텍스트와 참조 요약문 간의 n-gram 재현율(Recall)을 측정하는 문서 요약(Summarization) 평가의 대표 표준 지표입니다.\n• BLEU(A)는 정밀도(Precision) 중심의 기계 번역(Translation) 평가 지표입니다."
+  }
+]

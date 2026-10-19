@@ -1,0 +1,266 @@
+[
+  {
+    "id": "D1-Q001",
+    "domain": "Domain 1",
+    "domain_name": "도메인 1: AI 및 머신러닝의 기초 (Fundamentals of AI and ML)",
+    "topic_category": "AI vs ML vs DL vs GenAI",
+    "key_concept": "AI vs ML vs DL vs GenAI, 인공지능, 머신러닝, 딥러닝, 생성형 AI 계층 구조",
+    "question_en": "An enterprise wants to develop a customer support system. Which technology category specifically focuses on generating novel content such as emails and summaries based on learned patterns from foundation models?",
+    "question_kr": "기업에서 고객 지원 시스템을 구축하고자 합니다. 대규모 파운데이션 모델로부터 학습된 패턴을 바탕으로 이메일 초안이나 요약본과 같은 새로운 콘텐츠를 능동적으로 생성하는 데 특화된 기술 분야는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Traditional statistical linear regression",
+        "text_kr": "전통적인 통계적 선형 회귀 분석"
+      },
+      {
+        "key": "B",
+        "text_en": "Generative AI leveraging foundation models",
+        "text_kr": "파운데이션 모델을 활용한 생성형 AI (Generative AI)"
+      },
+      {
+        "key": "C",
+        "text_en": "Rule-based deterministic expert systems",
+        "text_kr": "규칙 기반 결정론적 전문가 시스템"
+      },
+      {
+        "key": "D",
+        "text_en": "Unsupervised clustering algorithms alone",
+        "text_kr": "비지도 군집화(Clustering) 알고리즘 단독 적용"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: 생성형 AI(Generative AI)는 대규모 파운데이션 모델(FM)을 기반으로 기존 데이터를 학습하여 텍스트, 이미지, 코드 등 새로운 오리지널 콘텐츠를 생성하는 딥러닝의 특화 분야입니다.\n• A는 수치 예측용 통계 기법이며, C는 새로운 콘텐츠를 창작하지 못하는 고정 규칙 기반 시스템입니다."
+  },
+  {
+    "id": "D1-Q002",
+    "domain": "Domain 1",
+    "domain_name": "도메인 1: AI 및 머신러닝의 기초 (Fundamentals of AI and ML)",
+    "topic_category": "Supervised vs Unsupervised Learning",
+    "key_concept": "Supervised vs Unsupervised Learning, 지도학습과 비지도학습의 데이터 특성 구분",
+    "question_en": "A marketing team has historical customer transaction records with a target column indicating whether each customer churned or not. Which machine learning paradigm should be used to train a predictive model on this data?",
+    "question_kr": "마케팅 부서가 고객이 이탈했는지 여부(Churned: True/False)가 명시된 타깃 열(레이블)이 포함된 과거 거래 데이터를 보유하고 있습니다. 이 데이터를 바탕으로 미래 고객의 이탈 여부를 예측하는 모델을 훈련하기에 가장 적합한 머신러닝 방식은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Unsupervised clustering",
+        "text_kr": "비지도 군집화 (Unsupervised Clustering)"
+      },
+      {
+        "key": "B",
+        "text_en": "Supervised classification",
+        "text_kr": "지도 분류 (Supervised Classification)"
+      },
+      {
+        "key": "C",
+        "text_en": "Reinforcement learning policy gradient",
+        "text_kr": "강화학습 정책 그래디언트"
+      },
+      {
+        "key": "D",
+        "text_en": "Unsupervised dimensionality reduction",
+        "text_kr": "비지도 차원 축소 (PCA)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: 정답(레이블)이 존재하는 데이터셋을 기반으로 이탈 여부와 같은 이진 또는 다중 범주를 예측하는 문제는 지도학습의 '분류(Classification)' 작업에 해당합니다.\n• 비지도학습(A, D)은 정답 레이블이 없을 때 숨겨진 패턴이나 그룹을 찾을 때 사용됩니다."
+  },
+  {
+    "id": "D1-Q003",
+    "domain": "Domain 1",
+    "domain_name": "도메인 1: AI 및 머신러닝의 기초 (Fundamentals of AI and ML)",
+    "topic_category": "Classification Metrics - Recall vs Precision",
+    "key_concept": "Classification Metrics - Recall vs Precision, 암 진단 및 고위험 이상 탐지에서의 재현율(Recall) 극대화",
+    "question_en": "A healthcare provider is deploying an ML model to detect early-stage malignant tumors from medical scans. Failing to identify a malignant tumor (False Negative) has fatal consequences. Which evaluation metric should the team prioritize maximizing?",
+    "question_kr": "의료 기관에서 의료 영상을 분석하여 초기 악성 종양을 탐지하는 머신러닝 모델을 도입하려 합니다. 악성 종양을 놓쳐 정상으로 잘못 진단하는 경우(False Negative, 제2종 오류) 환자에게 치명적인 결과를 초래합니다. 이때 팀이 최우선으로 극대화해야 하는 평가 지표는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Precision",
+        "text_kr": "정밀도 (Precision)"
+      },
+      {
+        "key": "B",
+        "text_en": "Recall (Sensitivity)",
+        "text_kr": "재현율 (Recall / Sensitivity)"
+      },
+      {
+        "key": "C",
+        "text_en": "Mean Absolute Error (MAE)",
+        "text_kr": "평균 절대 오차 (MAE)"
+      },
+      {
+        "key": "D",
+        "text_en": "Adjusted R-squared",
+        "text_kr": "수정 결정계수 (Adjusted R-squared)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: 재현율(Recall = TP / (TP + FN))은 실제 양성인 케이스 중 모델이 놓치지 않고 찾아낸 비율입니다. 암 진단이나 중대 금융 사기처럼 False Negative(놓침)의 위험 비용이 극도로 높은 시나리오에서는 Recall을 최우선으로 극대화해야 합니다.\n• Precision(A)은 False Positive(스팸이 아닌데 스팸으로 분류)를 줄여야 할 때 중요합니다."
+  },
+  {
+    "id": "D1-Q004",
+    "domain": "Domain 1",
+    "domain_name": "도메인 1: AI 및 머신러닝의 기초 (Fundamentals of AI and ML)",
+    "topic_category": "Classification Metrics - Precision vs False Positive",
+    "key_concept": "Classification Metrics - Precision vs False Positive, 스팸 필터링과 정밀도(Precision) 최적화",
+    "question_en": "An enterprise email filtering system must ensure that critical client business emails are never mistakenly classified as spam and moved to the junk folder. Which metric is most critical to maximize in this scenario?",
+    "question_kr": "기업 이메일 필터링 시스템에서 중요한 고객의 비즈니스 이메일이 스팸으로 오분류되어 정크 폴더로 격리되는 일(False Positive)이 절대 발생하지 않도록 해야 합니다. 이 시나리오에서 가장 우선적으로 극대화해야 하는 평가 지표는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Precision",
+        "text_kr": "정밀도 (Precision)"
+      },
+      {
+        "key": "B",
+        "text_en": "Recall",
+        "text_kr": "재현율 (Recall)"
+      },
+      {
+        "key": "C",
+        "text_en": "Root Mean Squared Error (RMSE)",
+        "text_kr": "평균 제곱근 오차 (RMSE)"
+      },
+      {
+        "key": "D",
+        "text_en": "Perplexity",
+        "text_kr": "펄플렉서티 (Perplexity)"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: 정밀도(Precision = TP / (TP + FP))는 모델이 양성(스팸)이라고 판정한 것 중 실제 양성인 비율입니다. 정상 메일을 스팸으로 오분류하는 False Positive를 최소화하려면 Precision을 극대화해야 합니다."
+  },
+  {
+    "id": "D1-Q005",
+    "domain": "Domain 1",
+    "domain_name": "도메인 1: AI 및 머신러닝의 기초 (Fundamentals of AI and ML)",
+    "topic_category": "Overfitting vs Underfitting",
+    "key_concept": "Overfitting vs Underfitting, 과적합(Overfitting) 진단 및 완화 기법",
+    "question_en": "During model development, an ML engineer observes that the training loss is near zero, but the validation loss is significantly higher and rapidly increasing. Which technique should be applied to mitigate this issue?",
+    "question_kr": "모델 개발 과정에서 머신러닝 엔지니어가 훈련 데이터의 손실(Loss)은 거의 0에 가까우나, 검증 데이터의 손실은 현저히 높고 급격히 증가하는 현상을 관찰했습니다. 이 과적합(Overfitting) 문제를 해결하기 위해 적용해야 할 가장 적합한 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Increase the depth and number of layers of the neural network",
+        "text_kr": "신경망의 깊이와 레이어 수를 늘린다"
+      },
+      {
+        "key": "B",
+        "text_en": "Apply L1/L2 regularization and dropout",
+        "text_kr": "L1/L2 정규화 및 드롭아웃(Dropout)을 적용한다"
+      },
+      {
+        "key": "C",
+        "text_en": "Remove all cross-validation splits and train on test data",
+        "text_kr": "교차 검증 분할을 제거하고 테스트 데이터로 훈련한다"
+      },
+      {
+        "key": "D",
+        "text_en": "Decrease the amount of training data available",
+        "text_kr": "훈련 데이터의 양을 줄인다"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: 훈련 오차는 매우 낮은데 검증 오차가 높은 것은 전형적인 과적합(Overfitting / High Variance) 현상입니다.\n• 과적합을 방지하기 위해서는 가중치 크기에 페널티를 부여하는 L1/L2 정규화(Regularization), 뉴런을 무작위 비활성화하는 드롭아웃(Dropout), 조기 종료(Early Stopping), 데이터 증강 등을 적용해야 합니다."
+  },
+  {
+    "id": "D1-Q006",
+    "domain": "Domain 1",
+    "domain_name": "도메인 1: AI 및 머신러닝의 기초 (Fundamentals of AI and ML)",
+    "topic_category": "Feature Engineering - Categorical Encoding",
+    "key_concept": "Feature Engineering - Categorical Encoding, 원-핫 인코딩(One-Hot Encoding)과 범주형 데이터 변환",
+    "question_en": "A machine learning pipeline receives a categorical column representing US States ('NY', 'CA', 'TX') with no inherent order. Which feature engineering technique transforms this column into a numerical representation suitable for linear models?",
+    "question_kr": "머신러닝 파이프라인에서 순서나 서열 관계가 없는 미국 주 이름('NY', 'CA', 'TX')으로 구성된 범주형 데이터를 입력받았습니다. 이 데이터를 선형 모델이 학습할 수 있는 수치 형태로 변환하기 위한 가장 적합한 특성 공학 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "One-hot encoding",
+        "text_kr": "원-핫 인코딩 (One-Hot Encoding)"
+      },
+      {
+        "key": "B",
+        "text_en": "Min-Max normalization to 0-1",
+        "text_kr": "0~1 범위 Min-Max 정규화"
+      },
+      {
+        "key": "C",
+        "text_en": "Principal Component Analysis (PCA)",
+        "text_kr": "주성분 분석 (PCA)"
+      },
+      {
+        "key": "D",
+        "text_en": "Polynomial regression expansion",
+        "text_kr": "다항 회귀 확장"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: 순서가 없는 명목형 범주 데이터는 각 범주를 독립된 이진(0 또는 1) 열로 변환하는 '원-핫 인코딩(One-Hot Encoding)'을 적용해야 특정 범주가 임의의 크기 순서로 왜곡 해석되는 것을 방지할 수 있습니다."
+  },
+  {
+    "id": "D1-Q007",
+    "domain": "Domain 1",
+    "domain_name": "도메인 1: AI 및 머신러닝의 기초 (Fundamentals of AI and ML)",
+    "topic_category": "ML Monitoring - Data Drift",
+    "key_concept": "ML Monitoring - Data Drift, 운영 중 데이터 드리프트(Data Drift) 감지",
+    "question_en": "A retail recommendation model deployed in production experiences declining accuracy over several months because consumer purchasing behavior changed significantly after a major holiday. Which concept describes this change in input data distribution over time?",
+    "question_kr": "운영 환경에 배포된 쇼핑몰 추천 모델의 정확도가 수개월에 걸쳐 점진적으로 하락했습니다. 원인을 분석한 결과 대형 연휴 이후 고객들의 구매 행동 분포가 크게 변화한 것으로 나타났습니다. 시간이 지남에 따라 입력 데이터의 통계적 분포가 변화하는 이 현상을 무엇이라고 부릅니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Data drift",
+        "text_kr": "데이터 드리프트 (Data Drift)"
+      },
+      {
+        "key": "B",
+        "text_en": "Hyperparameter optimization",
+        "text_kr": "하이퍼파라미터 최적화"
+      },
+      {
+        "key": "C",
+        "text_en": "Gradient vanishing",
+        "text_kr": "기울기 소실 (Gradient Vanishing)"
+      },
+      {
+        "key": "D",
+        "text_en": "Token context overflow",
+        "text_kr": "토큰 컨텍스트 오버플로우"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: 모델 훈련에 사용된 입력 데이터의 통계적 분포가 실제 운영 환경에서 시간 경과에 따라 변하는 현상을 '데이터 드리프트(Data Drift)'라고 합니다. AWS에서는 Amazon SageMaker Model Monitor를 통해 이를 자동으로 감지하고 재학습 알람을 발생시킬 수 있습니다."
+  },
+  {
+    "id": "D1-Q008",
+    "domain": "Domain 1",
+    "domain_name": "도메인 1: AI 및 머신러닝의 기초 (Fundamentals of AI and ML)",
+    "topic_category": "Regression Metrics - RMSE vs MAE",
+    "key_concept": "Regression Metrics - RMSE vs MAE, 회귀 모델 평가 지표와 이상치 페널티",
+    "question_en": "A real estate company is predicting home sale prices. The business wants an evaluation metric that imposes a much heavier penalty on large prediction errors (outliers) than smaller errors. Which metric should be selected?",
+    "question_kr": "부동산 회사가 주택 매매 가격을 예측하는 회귀 모델을 평가하고 있습니다. 비즈니스 리더십은 작은 오차에 비해 큰 예측 오차(이상치)에 훨씬 더 무거운 페널티를 부여하는 평가 지표를 원합니다. 어떤 지표를 선택해야 합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Mean Absolute Error (MAE)",
+        "text_kr": "평균 절대 오차 (MAE)"
+      },
+      {
+        "key": "B",
+        "text_en": "Root Mean Squared Error (RMSE)",
+        "text_kr": "평균 제곱근 오차 (RMSE)"
+      },
+      {
+        "key": "C",
+        "text_en": "ROC-AUC",
+        "text_kr": "ROC-AUC"
+      },
+      {
+        "key": "D",
+        "text_en": "Classification Accuracy",
+        "text_kr": "분류 정확도 (Accuracy)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: RMSE(Root Mean Squared Error)는 오차를 제곱(Square)하여 평균을 낸 후 제곱근을 취하므로, 큰 오차일수록 기하급수적으로 큰 페널티가 부여됩니다. 반면 MAE(A)는 오차의 절댓값만을 취해 이상치에 덜 민감합니다."
+  }
+]

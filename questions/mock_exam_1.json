@@ -1,0 +1,2147 @@
+[
+  {
+    "id": "MOCK1-045",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "GenAI Evaluation Metrics - ROUGE vs BLEU",
+    "key_concept": "GenAI Evaluation Metrics - ROUGE vs BLEU, 문서 요약 평가(ROUGE)와 기계 번역 평가(BLEU)",
+    "question_en": "An AI team is evaluating the performance of multiple foundation models on a text summarization task against human reference summaries. Which metric measures n-gram recall between generated summaries and reference summaries?",
+    "question_kr": "AI 팀이 인간이 작성한 모범 요약문과 비교하여 여러 파운데이션 모델의 텍스트 요약(Summarization) 성능을 평가하고 있습니다. 생성된 요약문과 참조 요약문 간의 n-gram 재현율(Recall)을 주로 측정하는 지표는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "BLEU score",
+        "text_kr": "BLEU 점수"
+      },
+      {
+        "key": "B",
+        "text_en": "ROUGE score",
+        "text_kr": "ROUGE 점수"
+      },
+      {
+        "key": "C",
+        "text_en": "Mean Squared Error (MSE)",
+        "text_kr": "평균 제곱 오차 (MSE)"
+      },
+      {
+        "key": "D",
+        "text_en": "Area Under the ROC Curve (AUC)",
+        "text_kr": "ROC 곡선 아래 면적 (AUC)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: ROUGE(Recall-Oriented Understudy for Gisting Evaluation)는 생성된 텍스트와 참조 요약문 간의 n-gram 재현율(Recall)을 측정하는 문서 요약(Summarization) 평가의 대표 표준 지표입니다.\n• BLEU(A)는 정밀도(Precision) 중심의 기계 번역(Translation) 평가 지표입니다."
+  },
+  {
+    "id": "MOCK1-056",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Responsible AI - Bias Detection",
+    "key_concept": "Responsible AI - Bias Detection, SageMaker Clarify를 통한 편향 탐지 및 설명가능성",
+    "question_en": "A bank wants to audit its automated credit scoring model to ensure it does not discriminate against applicants based on age or gender, and needs to calculate SHAP values to explain loan approval decisions. Which AWS service should be used?",
+    "question_kr": "은행에서 자동 신용 평가 모델이 연령이나 성별과 같은 보호 속성을 기준으로 대출 신청자를 차별하지 않는지 감사하고, 대출 승인 결정 이유를 설명하기 위해 SHAP 값을 산출하고자 합니다. 어떤 AWS 서비스를 사용해야 합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon SageMaker Clarify",
+        "text_kr": "Amazon SageMaker Clarify"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon SageMaker JumpStart",
+        "text_kr": "Amazon SageMaker JumpStart"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon Rekognition Video",
+        "text_kr": "Amazon Rekognition Video"
+      },
+      {
+        "key": "D",
+        "text_en": "AWS Cloud9",
+        "text_kr": "AWS Cloud9"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Amazon SageMaker Clarify는 훈련 전후 데이터셋과 모델의 잠재적 편향(Bias)을 탐지하고, 게임 이론 기반의 SHAP 가치를 계산하여 모델의 예측 결과에 대한 설명가능성(Explainability)을 제공하는 전용 서비스입니다."
+  },
+  {
+    "id": "MOCK1-008",
+    "domain": "Domain 1",
+    "domain_name": "도메인 1: AI 및 머신러닝의 기초 (Fundamentals of AI and ML)",
+    "topic_category": "Regression Metrics - RMSE vs MAE",
+    "key_concept": "Regression Metrics - RMSE vs MAE, 회귀 모델 평가 지표와 이상치 페널티",
+    "question_en": "A real estate company is predicting home sale prices. The business wants an evaluation metric that imposes a much heavier penalty on large prediction errors (outliers) than smaller errors. Which metric should be selected?",
+    "question_kr": "부동산 회사가 주택 매매 가격을 예측하는 회귀 모델을 평가하고 있습니다. 비즈니스 리더십은 작은 오차에 비해 큰 예측 오차(이상치)에 훨씬 더 무거운 페널티를 부여하는 평가 지표를 원합니다. 어떤 지표를 선택해야 합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Mean Absolute Error (MAE)",
+        "text_kr": "평균 절대 오차 (MAE)"
+      },
+      {
+        "key": "B",
+        "text_en": "Root Mean Squared Error (RMSE)",
+        "text_kr": "평균 제곱근 오차 (RMSE)"
+      },
+      {
+        "key": "C",
+        "text_en": "ROC-AUC",
+        "text_kr": "ROC-AUC"
+      },
+      {
+        "key": "D",
+        "text_en": "Classification Accuracy",
+        "text_kr": "분류 정확도 (Accuracy)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: RMSE(Root Mean Squared Error)는 오차를 제곱(Square)하여 평균을 낸 후 제곱근을 취하므로, 큰 오차일수록 기하급수적으로 큰 페널티가 부여됩니다. 반면 MAE(A)는 오차의 절댓값만을 취해 이상치에 덜 민감합니다."
+  },
+  {
+    "id": "MOCK1-024",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "Prompt Engineering - Few-Shot",
+    "key_concept": "Prompt Engineering - Few-Shot, Few-Shot 프롬프팅을 통한 출력 형식 통제",
+    "question_en": "A developer wants an LLM to categorize customer feedback into specific tags formatted strictly as valid JSON. Without updating model weights, how can the developer best guide the model to follow this exact format?",
+    "question_kr": "개발자가 모델의 가중치를 변경하지 않고, 고객 피드백을 분류하여 엄격하게 유효한 JSON 형식으로만 응답을 생성하도록 유도하려 합니다. 모델이 정확한 형식을 따르도록 지침을 제공하는 가장 효과적인 방법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Pre-train a new foundation model from scratch",
+        "text_kr": "기초 모델을 처음부터 사전 훈련한다"
+      },
+      {
+        "key": "B",
+        "text_en": "Provide 2-3 exemplar input/output pairs in the prompt (Few-shot prompting)",
+        "text_kr": "프롬프트 내에 2~3개의 모범 입/출력 예시를 제공한다 (Few-shot 프롬프팅)"
+      },
+      {
+        "key": "C",
+        "text_en": "Fine-tune all model weights using reinforcement learning",
+        "text_kr": "강화학습을 사용해 전체 모델 가중치를 파인튜닝한다"
+      },
+      {
+        "key": "D",
+        "text_en": "Increase the learning rate hyperparameter during inference",
+        "text_kr": "추론 시 학습률(Learning Rate) 하이퍼파라미터를 높인다"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: Few-shot 프롬프팅은 프롬프트 안에 원하는 입력과 출력 예시(Exemplars)를 몇 개 포함시켜 모델이 가중치 변경 없이도 원하는 출력 스타일과 JSON 구조를 정확히 따르도록 유도하는 가장 비용 효율적인 기법입니다."
+  },
+  {
+    "id": "MOCK1-047",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Bedrock Knowledge Bases",
+    "key_concept": "Bedrock Knowledge Bases, Bedrock Knowledge Bases를 활용한 완전관리형 RAG",
+    "question_en": "An enterprise stores thousands of technical product manuals as PDFs in Amazon S3. They want to enable a chatbot to answer user queries grounded in these PDFs without writing custom chunking, embedding, or sync pipelines. Which feature should they use?",
+    "question_kr": "기업에서 수천 건의 기술 제품 매뉴얼 PDF를 Amazon S3에 저장하고 있습니다. 맞춤형 청킹, 임베딩, 동기화 파이프라인을 직접 코딩하지 않고, 이 PDF 문서에 기반하여 질문에 답변하는 챗봇을 구현하고자 합니다. 어떤 기능을 사용해야 합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Knowledge Bases for Amazon Bedrock",
+        "text_kr": "Amazon Bedrock Knowledge Bases (지식 베이스)"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Polly Speech Synthesis",
+        "text_kr": "Amazon Polly 음성 합성"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS Glue ETL with Spark Streaming",
+        "text_kr": "Spark Streaming 기반 AWS Glue ETL"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Rekognition Custom Labels",
+        "text_kr": "Amazon Rekognition Custom Labels"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Knowledge Bases for Amazon Bedrock은 S3에 저장된 문서를 지정하기만 하면 문서 파싱, 청킹(Chunking), 임베딩 생성 및 벡터 스토어(OpenSearch Serverless 등) 색인과 쿼리 검색을 모두 자동으로 처리해 주는 완전관리형 RAG 솔루션입니다."
+  },
+  {
+    "id": "MOCK1-040",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Bedrock Agents",
+    "key_concept": "Bedrock Agents, Bedrock Agents와 AWS Lambda를 통한 자율 작업 오케스트레이션",
+    "question_en": "A travel company needs an AI assistant that can understand customer requests in natural language, break down actions into multiple steps, and interact with internal flight booking databases via APIs. Which Bedrock feature provides this capability?",
+    "question_kr": "여행사에서 고객의 자연어 요청을 이해하고 실행 계획을 다단계로 수립한 후, API를 통해 사내 항공권 예약 데이터베이스와 직접 상호작용할 수 있는 AI 어시스턴트를 구축하고자 합니다. 이 기능을 제공하는 Amazon Bedrock의 핵심 기능은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Bedrock Guardrails",
+        "text_kr": "Bedrock Guardrails"
+      },
+      {
+        "key": "B",
+        "text_en": "Agents for Amazon Bedrock",
+        "text_kr": "Agents for Amazon Bedrock (베드록 에이전트)"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon SageMaker Canvas",
+        "text_kr": "Amazon SageMaker Canvas"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Textract Queries",
+        "text_kr": "Amazon Textract Queries"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: Agents for Amazon Bedrock은 파운데이션 모델의 추론 능력을 바탕으로 사용자의 요청을 분석하여 다단계 실행 계획을 오케스트레이션하고, OpenAPI 스키마로 정의된 Action Groups를 통해 백엔드 AWS Lambda 함수를 호출하여 외부 비즈니스 로직을 자율적으로 수행합니다."
+  },
+  {
+    "id": "MOCK1-021",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "Generative AI - Transformer Architecture",
+    "key_concept": "Generative AI - Transformer Architecture, 트랜스포머의 셀프 어텐션(Self-Attention) 메커니즘",
+    "question_en": "What architectural innovation allows Transformer models to process sequences in parallel and capture relationships between all words in a sentence regardless of their distance?",
+    "question_kr": "트랜스포머(Transformer) 모델이 단어들을 순차적으로 처리하지 않고 병렬로 처리할 수 있게 하며, 문장 내 단어 간의 거리와 무관하게 모든 단어 사이의 의미적 연관성을 동시에 포착할 수 있도록 만든 핵심 아키텍처 혁신은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Convolutional feature maps",
+        "text_kr": "합성곱 특성 맵 (Convolutional feature maps)"
+      },
+      {
+        "key": "B",
+        "text_en": "Self-attention mechanism",
+        "text_kr": "셀프 어텐션 메커니즘 (Self-Attention)"
+      },
+      {
+        "key": "C",
+        "text_en": "Markov decision process",
+        "text_kr": "마르코프 결정 과정 (MDP)"
+      },
+      {
+        "key": "D",
+        "text_en": "Recurrent hidden gates",
+        "text_kr": "순환 은닉 게이트 (LSTM Gates)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: 트랜스포머의 '셀프 어텐션(Self-Attention)' 메커니즘은 문장 내 모든 단어 쌍 간의 상호작용 가중치를 한 번에 계산하여 장거리 의존성(Long-range dependency)을 효과적으로 파악하고 병렬 처리를 가능하게 합니다."
+  },
+  {
+    "id": "MOCK1-061",
+    "domain": "Domain 5",
+    "domain_name": "도메인 5: AI 솔루션의 보안, 컴플라이언스 및 거버넌스 (Security, Compliance, and Governance)",
+    "topic_category": "Generative AI Threats - Prompt Injection",
+    "key_concept": "Generative AI Threats - Prompt Injection, 프롬프트 인젝션(Prompt Injection) 공격과 Bedrock Guardrails",
+    "question_en": "An external user inputs malicious text crafted to overwrite the system prompt of a customer support chatbot and force it to reveal proprietary system backend instructions. What type of attack is this, and how can it be mitigated?",
+    "question_kr": "외부 사용자가 고객 지원 챗봇의 시스템 프롬프트를 덮어쓰고 내부 시스템 백엔드 지침을 강제로 유출하도록 조작된 악의적 텍스트를 입력했습니다. 이 공격의 유형은 무엇이며, 어떻게 방어할 수 있습니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Direct Prompt Injection attack; mitigate using Amazon Bedrock Guardrails",
+        "text_kr": "직접 프롬프트 주입(Direct Prompt Injection) 공격; Amazon Bedrock Guardrails를 사용하여 완화"
+      },
+      {
+        "key": "B",
+        "text_en": "Distributed Denial of Service (DDoS); mitigate using AWS Shield Advanced alone",
+        "text_kr": "분산 서비스 거부(DDoS) 공격; AWS Shield Advanced 단독 완화"
+      },
+      {
+        "key": "C",
+        "text_en": "SQL Injection; mitigate using Amazon RDS read replicas",
+        "text_kr": "SQL 인젝션 공격; Amazon RDS 읽기 전용 복제본 활용"
+      },
+      {
+        "key": "D",
+        "text_en": "Concept drift; mitigate using Amazon SageMaker Model Monitor",
+        "text_kr": "개념 드리프트; Amazon SageMaker Model Monitor 활용"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: 사용자가 입력 지시문을 통해 모델의 사전 설정된 시스템 규칙이나 가드레일을 무력화하려는 시도를 '직접 프롬프트 주입(Direct Prompt Injection)'이라고 합니다. Amazon Bedrock Guardrails는 프롬프트 공격을 실시간으로 감지하고 차단하는 전용 필터를 제공합니다."
+  },
+  {
+    "id": "MOCK1-055",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Bedrock Data Privacy",
+    "key_concept": "Bedrock Data Privacy, Amazon Bedrock의 고객 데이터 격리 및 모델 미학습 정책",
+    "question_en": "A financial client is concerned about submitting proprietary customer inquiries to foundation models hosted on Amazon Bedrock. What is AWS's official data privacy policy regarding customer prompts on Bedrock?",
+    "question_kr": "금융 고객사가 Amazon Bedrock에서 호스팅되는 파운데이션 모델에 고객의 민감한 질의 데이터를 전송하는 것에 대해 우려하고 있습니다. Bedrock에서 고객의 프롬프트 및 응답 데이터에 대한 AWS의 공식 데이터 프라이버시 정책은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Customer prompts are automatically used to pre-train future public models",
+        "text_kr": "고객의 프롬프트는 향후 공개 기본 모델을 사전 학습하는 데 자동으로 사용된다"
+      },
+      {
+        "key": "B",
+        "text_en": "Customer prompts and responses are NEVER used to train base foundation models and remain in the customer's secure environment",
+        "text_kr": "고객의 프롬프트와 응답은 기본 파운데이션 모델을 학습시키는 데 절대 사용되지 않으며, 고객의 안전한 환경 내에 격리된다"
+      },
+      {
+        "key": "C",
+        "text_en": "Customer prompts are shared across all tenants within the same AWS region",
+        "text_kr": "고객의 프롬프트는 동일한 AWS 리전 내의 모든 테넌트에게 공유된다"
+      },
+      {
+        "key": "D",
+        "text_en": "Prompts are logged publicly to the AWS Open Data repository",
+        "text_kr": "프롬프트는 AWS 오픈 데이터 저장소에 공개적으로 로깅된다"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: Amazon Bedrock은 고객의 프롬프트 및 생성된 응답을 기본 파운데이션 모델을 훈련하거나 개선하는 데 절대 사용하지 않으며, 제3자 모델 제공자에게도 훈련 목적으로 공유되지 않습니다. 모든 데이터는 암호화되어 격리됩니다."
+  },
+  {
+    "id": "MOCK1-010",
+    "domain": "Domain 1",
+    "domain_name": "도메인 1: AI 및 머신러닝의 기초 (Fundamentals of AI and ML)",
+    "topic_category": "Supervised vs Unsupervised Learning",
+    "key_concept": "Supervised vs Unsupervised Learning, 지도학습과 비지도학습의 데이터 특성 구분",
+    "question_en": "A marketing team has historical customer transaction records with a target column indicating whether each customer churned or not. Which machine learning paradigm should be used to train a predictive model on this data?",
+    "question_kr": "마케팅 부서가 고객이 이탈했는지 여부(Churned: True/False)가 명시된 타깃 열(레이블)이 포함된 과거 거래 데이터를 보유하고 있습니다. 이 데이터를 바탕으로 미래 고객의 이탈 여부를 예측하는 모델을 훈련하기에 가장 적합한 머신러닝 방식은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Unsupervised clustering",
+        "text_kr": "비지도 군집화 (Unsupervised Clustering)"
+      },
+      {
+        "key": "B",
+        "text_en": "Supervised classification",
+        "text_kr": "지도 분류 (Supervised Classification)"
+      },
+      {
+        "key": "C",
+        "text_en": "Reinforcement learning policy gradient",
+        "text_kr": "강화학습 정책 그래디언트"
+      },
+      {
+        "key": "D",
+        "text_en": "Unsupervised dimensionality reduction",
+        "text_kr": "비지도 차원 축소 (PCA)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: 정답(레이블)이 존재하는 데이터셋을 기반으로 이탈 여부와 같은 이진 또는 다중 범주를 예측하는 문제는 지도학습의 '분류(Classification)' 작업에 해당합니다.\n• 비지도학습(A, D)은 정답 레이블이 없을 때 숨겨진 패턴이나 그룹을 찾을 때 사용됩니다."
+  },
+  {
+    "id": "MOCK1-030",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Amazon Bedrock - Core Capability",
+    "key_concept": "Amazon Bedrock - Core Capability, Amazon Bedrock의 완전관리형 서버리스 API 특성",
+    "question_en": "A startup wants to integrate multiple leading foundation models (Claude, Llama, Titan) into their web app using a single, unified API without provisioning or managing underlying GPU servers. Which AWS service fulfills this requirement?",
+    "question_kr": "스타트업에서 기본 GPU 서버 인프라를 프로비저닝하거나 관리하지 않고, 단일 통합 API를 통해 여러 업계 최고의 파운데이션 모델(Claude, Llama, Titan 등)을 웹 애플리케이션에 통합하고자 합니다. 이 요구사항을 충족하는 완전관리형 AWS 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon EC2 G5 GPU instances",
+        "text_kr": "Amazon EC2 G5 GPU 인스턴스"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Bedrock",
+        "text_kr": "Amazon Bedrock"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon SageMaker HyperPod",
+        "text_kr": "Amazon SageMaker HyperPod"
+      },
+      {
+        "key": "D",
+        "text_en": "AWS Elastic Beanstalk",
+        "text_kr": "AWS Elastic Beanstalk"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: Amazon Bedrock은 인프라 관리 없이 단일 API 호출을 통해 주요 AI 기업들의 파운데이션 모델(Anthropic Claude, Meta Llama, Amazon Titan 등)을 서버리스 형태로 제공하는 완전관리형 서비스입니다."
+  },
+  {
+    "id": "MOCK1-019",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "PEFT / LoRA",
+    "key_concept": "PEFT / LoRA, 매개변수 효율적 미세조정(PEFT)과 LoRA",
+    "question_en": "A company wants to fine-tune a 70B parameter open-source LLM for medical terminology. Due to GPU memory and budget constraints, they cannot update all 70B weights. Which technique should they use to freeze the original weights and train only small adapter layers?",
+    "question_kr": "기업에서 의학 전문 용어를 학습시키기 위해 700억(70B) 파라미터의 오픈소스 LLM을 미세조정하려 합니다. GPU 메모리와 예산 제약으로 인해 700억 개의 가중치 전체를 학습시킬 수 없습니다. 원본 가중치는 고정(Freeze)하고 소형 어댑터 계층만 학습시키는 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Parameter-Efficient Fine-Tuning (PEFT) using LoRA",
+        "text_kr": "LoRA를 활용한 매개변수 효율적 미세조정 (PEFT)"
+      },
+      {
+        "key": "B",
+        "text_en": "Unsupervised pre-training",
+        "text_kr": "비지도 사전 훈련 (Pre-training)"
+      },
+      {
+        "key": "C",
+        "text_en": "Chain of Thought prompting",
+        "text_kr": "생각의 사슬 프롬프팅"
+      },
+      {
+        "key": "D",
+        "text_en": "K-means clustering on embeddings",
+        "text_kr": "임베딩에 대한 K-means 군집화"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: PEFT(Parameter-Efficient Fine-Tuning)의 대표 기법인 LoRA(Low-Rank Adaptation)는 대형 기반 모델의 기존 가중치는 동결하고 소형 저차원 분해 행렬(어댑터)만 학습시켜 컴퓨팅 자원과 GPU 메모리를 90% 이상 절감하면서도 높은 성능을 달성합니다."
+  },
+  {
+    "id": "MOCK1-042",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Amazon Q Developer",
+    "key_concept": "Amazon Q Developer, 개발자를 위한 IDE 코드 생성 및 취약점 스캔",
+    "question_en": "A software engineering team wants to accelerate development inside their IDEs by getting inline code recommendations, generating unit tests, and scanning code for security vulnerabilities. Which tool should they adopt?",
+    "question_kr": "소프트웨어 엔지니어링 팀이 IDE 환경 내에서 실시간 인라인 코드 추천, 단위 테스트 자동 생성, 보안 취약점 스캔을 통해 개발 생산성을 높이고자 합니다. 어떤 도구를 도입해야 합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Q Developer",
+        "text_kr": "Amazon Q Developer"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Comprehend",
+        "text_kr": "Amazon Comprehend"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon SageMaker Canvas",
+        "text_kr": "Amazon SageMaker Canvas"
+      },
+      {
+        "key": "D",
+        "text_en": "AWS CloudTrail",
+        "text_kr": "AWS CloudTrail"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Amazon Q Developer(구 CodeWhisperer 발전형)는 개발자 IDE에서 실시간 코드 자동완성, 리팩토링, 보안 취약점 검사 및 수정 제안, 레거시 언어(Java 등) 변환을 지원하는 생성형 AI 개발 도우미입니다."
+  },
+  {
+    "id": "MOCK1-037",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "GenAI Evaluation Metrics - ROUGE vs BLEU",
+    "key_concept": "GenAI Evaluation Metrics - ROUGE vs BLEU, 문서 요약 평가(ROUGE)와 기계 번역 평가(BLEU)",
+    "question_en": "An AI team is evaluating the performance of multiple foundation models on a text summarization task against human reference summaries. Which metric measures n-gram recall between generated summaries and reference summaries?",
+    "question_kr": "AI 팀이 인간이 작성한 모범 요약문과 비교하여 여러 파운데이션 모델의 텍스트 요약(Summarization) 성능을 평가하고 있습니다. 생성된 요약문과 참조 요약문 간의 n-gram 재현율(Recall)을 주로 측정하는 지표는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "BLEU score",
+        "text_kr": "BLEU 점수"
+      },
+      {
+        "key": "B",
+        "text_en": "ROUGE score",
+        "text_kr": "ROUGE 점수"
+      },
+      {
+        "key": "C",
+        "text_en": "Mean Squared Error (MSE)",
+        "text_kr": "평균 제곱 오차 (MSE)"
+      },
+      {
+        "key": "D",
+        "text_en": "Area Under the ROC Curve (AUC)",
+        "text_kr": "ROC 곡선 아래 면적 (AUC)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: ROUGE(Recall-Oriented Understudy for Gisting Evaluation)는 생성된 텍스트와 참조 요약문 간의 n-gram 재현율(Recall)을 측정하는 문서 요약(Summarization) 평가의 대표 표준 지표입니다.\n• BLEU(A)는 정밀도(Precision) 중심의 기계 번역(Translation) 평가 지표입니다."
+  },
+  {
+    "id": "MOCK1-017",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "Prompt Engineering - Few-Shot",
+    "key_concept": "Prompt Engineering - Few-Shot, Few-Shot 프롬프팅을 통한 출력 형식 통제",
+    "question_en": "A developer wants an LLM to categorize customer feedback into specific tags formatted strictly as valid JSON. Without updating model weights, how can the developer best guide the model to follow this exact format?",
+    "question_kr": "개발자가 모델의 가중치를 변경하지 않고, 고객 피드백을 분류하여 엄격하게 유효한 JSON 형식으로만 응답을 생성하도록 유도하려 합니다. 모델이 정확한 형식을 따르도록 지침을 제공하는 가장 효과적인 방법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Pre-train a new foundation model from scratch",
+        "text_kr": "기초 모델을 처음부터 사전 훈련한다"
+      },
+      {
+        "key": "B",
+        "text_en": "Provide 2-3 exemplar input/output pairs in the prompt (Few-shot prompting)",
+        "text_kr": "프롬프트 내에 2~3개의 모범 입/출력 예시를 제공한다 (Few-shot 프롬프팅)"
+      },
+      {
+        "key": "C",
+        "text_en": "Fine-tune all model weights using reinforcement learning",
+        "text_kr": "강화학습을 사용해 전체 모델 가중치를 파인튜닝한다"
+      },
+      {
+        "key": "D",
+        "text_en": "Increase the learning rate hyperparameter during inference",
+        "text_kr": "추론 시 학습률(Learning Rate) 하이퍼파라미터를 높인다"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: Few-shot 프롬프팅은 프롬프트 안에 원하는 입력과 출력 예시(Exemplars)를 몇 개 포함시켜 모델이 가중치 변경 없이도 원하는 출력 스타일과 JSON 구조를 정확히 따르도록 유도하는 가장 비용 효율적인 기법입니다."
+  },
+  {
+    "id": "MOCK1-023",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "Prompt Engineering - Chain of Thought",
+    "key_concept": "Prompt Engineering - Chain of Thought, 복잡한 다단계 추론을 위한 Chain-of-Thought (CoT)",
+    "question_en": "An AI practitioner needs a foundation model to solve complex multi-step math word problems accurately. Which prompt engineering technique instructs the model to break down its reasoning step-by-step before producing the final answer?",
+    "question_kr": "AI 프랙티셔너가 파운데이션 모델을 사용하여 복잡한 다단계 수학 서술형 문제를 정확히 풀도록 유도하고자 합니다. 모델이 최종 정답을 내놓기 전에 중간 논리 추론 과정을 단계별로 풀어서 설명하도록 유도하는 프롬프트 엔지니어링 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Zero-shot prompting",
+        "text_kr": "제로샷 프롬프팅 (Zero-shot)"
+      },
+      {
+        "key": "B",
+        "text_en": "Chain-of-Thought (CoT) prompting",
+        "text_kr": "생각의 사슬 프롬프팅 (Chain-of-Thought)"
+      },
+      {
+        "key": "C",
+        "text_en": "Low-Rank Adaptation (LoRA)",
+        "text_kr": "저차원 적응 기법 (LoRA)"
+      },
+      {
+        "key": "D",
+        "text_en": "Gradient accumulation",
+        "text_kr": "그래디언트 누적 (Gradient Accumulation)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: Chain-of-Thought (CoT) 프롬프팅은 모델에게 \"단계별로 생각하라(Let's think step by step)\"는 지침을 주거나 단계별 풀이 예시를 제공하여, 복잡한 논리 및 수학 문제에서 추론 오류를 극적으로 줄이는 기법입니다."
+  },
+  {
+    "id": "MOCK1-052",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Responsible AI - Bias Detection",
+    "key_concept": "Responsible AI - Bias Detection, SageMaker Clarify를 통한 편향 탐지 및 설명가능성",
+    "question_en": "A bank wants to audit its automated credit scoring model to ensure it does not discriminate against applicants based on age or gender, and needs to calculate SHAP values to explain loan approval decisions. Which AWS service should be used?",
+    "question_kr": "은행에서 자동 신용 평가 모델이 연령이나 성별과 같은 보호 속성을 기준으로 대출 신청자를 차별하지 않는지 감사하고, 대출 승인 결정 이유를 설명하기 위해 SHAP 값을 산출하고자 합니다. 어떤 AWS 서비스를 사용해야 합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon SageMaker Clarify",
+        "text_kr": "Amazon SageMaker Clarify"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon SageMaker JumpStart",
+        "text_kr": "Amazon SageMaker JumpStart"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon Rekognition Video",
+        "text_kr": "Amazon Rekognition Video"
+      },
+      {
+        "key": "D",
+        "text_en": "AWS Cloud9",
+        "text_kr": "AWS Cloud9"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Amazon SageMaker Clarify는 훈련 전후 데이터셋과 모델의 잠재적 편향(Bias)을 탐지하고, 게임 이론 기반의 SHAP 가치를 계산하여 모델의 예측 결과에 대한 설명가능성(Explainability)을 제공하는 전용 서비스입니다."
+  },
+  {
+    "id": "MOCK1-043",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Amazon SageMaker Canvas",
+    "key_concept": "Amazon SageMaker Canvas, 비즈니스 분석가를 위한 No-code 머신러닝",
+    "question_en": "A business analyst with no coding or ML engineering experience needs to build a churn prediction model from spreadsheet data and test generative AI text summarization visually. Which tool is specifically built for this user?",
+    "question_kr": "코딩이나 머신러닝 엔지니어링 경험이 없는 비즈니스 분석가가 스프레드시트 엑셀 데이터를 바탕으로 고객 이탈 예측 모델을 만들고, 시각적 인터페이스에서 생성형 AI 텍스트 요약을 직접 테스트해 보고자 합니다. 이 사용자를 위해 특화된 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon SageMaker Canvas",
+        "text_kr": "Amazon SageMaker Canvas"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon SageMaker Studio Code Editor",
+        "text_kr": "Amazon SageMaker Studio Code Editor"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS Deep Learning AMIs",
+        "text_kr": "AWS Deep Learning AMIs"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon EMR Serverless",
+        "text_kr": "Amazon EMR Serverless"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Amazon SageMaker Canvas는 비즈니스 분석가를 위한 시각적 노코드(No-code) 머신러닝 도구로, 코드 한 줄 없이 정형 데이터 분류/회귀 모델을 생성하거나 파운데이션 모델을 시각적으로 테스트할 수 있습니다."
+  },
+  {
+    "id": "MOCK1-031",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Bedrock Knowledge Bases",
+    "key_concept": "Bedrock Knowledge Bases, Bedrock Knowledge Bases를 활용한 완전관리형 RAG",
+    "question_en": "An enterprise stores thousands of technical product manuals as PDFs in Amazon S3. They want to enable a chatbot to answer user queries grounded in these PDFs without writing custom chunking, embedding, or sync pipelines. Which feature should they use?",
+    "question_kr": "기업에서 수천 건의 기술 제품 매뉴얼 PDF를 Amazon S3에 저장하고 있습니다. 맞춤형 청킹, 임베딩, 동기화 파이프라인을 직접 코딩하지 않고, 이 PDF 문서에 기반하여 질문에 답변하는 챗봇을 구현하고자 합니다. 어떤 기능을 사용해야 합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Knowledge Bases for Amazon Bedrock",
+        "text_kr": "Amazon Bedrock Knowledge Bases (지식 베이스)"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Polly Speech Synthesis",
+        "text_kr": "Amazon Polly 음성 합성"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS Glue ETL with Spark Streaming",
+        "text_kr": "Spark Streaming 기반 AWS Glue ETL"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Rekognition Custom Labels",
+        "text_kr": "Amazon Rekognition Custom Labels"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Knowledge Bases for Amazon Bedrock은 S3에 저장된 문서를 지정하기만 하면 문서 파싱, 청킹(Chunking), 임베딩 생성 및 벡터 스토어(OpenSearch Serverless 등) 색인과 쿼리 검색을 모두 자동으로 처리해 주는 완전관리형 RAG 솔루션입니다."
+  },
+  {
+    "id": "MOCK1-020",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "Hallucination Mitigation",
+    "key_concept": "Hallucination Mitigation, 생성형 AI 환각(Hallucination) 완화 전략",
+    "question_en": "A customer service chatbot occasionally invents non-existent return policy rules with high confidence. Which combination of strategies directly reduces these hallucinations?",
+    "question_kr": "고객 서비스 챗봇이 존재하지 않는 반품 정책 규정을 지어내어 확신을 가지고 답변하는 환각(Hallucination) 현상이 발생하고 있습니다. 이러한 환각을 직접적으로 줄이기 위한 가장 효과적인 전략 조합은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Implement RAG with authoritative policy docs and lower the temperature",
+        "text_kr": "공식 정책 문서를 연동한 RAG를 구축하고 Temperature를 낮춘다"
+      },
+      {
+        "key": "B",
+        "text_en": "Increase the temperature and top-p to maximize creative variance",
+        "text_kr": "창의적 다양성을 극대화하기 위해 Temperature와 Top-P를 높인다"
+      },
+      {
+        "key": "C",
+        "text_en": "Switch to an unsupervised clustering algorithm",
+        "text_kr": "비지도 군집화 알고리즘으로 전환한다"
+      },
+      {
+        "key": "D",
+        "text_en": "Disable system prompts and guardrails completely",
+        "text_kr": "시스템 프롬프트와 가드레일을 완전히 비활성화한다"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: 환각(Hallucination)을 줄이기 위해서는 공식적인 원천 문서(Ground Truth)를 검색하여 컨텍스트로 제공하는 RAG를 구축하고, 무작위성을 줄이기 위해 Temperature를 0.0~0.2 수준으로 낮추며 시스템 프롬프트로 근거에 기반한 답변만을 지시해야 합니다."
+  },
+  {
+    "id": "MOCK1-032",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Bedrock Agents",
+    "key_concept": "Bedrock Agents, Bedrock Agents와 AWS Lambda를 통한 자율 작업 오케스트레이션",
+    "question_en": "A travel company needs an AI assistant that can understand customer requests in natural language, break down actions into multiple steps, and interact with internal flight booking databases via APIs. Which Bedrock feature provides this capability?",
+    "question_kr": "여행사에서 고객의 자연어 요청을 이해하고 실행 계획을 다단계로 수립한 후, API를 통해 사내 항공권 예약 데이터베이스와 직접 상호작용할 수 있는 AI 어시스턴트를 구축하고자 합니다. 이 기능을 제공하는 Amazon Bedrock의 핵심 기능은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Bedrock Guardrails",
+        "text_kr": "Bedrock Guardrails"
+      },
+      {
+        "key": "B",
+        "text_en": "Agents for Amazon Bedrock",
+        "text_kr": "Agents for Amazon Bedrock (베드록 에이전트)"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon SageMaker Canvas",
+        "text_kr": "Amazon SageMaker Canvas"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Textract Queries",
+        "text_kr": "Amazon Textract Queries"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: Agents for Amazon Bedrock은 파운데이션 모델의 추론 능력을 바탕으로 사용자의 요청을 분석하여 다단계 실행 계획을 오케스트레이션하고, OpenAPI 스키마로 정의된 Action Groups를 통해 백엔드 AWS Lambda 함수를 호출하여 외부 비즈니스 로직을 자율적으로 수행합니다."
+  },
+  {
+    "id": "MOCK1-012",
+    "domain": "Domain 1",
+    "domain_name": "도메인 1: AI 및 머신러닝의 기초 (Fundamentals of AI and ML)",
+    "topic_category": "Classification Metrics - Precision vs False Positive",
+    "key_concept": "Classification Metrics - Precision vs False Positive, 스팸 필터링과 정밀도(Precision) 최적화",
+    "question_en": "An enterprise email filtering system must ensure that critical client business emails are never mistakenly classified as spam and moved to the junk folder. Which metric is most critical to maximize in this scenario?",
+    "question_kr": "기업 이메일 필터링 시스템에서 중요한 고객의 비즈니스 이메일이 스팸으로 오분류되어 정크 폴더로 격리되는 일(False Positive)이 절대 발생하지 않도록 해야 합니다. 이 시나리오에서 가장 우선적으로 극대화해야 하는 평가 지표는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Precision",
+        "text_kr": "정밀도 (Precision)"
+      },
+      {
+        "key": "B",
+        "text_en": "Recall",
+        "text_kr": "재현율 (Recall)"
+      },
+      {
+        "key": "C",
+        "text_en": "Root Mean Squared Error (RMSE)",
+        "text_kr": "평균 제곱근 오차 (RMSE)"
+      },
+      {
+        "key": "D",
+        "text_en": "Perplexity",
+        "text_kr": "펄플렉서티 (Perplexity)"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: 정밀도(Precision = TP / (TP + FP))는 모델이 양성(스팸)이라고 판정한 것 중 실제 양성인 비율입니다. 정상 메일을 스팸으로 오분류하는 False Positive를 최소화하려면 Precision을 극대화해야 합니다."
+  },
+  {
+    "id": "MOCK1-026",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "PEFT / LoRA",
+    "key_concept": "PEFT / LoRA, 매개변수 효율적 미세조정(PEFT)과 LoRA",
+    "question_en": "A company wants to fine-tune a 70B parameter open-source LLM for medical terminology. Due to GPU memory and budget constraints, they cannot update all 70B weights. Which technique should they use to freeze the original weights and train only small adapter layers?",
+    "question_kr": "기업에서 의학 전문 용어를 학습시키기 위해 700억(70B) 파라미터의 오픈소스 LLM을 미세조정하려 합니다. GPU 메모리와 예산 제약으로 인해 700억 개의 가중치 전체를 학습시킬 수 없습니다. 원본 가중치는 고정(Freeze)하고 소형 어댑터 계층만 학습시키는 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Parameter-Efficient Fine-Tuning (PEFT) using LoRA",
+        "text_kr": "LoRA를 활용한 매개변수 효율적 미세조정 (PEFT)"
+      },
+      {
+        "key": "B",
+        "text_en": "Unsupervised pre-training",
+        "text_kr": "비지도 사전 훈련 (Pre-training)"
+      },
+      {
+        "key": "C",
+        "text_en": "Chain of Thought prompting",
+        "text_kr": "생각의 사슬 프롬프팅"
+      },
+      {
+        "key": "D",
+        "text_en": "K-means clustering on embeddings",
+        "text_kr": "임베딩에 대한 K-means 군집화"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: PEFT(Parameter-Efficient Fine-Tuning)의 대표 기법인 LoRA(Low-Rank Adaptation)는 대형 기반 모델의 기존 가중치는 동결하고 소형 저차원 분해 행렬(어댑터)만 학습시켜 컴퓨팅 자원과 GPU 메모리를 90% 이상 절감하면서도 높은 성능을 달성합니다."
+  },
+  {
+    "id": "MOCK1-041",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Amazon Q Business",
+    "key_concept": "Amazon Q Business, 엔터프라이즈 사내 문서 검색 및 IAM/RBAC 권한 유지",
+    "question_en": "An enterprise wants an AI assistant that connects to corporate data sources (SharePoint, Jira, Salesforce) to answer employee questions while strictly enforcing existing user access permissions (RBAC). Which service is designed for this purpose?",
+    "question_kr": "기업에서 사내 데이터 소스(SharePoint, Jira, Salesforce 등)에 연결하여 직원의 질문에 답변하면서도, 기존의 사내 사용자 접근 권한(RBAC)을 엄격히 준수하여 권한이 없는 문서는 열람되지 않도록 보장하는 엔터프라이즈 AI 어시스턴트를 원합니다. 어떤 서비스가 가장 적합합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Q Developer",
+        "text_kr": "Amazon Q Developer"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Q Business",
+        "text_kr": "Amazon Q Business"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon Lex",
+        "text_kr": "Amazon Lex"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon SageMaker Studio",
+        "text_kr": "Amazon SageMaker Studio"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: Amazon Q Business는 기업의 다양한 사내 데이터 저장소에 사전 구축된 커넥터로 연결되어 사내 지식 기반 질의응답을 제공하며, 기업의 기존 IAM 및 역할 기반 접근 제어(RBAC)를 그대로 적용하여 각 직원이 권한을 가진 문서에 대해서만 답변을 생성합니다."
+  },
+  {
+    "id": "MOCK1-050",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Transparency - Model Cards",
+    "key_concept": "Transparency - Model Cards, SageMaker Model Cards를 통한 모델 투명성 및 감사",
+    "question_en": "A healthcare provider must document the intended use, training dataset distribution, evaluation metrics, and ethical limitations for all production ML models in a standardized format for regulatory audits. Which tool should they utilize?",
+    "question_kr": "의료 서비스 제공업체가 규제 기관의 감사를 받기 위해, 프로덕션 환경의 모든 머신러닝 모델에 대한 의도된 용도, 학습 데이터 분포, 평가 메트릭, 윤리적 한계점을 표준화된 형식으로 문서화하고 관리해야 합니다. 어떤 도구를 활용해야 합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon SageMaker Model Cards",
+        "text_kr": "Amazon SageMaker Model Cards (모델 카드)"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon S3 Glacier Deep Archive",
+        "text_kr": "Amazon S3 Glacier Deep Archive"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon CloudWatch Synthetics",
+        "text_kr": "Amazon CloudWatch Synthetics"
+      },
+      {
+        "key": "D",
+        "text_en": "AWS CodePipeline",
+        "text_kr": "AWS CodePipeline"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Amazon SageMaker Model Cards는 모델의 의도된 목적, 훈련 데이터 세부사항, 벤치마크 평가 결과, 한계점을 단일 팩트 시트로 표준화하여 문서화하고 규제 감사 및 거버넌스를 지원하는 도구입니다."
+  },
+  {
+    "id": "MOCK1-064",
+    "domain": "Domain 5",
+    "domain_name": "도메인 5: AI 솔루션의 보안, 컴플라이언스 및 거버넌스 (Security, Compliance, and Governance)",
+    "topic_category": "Audit and Governance - CloudTrail",
+    "key_concept": "Audit and Governance - CloudTrail, AWS CloudTrail을 통한 AI API 호출 감사 로깅",
+    "question_en": "A company must record an immutable audit history of all Amazon Bedrock API invocations, including the IAM user identity, source IP address, and timestamp of every model inference request. Which AWS service is responsible for logging these API actions?",
+    "question_kr": "기업에서 모델 추론 요청을 수행한 IAM 사용자 신원, 소스 IP 주소, 타임스탬프를 포함하여 Amazon Bedrock API의 모든 호출 기록을 변경 불가능한 감사 내역으로 로깅해야 합니다. 이러한 API 동작을 기록하는 AWS 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "AWS CloudTrail",
+        "text_kr": "AWS CloudTrail"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon CloudWatch Synthetics",
+        "text_kr": "Amazon CloudWatch Synthetics"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS Trusted Advisor",
+        "text_kr": "AWS Trusted Advisor"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon SageMaker Feature Store",
+        "text_kr": "Amazon SageMaker Feature Store"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: AWS CloudTrail은 계정 내에서 수행되는 모든 AWS API 호출(Bedrock의 InvokeModel, SageMaker API 등)의 요청자, IP, 타임스탬프 등의 감사 로그를 Amazon S3에 영구적으로 수집 및 보존합니다."
+  },
+  {
+    "id": "MOCK1-034",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Amazon Q Developer",
+    "key_concept": "Amazon Q Developer, 개발자를 위한 IDE 코드 생성 및 취약점 스캔",
+    "question_en": "A software engineering team wants to accelerate development inside their IDEs by getting inline code recommendations, generating unit tests, and scanning code for security vulnerabilities. Which tool should they adopt?",
+    "question_kr": "소프트웨어 엔지니어링 팀이 IDE 환경 내에서 실시간 인라인 코드 추천, 단위 테스트 자동 생성, 보안 취약점 스캔을 통해 개발 생산성을 높이고자 합니다. 어떤 도구를 도입해야 합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Q Developer",
+        "text_kr": "Amazon Q Developer"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Comprehend",
+        "text_kr": "Amazon Comprehend"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon SageMaker Canvas",
+        "text_kr": "Amazon SageMaker Canvas"
+      },
+      {
+        "key": "D",
+        "text_en": "AWS CloudTrail",
+        "text_kr": "AWS CloudTrail"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Amazon Q Developer(구 CodeWhisperer 발전형)는 개발자 IDE에서 실시간 코드 자동완성, 리팩토링, 보안 취약점 검사 및 수정 제안, 레거시 언어(Java 등) 변환을 지원하는 생성형 AI 개발 도우미입니다."
+  },
+  {
+    "id": "MOCK1-025",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "Model Customization - RAG Architecture",
+    "key_concept": "Model Customization - RAG Architecture, RAG (Retrieval-Augmented Generation) 도입 목적",
+    "question_en": "A legal firm wants an AI assistant that can answer questions based on internal proprietary contracts that are updated daily. The firm must avoid costly re-training and ensure answers cite exact source clauses. Which approach is best?",
+    "question_kr": "법률 사무소에서 매일 새롭게 업데이트되는 사내 독점 계약서 문서를 바탕으로 질문에 정확히 답변하는 AI 비서를 도입하고자 합니다. 비용이 많이 드는 재학습을 피하고, 답변 시 참조한 정확한 계약 조항 출처(Citation)를 인용해야 합니다. 가장 적합한 접근 방식은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Pre-training a foundation model from scratch weekly",
+        "text_kr": "매주 기초 파운데이션 모델을 처음부터 사전 학습한다"
+      },
+      {
+        "key": "B",
+        "text_en": "Retrieval-Augmented Generation (RAG) using a vector store",
+        "text_kr": "벡터 스토어를 활용한 검색 증강 생성 (RAG)"
+      },
+      {
+        "key": "C",
+        "text_en": "Full parameter fine-tuning on public datasets",
+        "text_kr": "공개 데이터셋을 활용한 전체 파라미터 파인튜닝"
+      },
+      {
+        "key": "D",
+        "text_en": "Increasing the model temperature parameter to 1.0",
+        "text_kr": "모델 Temperature 파라미터를 1.0으로 상향 조정"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: RAG(검색 증강 생성)는 수시로 변경되는 비공개 사내 문서를 벡터 DB에 저장해두고, 질문과 관련된 문서 조각을 실시간으로 검색하여 프롬프트의 컨텍스트로 제공함으로써 모델 재학습 없이도 최신 정보 기반 답변과 원문 인용(Citation)을 제공하는 최적의 아키텍처입니다."
+  },
+  {
+    "id": "MOCK1-057",
+    "domain": "Domain 5",
+    "domain_name": "도메인 5: AI 솔루션의 보안, 컴플라이언스 및 거버넌스 (Security, Compliance, and Governance)",
+    "topic_category": "Generative AI Threats - Prompt Injection",
+    "key_concept": "Generative AI Threats - Prompt Injection, 프롬프트 인젝션(Prompt Injection) 공격과 Bedrock Guardrails",
+    "question_en": "An external user inputs malicious text crafted to overwrite the system prompt of a customer support chatbot and force it to reveal proprietary system backend instructions. What type of attack is this, and how can it be mitigated?",
+    "question_kr": "외부 사용자가 고객 지원 챗봇의 시스템 프롬프트를 덮어쓰고 내부 시스템 백엔드 지침을 강제로 유출하도록 조작된 악의적 텍스트를 입력했습니다. 이 공격의 유형은 무엇이며, 어떻게 방어할 수 있습니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Direct Prompt Injection attack; mitigate using Amazon Bedrock Guardrails",
+        "text_kr": "직접 프롬프트 주입(Direct Prompt Injection) 공격; Amazon Bedrock Guardrails를 사용하여 완화"
+      },
+      {
+        "key": "B",
+        "text_en": "Distributed Denial of Service (DDoS); mitigate using AWS Shield Advanced alone",
+        "text_kr": "분산 서비스 거부(DDoS) 공격; AWS Shield Advanced 단독 완화"
+      },
+      {
+        "key": "C",
+        "text_en": "SQL Injection; mitigate using Amazon RDS read replicas",
+        "text_kr": "SQL 인젝션 공격; Amazon RDS 읽기 전용 복제본 활용"
+      },
+      {
+        "key": "D",
+        "text_en": "Concept drift; mitigate using Amazon SageMaker Model Monitor",
+        "text_kr": "개념 드리프트; Amazon SageMaker Model Monitor 활용"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: 사용자가 입력 지시문을 통해 모델의 사전 설정된 시스템 규칙이나 가드레일을 무력화하려는 시도를 '직접 프롬프트 주입(Direct Prompt Injection)'이라고 합니다. Amazon Bedrock Guardrails는 프롬프트 공격을 실시간으로 감지하고 차단하는 전용 필터를 제공합니다."
+  },
+  {
+    "id": "MOCK1-005",
+    "domain": "Domain 1",
+    "domain_name": "도메인 1: AI 및 머신러닝의 기초 (Fundamentals of AI and ML)",
+    "topic_category": "Overfitting vs Underfitting",
+    "key_concept": "Overfitting vs Underfitting, 과적합(Overfitting) 진단 및 완화 기법",
+    "question_en": "During model development, an ML engineer observes that the training loss is near zero, but the validation loss is significantly higher and rapidly increasing. Which technique should be applied to mitigate this issue?",
+    "question_kr": "모델 개발 과정에서 머신러닝 엔지니어가 훈련 데이터의 손실(Loss)은 거의 0에 가까우나, 검증 데이터의 손실은 현저히 높고 급격히 증가하는 현상을 관찰했습니다. 이 과적합(Overfitting) 문제를 해결하기 위해 적용해야 할 가장 적합한 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Increase the depth and number of layers of the neural network",
+        "text_kr": "신경망의 깊이와 레이어 수를 늘린다"
+      },
+      {
+        "key": "B",
+        "text_en": "Apply L1/L2 regularization and dropout",
+        "text_kr": "L1/L2 정규화 및 드롭아웃(Dropout)을 적용한다"
+      },
+      {
+        "key": "C",
+        "text_en": "Remove all cross-validation splits and train on test data",
+        "text_kr": "교차 검증 분할을 제거하고 테스트 데이터로 훈련한다"
+      },
+      {
+        "key": "D",
+        "text_en": "Decrease the amount of training data available",
+        "text_kr": "훈련 데이터의 양을 줄인다"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: 훈련 오차는 매우 낮은데 검증 오차가 높은 것은 전형적인 과적합(Overfitting / High Variance) 현상입니다.\n• 과적합을 방지하기 위해서는 가중치 크기에 페널티를 부여하는 L1/L2 정규화(Regularization), 뉴런을 무작위 비활성화하는 드롭아웃(Dropout), 조기 종료(Early Stopping), 데이터 증강 등을 적용해야 합니다."
+  },
+  {
+    "id": "MOCK1-059",
+    "domain": "Domain 5",
+    "domain_name": "도메인 5: AI 솔루션의 보안, 컴플라이언스 및 거버넌스 (Security, Compliance, and Governance)",
+    "topic_category": "Network Isolation - VPC Endpoints",
+    "key_concept": "Network Isolation - VPC Endpoints, AWS PrivateLink 기반 VPC 엔드포인트를 통한 인터넷 격리 통신",
+    "question_en": "A financial enterprise requires that all applications running in private VPC subnets communicate with Amazon Bedrock API endpoints without traversing the public internet. Which architecture achieves this requirement?",
+    "question_kr": "금융 기업에서 프라이빗 VPC 서브넷에서 실행되는 애플리케이션이 공용 인터넷을 거치지 않고 오직 AWS 내부 전용 네트워크를 통해서만 Amazon Bedrock API 엔드포인트와 통신하도록 강제하고자 합니다. 어떤 아키텍처를 구현해야 합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Configure an Internet Gateway and public IPs for all instances",
+        "text_kr": "인터넷 게이트웨이(IGW)와 모든 인스턴스에 공용 IP를 구성한다"
+      },
+      {
+        "key": "B",
+        "text_en": "Create a VPC Interface Endpoint powered by AWS PrivateLink for Amazon Bedrock",
+        "text_kr": "Amazon Bedrock용 AWS PrivateLink 기반 VPC 인터페이스 엔드포인트를 생성한다"
+      },
+      {
+        "key": "C",
+        "text_en": "Deploy a public NAT Gateway with open ingress rules",
+        "text_kr": "오픈 인그레스 규칙이 설정된 퍼블릭 NAT 게이트웨이를 배포한다"
+      },
+      {
+        "key": "D",
+        "text_en": "Route all traffic through a public S3 website endpoint",
+        "text_kr": "퍼블릭 S3 웹사이트 엔드포인트를 통해 모든 트래픽을 라우팅한다"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: AWS PrivateLink 기반의 VPC 엔드포인트(Interface Endpoint)를 사용하면 트래픽이 공용 인터넷에 노출되지 않고 AWS 전용 글로벌 네트워크 백본 내에서만 비공개(Private)로 안전하게 Amazon Bedrock과 통신할 수 있습니다."
+  },
+  {
+    "id": "MOCK1-022",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "Inference Parameters - Temperature",
+    "key_concept": "Inference Parameters - Temperature, Temperature 하이퍼파라미터 조절과 결정론적 출력",
+    "question_en": "A company is using an LLM to generate precise JSON structures for financial transactions where creativity and randomness must be strictly minimized. How should the temperature parameter be configured?",
+    "question_kr": "금융 거래 데이터를 처리하기 위해 LLM을 사용하여 엄격한 JSON 구조를 생성하려 합니다. 모델의 창의성이나 무작위성을 극도로 배제하고 가장 일관되고 예측 가능한 답변을 얻으려면 Temperature 파라미터를 어떻게 설정해야 합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Set temperature to a value close to 0 (e.g., 0.0 to 0.2)",
+        "text_kr": "온도(Temperature)를 0에 가까운 값(예: 0.0~0.2)으로 설정한다"
+      },
+      {
+        "key": "B",
+        "text_en": "Set temperature to the maximum supported value (e.g., 1.0 or 2.0)",
+        "text_kr": "온도를 지원되는 최댓값(예: 1.0~2.0)으로 설정한다"
+      },
+      {
+        "key": "C",
+        "text_en": "Increase Top-P to 1.0 while leaving temperature unset",
+        "text_kr": "온도는 비워두고 Top-P만 1.0으로 높인다"
+      },
+      {
+        "key": "D",
+        "text_en": "Decrease the context window size to 10 tokens",
+        "text_kr": "컨텍스트 윈도우 크기를 10토큰으로 줄인다"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Temperature 파라미터는 모델의 무작위성(창의성)을 제어합니다. 값이 0에 가까울수록(0.0~0.2) 가장 확률이 높은 단어만 선택하는 결정론적(Deterministic)이고 사실적인 출력을 생성하므로, JSON 파싱이나 금융/법률 작업에 필수적입니다."
+  },
+  {
+    "id": "MOCK1-051",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Bedrock Data Privacy",
+    "key_concept": "Bedrock Data Privacy, Amazon Bedrock의 고객 데이터 격리 및 모델 미학습 정책",
+    "question_en": "A financial client is concerned about submitting proprietary customer inquiries to foundation models hosted on Amazon Bedrock. What is AWS's official data privacy policy regarding customer prompts on Bedrock?",
+    "question_kr": "금융 고객사가 Amazon Bedrock에서 호스팅되는 파운데이션 모델에 고객의 민감한 질의 데이터를 전송하는 것에 대해 우려하고 있습니다. Bedrock에서 고객의 프롬프트 및 응답 데이터에 대한 AWS의 공식 데이터 프라이버시 정책은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Customer prompts are automatically used to pre-train future public models",
+        "text_kr": "고객의 프롬프트는 향후 공개 기본 모델을 사전 학습하는 데 자동으로 사용된다"
+      },
+      {
+        "key": "B",
+        "text_en": "Customer prompts and responses are NEVER used to train base foundation models and remain in the customer's secure environment",
+        "text_kr": "고객의 프롬프트와 응답은 기본 파운데이션 모델을 학습시키는 데 절대 사용되지 않으며, 고객의 안전한 환경 내에 격리된다"
+      },
+      {
+        "key": "C",
+        "text_en": "Customer prompts are shared across all tenants within the same AWS region",
+        "text_kr": "고객의 프롬프트는 동일한 AWS 리전 내의 모든 테넌트에게 공유된다"
+      },
+      {
+        "key": "D",
+        "text_en": "Prompts are logged publicly to the AWS Open Data repository",
+        "text_kr": "프롬프트는 AWS 오픈 데이터 저장소에 공개적으로 로깅된다"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: Amazon Bedrock은 고객의 프롬프트 및 생성된 응답을 기본 파운데이션 모델을 훈련하거나 개선하는 데 절대 사용하지 않으며, 제3자 모델 제공자에게도 훈련 목적으로 공유되지 않습니다. 모든 데이터는 암호화되어 격리됩니다."
+  },
+  {
+    "id": "MOCK1-011",
+    "domain": "Domain 1",
+    "domain_name": "도메인 1: AI 및 머신러닝의 기초 (Fundamentals of AI and ML)",
+    "topic_category": "Classification Metrics - Recall vs Precision",
+    "key_concept": "Classification Metrics - Recall vs Precision, 암 진단 및 고위험 이상 탐지에서의 재현율(Recall) 극대화",
+    "question_en": "A healthcare provider is deploying an ML model to detect early-stage malignant tumors from medical scans. Failing to identify a malignant tumor (False Negative) has fatal consequences. Which evaluation metric should the team prioritize maximizing?",
+    "question_kr": "의료 기관에서 의료 영상을 분석하여 초기 악성 종양을 탐지하는 머신러닝 모델을 도입하려 합니다. 악성 종양을 놓쳐 정상으로 잘못 진단하는 경우(False Negative, 제2종 오류) 환자에게 치명적인 결과를 초래합니다. 이때 팀이 최우선으로 극대화해야 하는 평가 지표는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Precision",
+        "text_kr": "정밀도 (Precision)"
+      },
+      {
+        "key": "B",
+        "text_en": "Recall (Sensitivity)",
+        "text_kr": "재현율 (Recall / Sensitivity)"
+      },
+      {
+        "key": "C",
+        "text_en": "Mean Absolute Error (MAE)",
+        "text_kr": "평균 절대 오차 (MAE)"
+      },
+      {
+        "key": "D",
+        "text_en": "Adjusted R-squared",
+        "text_kr": "수정 결정계수 (Adjusted R-squared)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: 재현율(Recall = TP / (TP + FN))은 실제 양성인 케이스 중 모델이 놓치지 않고 찾아낸 비율입니다. 암 진단이나 중대 금융 사기처럼 False Negative(놓침)의 위험 비용이 극도로 높은 시나리오에서는 Recall을 최우선으로 극대화해야 합니다.\n• Precision(A)은 False Positive(스팸이 아닌데 스팸으로 분류)를 줄여야 할 때 중요합니다."
+  },
+  {
+    "id": "MOCK1-001",
+    "domain": "Domain 1",
+    "domain_name": "도메인 1: AI 및 머신러닝의 기초 (Fundamentals of AI and ML)",
+    "topic_category": "AI vs ML vs DL vs GenAI",
+    "key_concept": "AI vs ML vs DL vs GenAI, 인공지능, 머신러닝, 딥러닝, 생성형 AI 계층 구조",
+    "question_en": "An enterprise wants to develop a customer support system. Which technology category specifically focuses on generating novel content such as emails and summaries based on learned patterns from foundation models?",
+    "question_kr": "기업에서 고객 지원 시스템을 구축하고자 합니다. 대규모 파운데이션 모델로부터 학습된 패턴을 바탕으로 이메일 초안이나 요약본과 같은 새로운 콘텐츠를 능동적으로 생성하는 데 특화된 기술 분야는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Traditional statistical linear regression",
+        "text_kr": "전통적인 통계적 선형 회귀 분석"
+      },
+      {
+        "key": "B",
+        "text_en": "Generative AI leveraging foundation models",
+        "text_kr": "파운데이션 모델을 활용한 생성형 AI (Generative AI)"
+      },
+      {
+        "key": "C",
+        "text_en": "Rule-based deterministic expert systems",
+        "text_kr": "규칙 기반 결정론적 전문가 시스템"
+      },
+      {
+        "key": "D",
+        "text_en": "Unsupervised clustering algorithms alone",
+        "text_kr": "비지도 군집화(Clustering) 알고리즘 단독 적용"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: 생성형 AI(Generative AI)는 대규모 파운데이션 모델(FM)을 기반으로 기존 데이터를 학습하여 텍스트, 이미지, 코드 등 새로운 오리지널 콘텐츠를 생성하는 딥러닝의 특화 분야입니다.\n• A는 수치 예측용 통계 기법이며, C는 새로운 콘텐츠를 창작하지 못하는 고정 규칙 기반 시스템입니다."
+  },
+  {
+    "id": "MOCK1-062",
+    "domain": "Domain 5",
+    "domain_name": "도메인 5: AI 솔루션의 보안, 컴플라이언스 및 거버넌스 (Security, Compliance, and Governance)",
+    "topic_category": "Data Protection - S3 PII Scanning",
+    "key_concept": "Data Protection - S3 PII Scanning, Amazon Macie를 활용한 S3 내 민감 개인정보(PII) 자동 발견",
+    "question_en": "Before fine-tuning a foundation model on internal customer logs stored in Amazon S3, a compliance officer must discover and classify sensitive Personally Identifiable Information (PII) such as credit card and social security numbers. Which AWS service automates this?",
+    "question_kr": "Amazon S3에 저장된 고객 로그 데이터를 사용하여 파운데이션 모델을 미세조정하기 전에, 규제 준수 담당자가 신용카드 번호나 주민등록번호 같은 민감한 개인식별정보(PII)를 자동으로 발견하고 분류하고자 합니다. 이를 자동화하는 AWS 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Macie",
+        "text_kr": "Amazon Macie"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Inspector",
+        "text_kr": "Amazon Inspector"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS Artifact",
+        "text_kr": "AWS Artifact"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon GuardDuty EC2 runtime monitoring",
+        "text_kr": "Amazon GuardDuty EC2 런타임 모니터링"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Amazon Macie는 머신러닝과 패턴 매칭을 사용하여 Amazon S3 버킷 내의 민감한 데이터(주민등록번호, 신용카드 번호, 여권 번호 등 PII)를 자동으로 발견, 분류 및 보호하는 데이터 보안 서비스입니다."
+  },
+  {
+    "id": "MOCK1-029",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "Inference Parameters - Temperature",
+    "key_concept": "Inference Parameters - Temperature, Temperature 하이퍼파라미터 조절과 결정론적 출력",
+    "question_en": "A company is using an LLM to generate precise JSON structures for financial transactions where creativity and randomness must be strictly minimized. How should the temperature parameter be configured?",
+    "question_kr": "금융 거래 데이터를 처리하기 위해 LLM을 사용하여 엄격한 JSON 구조를 생성하려 합니다. 모델의 창의성이나 무작위성을 극도로 배제하고 가장 일관되고 예측 가능한 답변을 얻으려면 Temperature 파라미터를 어떻게 설정해야 합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Set temperature to a value close to 0 (e.g., 0.0 to 0.2)",
+        "text_kr": "온도(Temperature)를 0에 가까운 값(예: 0.0~0.2)으로 설정한다"
+      },
+      {
+        "key": "B",
+        "text_en": "Set temperature to the maximum supported value (e.g., 1.0 or 2.0)",
+        "text_kr": "온도를 지원되는 최댓값(예: 1.0~2.0)으로 설정한다"
+      },
+      {
+        "key": "C",
+        "text_en": "Increase Top-P to 1.0 while leaving temperature unset",
+        "text_kr": "온도는 비워두고 Top-P만 1.0으로 높인다"
+      },
+      {
+        "key": "D",
+        "text_en": "Decrease the context window size to 10 tokens",
+        "text_kr": "컨텍스트 윈도우 크기를 10토큰으로 줄인다"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Temperature 파라미터는 모델의 무작위성(창의성)을 제어합니다. 값이 0에 가까울수록(0.0~0.2) 가장 확률이 높은 단어만 선택하는 결정론적(Deterministic)이고 사실적인 출력을 생성하므로, JSON 파싱이나 금융/법률 작업에 필수적입니다."
+  },
+  {
+    "id": "MOCK1-046",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Amazon Bedrock - Core Capability",
+    "key_concept": "Amazon Bedrock - Core Capability, Amazon Bedrock의 완전관리형 서버리스 API 특성",
+    "question_en": "A startup wants to integrate multiple leading foundation models (Claude, Llama, Titan) into their web app using a single, unified API without provisioning or managing underlying GPU servers. Which AWS service fulfills this requirement?",
+    "question_kr": "스타트업에서 기본 GPU 서버 인프라를 프로비저닝하거나 관리하지 않고, 단일 통합 API를 통해 여러 업계 최고의 파운데이션 모델(Claude, Llama, Titan 등)을 웹 애플리케이션에 통합하고자 합니다. 이 요구사항을 충족하는 완전관리형 AWS 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon EC2 G5 GPU instances",
+        "text_kr": "Amazon EC2 G5 GPU 인스턴스"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Bedrock",
+        "text_kr": "Amazon Bedrock"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon SageMaker HyperPod",
+        "text_kr": "Amazon SageMaker HyperPod"
+      },
+      {
+        "key": "D",
+        "text_en": "AWS Elastic Beanstalk",
+        "text_kr": "AWS Elastic Beanstalk"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: Amazon Bedrock은 인프라 관리 없이 단일 API 호출을 통해 주요 AI 기업들의 파운데이션 모델(Anthropic Claude, Meta Llama, Amazon Titan 등)을 서버리스 형태로 제공하는 완전관리형 서비스입니다."
+  },
+  {
+    "id": "MOCK1-027",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "Hallucination Mitigation",
+    "key_concept": "Hallucination Mitigation, 생성형 AI 환각(Hallucination) 완화 전략",
+    "question_en": "A customer service chatbot occasionally invents non-existent return policy rules with high confidence. Which combination of strategies directly reduces these hallucinations?",
+    "question_kr": "고객 서비스 챗봇이 존재하지 않는 반품 정책 규정을 지어내어 확신을 가지고 답변하는 환각(Hallucination) 현상이 발생하고 있습니다. 이러한 환각을 직접적으로 줄이기 위한 가장 효과적인 전략 조합은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Implement RAG with authoritative policy docs and lower the temperature",
+        "text_kr": "공식 정책 문서를 연동한 RAG를 구축하고 Temperature를 낮춘다"
+      },
+      {
+        "key": "B",
+        "text_en": "Increase the temperature and top-p to maximize creative variance",
+        "text_kr": "창의적 다양성을 극대화하기 위해 Temperature와 Top-P를 높인다"
+      },
+      {
+        "key": "C",
+        "text_en": "Switch to an unsupervised clustering algorithm",
+        "text_kr": "비지도 군집화 알고리즘으로 전환한다"
+      },
+      {
+        "key": "D",
+        "text_en": "Disable system prompts and guardrails completely",
+        "text_kr": "시스템 프롬프트와 가드레일을 완전히 비활성화한다"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: 환각(Hallucination)을 줄이기 위해서는 공식적인 원천 문서(Ground Truth)를 검색하여 컨텍스트로 제공하는 RAG를 구축하고, 무작위성을 줄이기 위해 Temperature를 0.0~0.2 수준으로 낮추며 시스템 프롬프트로 근거에 기반한 답변만을 지시해야 합니다."
+  },
+  {
+    "id": "MOCK1-054",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Transparency - Model Cards",
+    "key_concept": "Transparency - Model Cards, SageMaker Model Cards를 통한 모델 투명성 및 감사",
+    "question_en": "A healthcare provider must document the intended use, training dataset distribution, evaluation metrics, and ethical limitations for all production ML models in a standardized format for regulatory audits. Which tool should they utilize?",
+    "question_kr": "의료 서비스 제공업체가 규제 기관의 감사를 받기 위해, 프로덕션 환경의 모든 머신러닝 모델에 대한 의도된 용도, 학습 데이터 분포, 평가 메트릭, 윤리적 한계점을 표준화된 형식으로 문서화하고 관리해야 합니다. 어떤 도구를 활용해야 합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon SageMaker Model Cards",
+        "text_kr": "Amazon SageMaker Model Cards (모델 카드)"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon S3 Glacier Deep Archive",
+        "text_kr": "Amazon S3 Glacier Deep Archive"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon CloudWatch Synthetics",
+        "text_kr": "Amazon CloudWatch Synthetics"
+      },
+      {
+        "key": "D",
+        "text_en": "AWS CodePipeline",
+        "text_kr": "AWS CodePipeline"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Amazon SageMaker Model Cards는 모델의 의도된 목적, 훈련 데이터 세부사항, 벤치마크 평가 결과, 한계점을 단일 팩트 시트로 표준화하여 문서화하고 규제 감사 및 거버넌스를 지원하는 도구입니다."
+  },
+  {
+    "id": "MOCK1-013",
+    "domain": "Domain 1",
+    "domain_name": "도메인 1: AI 및 머신러닝의 기초 (Fundamentals of AI and ML)",
+    "topic_category": "Overfitting vs Underfitting",
+    "key_concept": "Overfitting vs Underfitting, 과적합(Overfitting) 진단 및 완화 기법",
+    "question_en": "During model development, an ML engineer observes that the training loss is near zero, but the validation loss is significantly higher and rapidly increasing. Which technique should be applied to mitigate this issue?",
+    "question_kr": "모델 개발 과정에서 머신러닝 엔지니어가 훈련 데이터의 손실(Loss)은 거의 0에 가까우나, 검증 데이터의 손실은 현저히 높고 급격히 증가하는 현상을 관찰했습니다. 이 과적합(Overfitting) 문제를 해결하기 위해 적용해야 할 가장 적합한 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Increase the depth and number of layers of the neural network",
+        "text_kr": "신경망의 깊이와 레이어 수를 늘린다"
+      },
+      {
+        "key": "B",
+        "text_en": "Apply L1/L2 regularization and dropout",
+        "text_kr": "L1/L2 정규화 및 드롭아웃(Dropout)을 적용한다"
+      },
+      {
+        "key": "C",
+        "text_en": "Remove all cross-validation splits and train on test data",
+        "text_kr": "교차 검증 분할을 제거하고 테스트 데이터로 훈련한다"
+      },
+      {
+        "key": "D",
+        "text_en": "Decrease the amount of training data available",
+        "text_kr": "훈련 데이터의 양을 줄인다"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: 훈련 오차는 매우 낮은데 검증 오차가 높은 것은 전형적인 과적합(Overfitting / High Variance) 현상입니다.\n• 과적합을 방지하기 위해서는 가중치 크기에 페널티를 부여하는 L1/L2 정규화(Regularization), 뉴런을 무작위 비활성화하는 드롭아웃(Dropout), 조기 종료(Early Stopping), 데이터 증강 등을 적용해야 합니다."
+  },
+  {
+    "id": "MOCK1-036",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Turnkey AI Services - Textract",
+    "key_concept": "Turnkey AI Services - Textract, Amazon Textract를 통한 양식(Form) 및 표(Table) 추출",
+    "question_en": "A mortgage company processes millions of scanned loan applications. They need to extract structured Key-Value pairs from form fields and tabular data from mortgage statements accurately. Which service should they choose?",
+    "question_kr": "대출 금융 기업에서 수백만 건의 스캔된 대출 신청서 문서를 처리하고 있습니다. 단순 텍스트뿐만 아니라 양식(Form) 필드의 Key-Value 쌍과 대출 명세서의 표(Table) 구조를 정확히 추출해야 합니다. 가장 적합한 AWS 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Rekognition",
+        "text_kr": "Amazon Rekognition"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Textract",
+        "text_kr": "Amazon Textract"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon Transcribe",
+        "text_kr": "Amazon Transcribe"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Polly",
+        "text_kr": "Amazon Polly"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: Amazon Textract는 단순 OCR을 넘어 양식(Forms, Key-Value 쌍)과 표(Tables) 구조를 문서의 레이아웃을 보존하면서 정확하게 추출하는 전문 문서 인텔리전스 서비스입니다."
+  },
+  {
+    "id": "MOCK1-049",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Human-in-the-Loop - Amazon A2I",
+    "key_concept": "Human-in-the-Loop - Amazon A2I, Amazon Augmented AI (A2I)를 통한 신뢰도 기반 인간 검토",
+    "question_en": "An insurance company uses Amazon Textract to process claims automatically. However, when the prediction confidence score falls below 90%, the document must be routed to human claims adjusters for manual review. Which AWS service manages this workflow?",
+    "question_kr": "보험 회사에서 Amazon Textract를 사용하여 보험금 청구서를 자동 처리하고 있습니다. 그러나 모델의 예측 신뢰도 점수(Confidence Score)가 90% 미만으로 떨어지는 경우, 해당 문서를 사람(전문 손해사정사)에게 자동으로 라우팅하여 수동 검토하도록 해야 합니다. 이 워크플로를 관리하는 AWS 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Augmented AI (Amazon A2I)",
+        "text_kr": "Amazon Augmented AI (Amazon A2I)"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Simple Queue Service (SQS)",
+        "text_kr": "Amazon Simple Queue Service (SQS)"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS Lambda Dead Letter Queues",
+        "text_kr": "AWS Lambda 데드 레터 큐 (DLQ)"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Comprehend Medical",
+        "text_kr": "Amazon Comprehend Medical"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Amazon Augmented AI (Amazon A2I)는 AI 모델의 신뢰도가 낮거나 비즈니스 규칙에 부합하지 않을 때 인간 검토자(Human-in-the-Loop)에게 작업을 자동으로 전달하고 검토 결과를 통합하는 완전관리형 서비스입니다."
+  },
+  {
+    "id": "MOCK1-039",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Bedrock Knowledge Bases",
+    "key_concept": "Bedrock Knowledge Bases, Bedrock Knowledge Bases를 활용한 완전관리형 RAG",
+    "question_en": "An enterprise stores thousands of technical product manuals as PDFs in Amazon S3. They want to enable a chatbot to answer user queries grounded in these PDFs without writing custom chunking, embedding, or sync pipelines. Which feature should they use?",
+    "question_kr": "기업에서 수천 건의 기술 제품 매뉴얼 PDF를 Amazon S3에 저장하고 있습니다. 맞춤형 청킹, 임베딩, 동기화 파이프라인을 직접 코딩하지 않고, 이 PDF 문서에 기반하여 질문에 답변하는 챗봇을 구현하고자 합니다. 어떤 기능을 사용해야 합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Knowledge Bases for Amazon Bedrock",
+        "text_kr": "Amazon Bedrock Knowledge Bases (지식 베이스)"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Polly Speech Synthesis",
+        "text_kr": "Amazon Polly 음성 합성"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS Glue ETL with Spark Streaming",
+        "text_kr": "Spark Streaming 기반 AWS Glue ETL"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Rekognition Custom Labels",
+        "text_kr": "Amazon Rekognition Custom Labels"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Knowledge Bases for Amazon Bedrock은 S3에 저장된 문서를 지정하기만 하면 문서 파싱, 청킹(Chunking), 임베딩 생성 및 벡터 스토어(OpenSearch Serverless 등) 색인과 쿼리 검색을 모두 자동으로 처리해 주는 완전관리형 RAG 솔루션입니다."
+  },
+  {
+    "id": "MOCK1-033",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Amazon Q Business",
+    "key_concept": "Amazon Q Business, 엔터프라이즈 사내 문서 검색 및 IAM/RBAC 권한 유지",
+    "question_en": "An enterprise wants an AI assistant that connects to corporate data sources (SharePoint, Jira, Salesforce) to answer employee questions while strictly enforcing existing user access permissions (RBAC). Which service is designed for this purpose?",
+    "question_kr": "기업에서 사내 데이터 소스(SharePoint, Jira, Salesforce 등)에 연결하여 직원의 질문에 답변하면서도, 기존의 사내 사용자 접근 권한(RBAC)을 엄격히 준수하여 권한이 없는 문서는 열람되지 않도록 보장하는 엔터프라이즈 AI 어시스턴트를 원합니다. 어떤 서비스가 가장 적합합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Q Developer",
+        "text_kr": "Amazon Q Developer"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Q Business",
+        "text_kr": "Amazon Q Business"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon Lex",
+        "text_kr": "Amazon Lex"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon SageMaker Studio",
+        "text_kr": "Amazon SageMaker Studio"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: Amazon Q Business는 기업의 다양한 사내 데이터 저장소에 사전 구축된 커넥터로 연결되어 사내 지식 기반 질의응답을 제공하며, 기업의 기존 IAM 및 역할 기반 접근 제어(RBAC)를 그대로 적용하여 각 직원이 권한을 가진 문서에 대해서만 답변을 생성합니다."
+  },
+  {
+    "id": "MOCK1-060",
+    "domain": "Domain 5",
+    "domain_name": "도메인 5: AI 솔루션의 보안, 컴플라이언스 및 거버넌스 (Security, Compliance, and Governance)",
+    "topic_category": "Audit and Governance - CloudTrail",
+    "key_concept": "Audit and Governance - CloudTrail, AWS CloudTrail을 통한 AI API 호출 감사 로깅",
+    "question_en": "A company must record an immutable audit history of all Amazon Bedrock API invocations, including the IAM user identity, source IP address, and timestamp of every model inference request. Which AWS service is responsible for logging these API actions?",
+    "question_kr": "기업에서 모델 추론 요청을 수행한 IAM 사용자 신원, 소스 IP 주소, 타임스탬프를 포함하여 Amazon Bedrock API의 모든 호출 기록을 변경 불가능한 감사 내역으로 로깅해야 합니다. 이러한 API 동작을 기록하는 AWS 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "AWS CloudTrail",
+        "text_kr": "AWS CloudTrail"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon CloudWatch Synthetics",
+        "text_kr": "Amazon CloudWatch Synthetics"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS Trusted Advisor",
+        "text_kr": "AWS Trusted Advisor"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon SageMaker Feature Store",
+        "text_kr": "Amazon SageMaker Feature Store"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: AWS CloudTrail은 계정 내에서 수행되는 모든 AWS API 호출(Bedrock의 InvokeModel, SageMaker API 등)의 요청자, IP, 타임스탬프 등의 감사 로그를 Amazon S3에 영구적으로 수집 및 보존합니다."
+  },
+  {
+    "id": "MOCK1-014",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "Generative AI - Transformer Architecture",
+    "key_concept": "Generative AI - Transformer Architecture, 트랜스포머의 셀프 어텐션(Self-Attention) 메커니즘",
+    "question_en": "What architectural innovation allows Transformer models to process sequences in parallel and capture relationships between all words in a sentence regardless of their distance?",
+    "question_kr": "트랜스포머(Transformer) 모델이 단어들을 순차적으로 처리하지 않고 병렬로 처리할 수 있게 하며, 문장 내 단어 간의 거리와 무관하게 모든 단어 사이의 의미적 연관성을 동시에 포착할 수 있도록 만든 핵심 아키텍처 혁신은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Convolutional feature maps",
+        "text_kr": "합성곱 특성 맵 (Convolutional feature maps)"
+      },
+      {
+        "key": "B",
+        "text_en": "Self-attention mechanism",
+        "text_kr": "셀프 어텐션 메커니즘 (Self-Attention)"
+      },
+      {
+        "key": "C",
+        "text_en": "Markov decision process",
+        "text_kr": "마르코프 결정 과정 (MDP)"
+      },
+      {
+        "key": "D",
+        "text_en": "Recurrent hidden gates",
+        "text_kr": "순환 은닉 게이트 (LSTM Gates)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: 트랜스포머의 '셀프 어텐션(Self-Attention)' 메커니즘은 문장 내 모든 단어 쌍 간의 상호작용 가중치를 한 번에 계산하여 장거리 의존성(Long-range dependency)을 효과적으로 파악하고 병렬 처리를 가능하게 합니다."
+  },
+  {
+    "id": "MOCK1-053",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Human-in-the-Loop - Amazon A2I",
+    "key_concept": "Human-in-the-Loop - Amazon A2I, Amazon Augmented AI (A2I)를 통한 신뢰도 기반 인간 검토",
+    "question_en": "An insurance company uses Amazon Textract to process claims automatically. However, when the prediction confidence score falls below 90%, the document must be routed to human claims adjusters for manual review. Which AWS service manages this workflow?",
+    "question_kr": "보험 회사에서 Amazon Textract를 사용하여 보험금 청구서를 자동 처리하고 있습니다. 그러나 모델의 예측 신뢰도 점수(Confidence Score)가 90% 미만으로 떨어지는 경우, 해당 문서를 사람(전문 손해사정사)에게 자동으로 라우팅하여 수동 검토하도록 해야 합니다. 이 워크플로를 관리하는 AWS 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Augmented AI (Amazon A2I)",
+        "text_kr": "Amazon Augmented AI (Amazon A2I)"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Simple Queue Service (SQS)",
+        "text_kr": "Amazon Simple Queue Service (SQS)"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS Lambda Dead Letter Queues",
+        "text_kr": "AWS Lambda 데드 레터 큐 (DLQ)"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Comprehend Medical",
+        "text_kr": "Amazon Comprehend Medical"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Amazon Augmented AI (Amazon A2I)는 AI 모델의 신뢰도가 낮거나 비즈니스 규칙에 부합하지 않을 때 인간 검토자(Human-in-the-Loop)에게 작업을 자동으로 전달하고 검토 결과를 통합하는 완전관리형 서비스입니다."
+  },
+  {
+    "id": "MOCK1-002",
+    "domain": "Domain 1",
+    "domain_name": "도메인 1: AI 및 머신러닝의 기초 (Fundamentals of AI and ML)",
+    "topic_category": "Supervised vs Unsupervised Learning",
+    "key_concept": "Supervised vs Unsupervised Learning, 지도학습과 비지도학습의 데이터 특성 구분",
+    "question_en": "A marketing team has historical customer transaction records with a target column indicating whether each customer churned or not. Which machine learning paradigm should be used to train a predictive model on this data?",
+    "question_kr": "마케팅 부서가 고객이 이탈했는지 여부(Churned: True/False)가 명시된 타깃 열(레이블)이 포함된 과거 거래 데이터를 보유하고 있습니다. 이 데이터를 바탕으로 미래 고객의 이탈 여부를 예측하는 모델을 훈련하기에 가장 적합한 머신러닝 방식은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Unsupervised clustering",
+        "text_kr": "비지도 군집화 (Unsupervised Clustering)"
+      },
+      {
+        "key": "B",
+        "text_en": "Supervised classification",
+        "text_kr": "지도 분류 (Supervised Classification)"
+      },
+      {
+        "key": "C",
+        "text_en": "Reinforcement learning policy gradient",
+        "text_kr": "강화학습 정책 그래디언트"
+      },
+      {
+        "key": "D",
+        "text_en": "Unsupervised dimensionality reduction",
+        "text_kr": "비지도 차원 축소 (PCA)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: 정답(레이블)이 존재하는 데이터셋을 기반으로 이탈 여부와 같은 이진 또는 다중 범주를 예측하는 문제는 지도학습의 '분류(Classification)' 작업에 해당합니다.\n• 비지도학습(A, D)은 정답 레이블이 없을 때 숨겨진 패턴이나 그룹을 찾을 때 사용됩니다."
+  },
+  {
+    "id": "MOCK1-003",
+    "domain": "Domain 1",
+    "domain_name": "도메인 1: AI 및 머신러닝의 기초 (Fundamentals of AI and ML)",
+    "topic_category": "Classification Metrics - Recall vs Precision",
+    "key_concept": "Classification Metrics - Recall vs Precision, 암 진단 및 고위험 이상 탐지에서의 재현율(Recall) 극대화",
+    "question_en": "A healthcare provider is deploying an ML model to detect early-stage malignant tumors from medical scans. Failing to identify a malignant tumor (False Negative) has fatal consequences. Which evaluation metric should the team prioritize maximizing?",
+    "question_kr": "의료 기관에서 의료 영상을 분석하여 초기 악성 종양을 탐지하는 머신러닝 모델을 도입하려 합니다. 악성 종양을 놓쳐 정상으로 잘못 진단하는 경우(False Negative, 제2종 오류) 환자에게 치명적인 결과를 초래합니다. 이때 팀이 최우선으로 극대화해야 하는 평가 지표는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Precision",
+        "text_kr": "정밀도 (Precision)"
+      },
+      {
+        "key": "B",
+        "text_en": "Recall (Sensitivity)",
+        "text_kr": "재현율 (Recall / Sensitivity)"
+      },
+      {
+        "key": "C",
+        "text_en": "Mean Absolute Error (MAE)",
+        "text_kr": "평균 절대 오차 (MAE)"
+      },
+      {
+        "key": "D",
+        "text_en": "Adjusted R-squared",
+        "text_kr": "수정 결정계수 (Adjusted R-squared)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: 재현율(Recall = TP / (TP + FN))은 실제 양성인 케이스 중 모델이 놓치지 않고 찾아낸 비율입니다. 암 진단이나 중대 금융 사기처럼 False Negative(놓침)의 위험 비용이 극도로 높은 시나리오에서는 Recall을 최우선으로 극대화해야 합니다.\n• Precision(A)은 False Positive(스팸이 아닌데 스팸으로 분류)를 줄여야 할 때 중요합니다."
+  },
+  {
+    "id": "MOCK1-028",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "Generative AI - Transformer Architecture",
+    "key_concept": "Generative AI - Transformer Architecture, 트랜스포머의 셀프 어텐션(Self-Attention) 메커니즘",
+    "question_en": "What architectural innovation allows Transformer models to process sequences in parallel and capture relationships between all words in a sentence regardless of their distance?",
+    "question_kr": "트랜스포머(Transformer) 모델이 단어들을 순차적으로 처리하지 않고 병렬로 처리할 수 있게 하며, 문장 내 단어 간의 거리와 무관하게 모든 단어 사이의 의미적 연관성을 동시에 포착할 수 있도록 만든 핵심 아키텍처 혁신은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Convolutional feature maps",
+        "text_kr": "합성곱 특성 맵 (Convolutional feature maps)"
+      },
+      {
+        "key": "B",
+        "text_en": "Self-attention mechanism",
+        "text_kr": "셀프 어텐션 메커니즘 (Self-Attention)"
+      },
+      {
+        "key": "C",
+        "text_en": "Markov decision process",
+        "text_kr": "마르코프 결정 과정 (MDP)"
+      },
+      {
+        "key": "D",
+        "text_en": "Recurrent hidden gates",
+        "text_kr": "순환 은닉 게이트 (LSTM Gates)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: 트랜스포머의 '셀프 어텐션(Self-Attention)' 메커니즘은 문장 내 모든 단어 쌍 간의 상호작용 가중치를 한 번에 계산하여 장거리 의존성(Long-range dependency)을 효과적으로 파악하고 병렬 처리를 가능하게 합니다."
+  },
+  {
+    "id": "MOCK1-038",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Amazon Bedrock - Core Capability",
+    "key_concept": "Amazon Bedrock - Core Capability, Amazon Bedrock의 완전관리형 서버리스 API 특성",
+    "question_en": "A startup wants to integrate multiple leading foundation models (Claude, Llama, Titan) into their web app using a single, unified API without provisioning or managing underlying GPU servers. Which AWS service fulfills this requirement?",
+    "question_kr": "스타트업에서 기본 GPU 서버 인프라를 프로비저닝하거나 관리하지 않고, 단일 통합 API를 통해 여러 업계 최고의 파운데이션 모델(Claude, Llama, Titan 등)을 웹 애플리케이션에 통합하고자 합니다. 이 요구사항을 충족하는 완전관리형 AWS 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon EC2 G5 GPU instances",
+        "text_kr": "Amazon EC2 G5 GPU 인스턴스"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Bedrock",
+        "text_kr": "Amazon Bedrock"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon SageMaker HyperPod",
+        "text_kr": "Amazon SageMaker HyperPod"
+      },
+      {
+        "key": "D",
+        "text_en": "AWS Elastic Beanstalk",
+        "text_kr": "AWS Elastic Beanstalk"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: Amazon Bedrock은 인프라 관리 없이 단일 API 호출을 통해 주요 AI 기업들의 파운데이션 모델(Anthropic Claude, Meta Llama, Amazon Titan 등)을 서버리스 형태로 제공하는 완전관리형 서비스입니다."
+  },
+  {
+    "id": "MOCK1-006",
+    "domain": "Domain 1",
+    "domain_name": "도메인 1: AI 및 머신러닝의 기초 (Fundamentals of AI and ML)",
+    "topic_category": "Feature Engineering - Categorical Encoding",
+    "key_concept": "Feature Engineering - Categorical Encoding, 원-핫 인코딩(One-Hot Encoding)과 범주형 데이터 변환",
+    "question_en": "A machine learning pipeline receives a categorical column representing US States ('NY', 'CA', 'TX') with no inherent order. Which feature engineering technique transforms this column into a numerical representation suitable for linear models?",
+    "question_kr": "머신러닝 파이프라인에서 순서나 서열 관계가 없는 미국 주 이름('NY', 'CA', 'TX')으로 구성된 범주형 데이터를 입력받았습니다. 이 데이터를 선형 모델이 학습할 수 있는 수치 형태로 변환하기 위한 가장 적합한 특성 공학 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "One-hot encoding",
+        "text_kr": "원-핫 인코딩 (One-Hot Encoding)"
+      },
+      {
+        "key": "B",
+        "text_en": "Min-Max normalization to 0-1",
+        "text_kr": "0~1 범위 Min-Max 정규화"
+      },
+      {
+        "key": "C",
+        "text_en": "Principal Component Analysis (PCA)",
+        "text_kr": "주성분 분석 (PCA)"
+      },
+      {
+        "key": "D",
+        "text_en": "Polynomial regression expansion",
+        "text_kr": "다항 회귀 확장"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: 순서가 없는 명목형 범주 데이터는 각 범주를 독립된 이진(0 또는 1) 열로 변환하는 '원-핫 인코딩(One-Hot Encoding)'을 적용해야 특정 범주가 임의의 크기 순서로 왜곡 해석되는 것을 방지할 수 있습니다."
+  },
+  {
+    "id": "MOCK1-035",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Amazon SageMaker Canvas",
+    "key_concept": "Amazon SageMaker Canvas, 비즈니스 분석가를 위한 No-code 머신러닝",
+    "question_en": "A business analyst with no coding or ML engineering experience needs to build a churn prediction model from spreadsheet data and test generative AI text summarization visually. Which tool is specifically built for this user?",
+    "question_kr": "코딩이나 머신러닝 엔지니어링 경험이 없는 비즈니스 분석가가 스프레드시트 엑셀 데이터를 바탕으로 고객 이탈 예측 모델을 만들고, 시각적 인터페이스에서 생성형 AI 텍스트 요약을 직접 테스트해 보고자 합니다. 이 사용자를 위해 특화된 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon SageMaker Canvas",
+        "text_kr": "Amazon SageMaker Canvas"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon SageMaker Studio Code Editor",
+        "text_kr": "Amazon SageMaker Studio Code Editor"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS Deep Learning AMIs",
+        "text_kr": "AWS Deep Learning AMIs"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon EMR Serverless",
+        "text_kr": "Amazon EMR Serverless"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Amazon SageMaker Canvas는 비즈니스 분석가를 위한 시각적 노코드(No-code) 머신러닝 도구로, 코드 한 줄 없이 정형 데이터 분류/회귀 모델을 생성하거나 파운데이션 모델을 시각적으로 테스트할 수 있습니다."
+  },
+  {
+    "id": "MOCK1-058",
+    "domain": "Domain 5",
+    "domain_name": "도메인 5: AI 솔루션의 보안, 컴플라이언스 및 거버넌스 (Security, Compliance, and Governance)",
+    "topic_category": "Data Protection - S3 PII Scanning",
+    "key_concept": "Data Protection - S3 PII Scanning, Amazon Macie를 활용한 S3 내 민감 개인정보(PII) 자동 발견",
+    "question_en": "Before fine-tuning a foundation model on internal customer logs stored in Amazon S3, a compliance officer must discover and classify sensitive Personally Identifiable Information (PII) such as credit card and social security numbers. Which AWS service automates this?",
+    "question_kr": "Amazon S3에 저장된 고객 로그 데이터를 사용하여 파운데이션 모델을 미세조정하기 전에, 규제 준수 담당자가 신용카드 번호나 주민등록번호 같은 민감한 개인식별정보(PII)를 자동으로 발견하고 분류하고자 합니다. 이를 자동화하는 AWS 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Macie",
+        "text_kr": "Amazon Macie"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Inspector",
+        "text_kr": "Amazon Inspector"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS Artifact",
+        "text_kr": "AWS Artifact"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon GuardDuty EC2 runtime monitoring",
+        "text_kr": "Amazon GuardDuty EC2 런타임 모니터링"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Amazon Macie는 머신러닝과 패턴 매칭을 사용하여 Amazon S3 버킷 내의 민감한 데이터(주민등록번호, 신용카드 번호, 여권 번호 등 PII)를 자동으로 발견, 분류 및 보호하는 데이터 보안 서비스입니다."
+  },
+  {
+    "id": "MOCK1-044",
+    "domain": "Domain 3",
+    "domain_name": "도메인 3: 파운데이션 모델의 적용 및 평가 (Applications of Foundation Models)",
+    "topic_category": "Turnkey AI Services - Textract",
+    "key_concept": "Turnkey AI Services - Textract, Amazon Textract를 통한 양식(Form) 및 표(Table) 추출",
+    "question_en": "A mortgage company processes millions of scanned loan applications. They need to extract structured Key-Value pairs from form fields and tabular data from mortgage statements accurately. Which service should they choose?",
+    "question_kr": "대출 금융 기업에서 수백만 건의 스캔된 대출 신청서 문서를 처리하고 있습니다. 단순 텍스트뿐만 아니라 양식(Form) 필드의 Key-Value 쌍과 대출 명세서의 표(Table) 구조를 정확히 추출해야 합니다. 가장 적합한 AWS 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Rekognition",
+        "text_kr": "Amazon Rekognition"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Textract",
+        "text_kr": "Amazon Textract"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon Transcribe",
+        "text_kr": "Amazon Transcribe"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Polly",
+        "text_kr": "Amazon Polly"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: Amazon Textract는 단순 OCR을 넘어 양식(Forms, Key-Value 쌍)과 표(Tables) 구조를 문서의 레이아웃을 보존하면서 정확하게 추출하는 전문 문서 인텔리전스 서비스입니다."
+  },
+  {
+    "id": "MOCK1-007",
+    "domain": "Domain 1",
+    "domain_name": "도메인 1: AI 및 머신러닝의 기초 (Fundamentals of AI and ML)",
+    "topic_category": "ML Monitoring - Data Drift",
+    "key_concept": "ML Monitoring - Data Drift, 운영 중 데이터 드리프트(Data Drift) 감지",
+    "question_en": "A retail recommendation model deployed in production experiences declining accuracy over several months because consumer purchasing behavior changed significantly after a major holiday. Which concept describes this change in input data distribution over time?",
+    "question_kr": "운영 환경에 배포된 쇼핑몰 추천 모델의 정확도가 수개월에 걸쳐 점진적으로 하락했습니다. 원인을 분석한 결과 대형 연휴 이후 고객들의 구매 행동 분포가 크게 변화한 것으로 나타났습니다. 시간이 지남에 따라 입력 데이터의 통계적 분포가 변화하는 이 현상을 무엇이라고 부릅니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Data drift",
+        "text_kr": "데이터 드리프트 (Data Drift)"
+      },
+      {
+        "key": "B",
+        "text_en": "Hyperparameter optimization",
+        "text_kr": "하이퍼파라미터 최적화"
+      },
+      {
+        "key": "C",
+        "text_en": "Gradient vanishing",
+        "text_kr": "기울기 소실 (Gradient Vanishing)"
+      },
+      {
+        "key": "D",
+        "text_en": "Token context overflow",
+        "text_kr": "토큰 컨텍스트 오버플로우"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: 모델 훈련에 사용된 입력 데이터의 통계적 분포가 실제 운영 환경에서 시간 경과에 따라 변하는 현상을 '데이터 드리프트(Data Drift)'라고 합니다. AWS에서는 Amazon SageMaker Model Monitor를 통해 이를 자동으로 감지하고 재학습 알람을 발생시킬 수 있습니다."
+  },
+  {
+    "id": "MOCK1-063",
+    "domain": "Domain 5",
+    "domain_name": "도메인 5: AI 솔루션의 보안, 컴플라이언스 및 거버넌스 (Security, Compliance, and Governance)",
+    "topic_category": "Network Isolation - VPC Endpoints",
+    "key_concept": "Network Isolation - VPC Endpoints, AWS PrivateLink 기반 VPC 엔드포인트를 통한 인터넷 격리 통신",
+    "question_en": "A financial enterprise requires that all applications running in private VPC subnets communicate with Amazon Bedrock API endpoints without traversing the public internet. Which architecture achieves this requirement?",
+    "question_kr": "금융 기업에서 프라이빗 VPC 서브넷에서 실행되는 애플리케이션이 공용 인터넷을 거치지 않고 오직 AWS 내부 전용 네트워크를 통해서만 Amazon Bedrock API 엔드포인트와 통신하도록 강제하고자 합니다. 어떤 아키텍처를 구현해야 합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Configure an Internet Gateway and public IPs for all instances",
+        "text_kr": "인터넷 게이트웨이(IGW)와 모든 인스턴스에 공용 IP를 구성한다"
+      },
+      {
+        "key": "B",
+        "text_en": "Create a VPC Interface Endpoint powered by AWS PrivateLink for Amazon Bedrock",
+        "text_kr": "Amazon Bedrock용 AWS PrivateLink 기반 VPC 인터페이스 엔드포인트를 생성한다"
+      },
+      {
+        "key": "C",
+        "text_en": "Deploy a public NAT Gateway with open ingress rules",
+        "text_kr": "오픈 인그레스 규칙이 설정된 퍼블릭 NAT 게이트웨이를 배포한다"
+      },
+      {
+        "key": "D",
+        "text_en": "Route all traffic through a public S3 website endpoint",
+        "text_kr": "퍼블릭 S3 웹사이트 엔드포인트를 통해 모든 트래픽을 라우팅한다"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: AWS PrivateLink 기반의 VPC 엔드포인트(Interface Endpoint)를 사용하면 트래픽이 공용 인터넷에 노출되지 않고 AWS 전용 글로벌 네트워크 백본 내에서만 비공개(Private)로 안전하게 Amazon Bedrock과 통신할 수 있습니다."
+  },
+  {
+    "id": "MOCK1-009",
+    "domain": "Domain 1",
+    "domain_name": "도메인 1: AI 및 머신러닝의 기초 (Fundamentals of AI and ML)",
+    "topic_category": "AI vs ML vs DL vs GenAI",
+    "key_concept": "AI vs ML vs DL vs GenAI, 인공지능, 머신러닝, 딥러닝, 생성형 AI 계층 구조",
+    "question_en": "An enterprise wants to develop a customer support system. Which technology category specifically focuses on generating novel content such as emails and summaries based on learned patterns from foundation models?",
+    "question_kr": "기업에서 고객 지원 시스템을 구축하고자 합니다. 대규모 파운데이션 모델로부터 학습된 패턴을 바탕으로 이메일 초안이나 요약본과 같은 새로운 콘텐츠를 능동적으로 생성하는 데 특화된 기술 분야는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Traditional statistical linear regression",
+        "text_kr": "전통적인 통계적 선형 회귀 분석"
+      },
+      {
+        "key": "B",
+        "text_en": "Generative AI leveraging foundation models",
+        "text_kr": "파운데이션 모델을 활용한 생성형 AI (Generative AI)"
+      },
+      {
+        "key": "C",
+        "text_en": "Rule-based deterministic expert systems",
+        "text_kr": "규칙 기반 결정론적 전문가 시스템"
+      },
+      {
+        "key": "D",
+        "text_en": "Unsupervised clustering algorithms alone",
+        "text_kr": "비지도 군집화(Clustering) 알고리즘 단독 적용"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: 생성형 AI(Generative AI)는 대규모 파운데이션 모델(FM)을 기반으로 기존 데이터를 학습하여 텍스트, 이미지, 코드 등 새로운 오리지널 콘텐츠를 생성하는 딥러닝의 특화 분야입니다.\n• A는 수치 예측용 통계 기법이며, C는 새로운 콘텐츠를 창작하지 못하는 고정 규칙 기반 시스템입니다."
+  },
+  {
+    "id": "MOCK1-065",
+    "domain": "Domain 5",
+    "domain_name": "도메인 5: AI 솔루션의 보안, 컴플라이언스 및 거버넌스 (Security, Compliance, and Governance)",
+    "topic_category": "Generative AI Threats - Prompt Injection",
+    "key_concept": "Generative AI Threats - Prompt Injection, 프롬프트 인젝션(Prompt Injection) 공격과 Bedrock Guardrails",
+    "question_en": "An external user inputs malicious text crafted to overwrite the system prompt of a customer support chatbot and force it to reveal proprietary system backend instructions. What type of attack is this, and how can it be mitigated?",
+    "question_kr": "외부 사용자가 고객 지원 챗봇의 시스템 프롬프트를 덮어쓰고 내부 시스템 백엔드 지침을 강제로 유출하도록 조작된 악의적 텍스트를 입력했습니다. 이 공격의 유형은 무엇이며, 어떻게 방어할 수 있습니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Direct Prompt Injection attack; mitigate using Amazon Bedrock Guardrails",
+        "text_kr": "직접 프롬프트 주입(Direct Prompt Injection) 공격; Amazon Bedrock Guardrails를 사용하여 완화"
+      },
+      {
+        "key": "B",
+        "text_en": "Distributed Denial of Service (DDoS); mitigate using AWS Shield Advanced alone",
+        "text_kr": "분산 서비스 거부(DDoS) 공격; AWS Shield Advanced 단독 완화"
+      },
+      {
+        "key": "C",
+        "text_en": "SQL Injection; mitigate using Amazon RDS read replicas",
+        "text_kr": "SQL 인젝션 공격; Amazon RDS 읽기 전용 복제본 활용"
+      },
+      {
+        "key": "D",
+        "text_en": "Concept drift; mitigate using Amazon SageMaker Model Monitor",
+        "text_kr": "개념 드리프트; Amazon SageMaker Model Monitor 활용"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: 사용자가 입력 지시문을 통해 모델의 사전 설정된 시스템 규칙이나 가드레일을 무력화하려는 시도를 '직접 프롬프트 주입(Direct Prompt Injection)'이라고 합니다. Amazon Bedrock Guardrails는 프롬프트 공격을 실시간으로 감지하고 차단하는 전용 필터를 제공합니다."
+  },
+  {
+    "id": "MOCK1-016",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "Prompt Engineering - Chain of Thought",
+    "key_concept": "Prompt Engineering - Chain of Thought, 복잡한 다단계 추론을 위한 Chain-of-Thought (CoT)",
+    "question_en": "An AI practitioner needs a foundation model to solve complex multi-step math word problems accurately. Which prompt engineering technique instructs the model to break down its reasoning step-by-step before producing the final answer?",
+    "question_kr": "AI 프랙티셔너가 파운데이션 모델을 사용하여 복잡한 다단계 수학 서술형 문제를 정확히 풀도록 유도하고자 합니다. 모델이 최종 정답을 내놓기 전에 중간 논리 추론 과정을 단계별로 풀어서 설명하도록 유도하는 프롬프트 엔지니어링 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Zero-shot prompting",
+        "text_kr": "제로샷 프롬프팅 (Zero-shot)"
+      },
+      {
+        "key": "B",
+        "text_en": "Chain-of-Thought (CoT) prompting",
+        "text_kr": "생각의 사슬 프롬프팅 (Chain-of-Thought)"
+      },
+      {
+        "key": "C",
+        "text_en": "Low-Rank Adaptation (LoRA)",
+        "text_kr": "저차원 적응 기법 (LoRA)"
+      },
+      {
+        "key": "D",
+        "text_en": "Gradient accumulation",
+        "text_kr": "그래디언트 누적 (Gradient Accumulation)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: Chain-of-Thought (CoT) 프롬프팅은 모델에게 \"단계별로 생각하라(Let's think step by step)\"는 지침을 주거나 단계별 풀이 예시를 제공하여, 복잡한 논리 및 수학 문제에서 추론 오류를 극적으로 줄이는 기법입니다."
+  },
+  {
+    "id": "MOCK1-018",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "Model Customization - RAG Architecture",
+    "key_concept": "Model Customization - RAG Architecture, RAG (Retrieval-Augmented Generation) 도입 목적",
+    "question_en": "A legal firm wants an AI assistant that can answer questions based on internal proprietary contracts that are updated daily. The firm must avoid costly re-training and ensure answers cite exact source clauses. Which approach is best?",
+    "question_kr": "법률 사무소에서 매일 새롭게 업데이트되는 사내 독점 계약서 문서를 바탕으로 질문에 정확히 답변하는 AI 비서를 도입하고자 합니다. 비용이 많이 드는 재학습을 피하고, 답변 시 참조한 정확한 계약 조항 출처(Citation)를 인용해야 합니다. 가장 적합한 접근 방식은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Pre-training a foundation model from scratch weekly",
+        "text_kr": "매주 기초 파운데이션 모델을 처음부터 사전 학습한다"
+      },
+      {
+        "key": "B",
+        "text_en": "Retrieval-Augmented Generation (RAG) using a vector store",
+        "text_kr": "벡터 스토어를 활용한 검색 증강 생성 (RAG)"
+      },
+      {
+        "key": "C",
+        "text_en": "Full parameter fine-tuning on public datasets",
+        "text_kr": "공개 데이터셋을 활용한 전체 파라미터 파인튜닝"
+      },
+      {
+        "key": "D",
+        "text_en": "Increasing the model temperature parameter to 1.0",
+        "text_kr": "모델 Temperature 파라미터를 1.0으로 상향 조정"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: RAG(검색 증강 생성)는 수시로 변경되는 비공개 사내 문서를 벡터 DB에 저장해두고, 질문과 관련된 문서 조각을 실시간으로 검색하여 프롬프트의 컨텍스트로 제공함으로써 모델 재학습 없이도 최신 정보 기반 답변과 원문 인용(Citation)을 제공하는 최적의 아키텍처입니다."
+  },
+  {
+    "id": "MOCK1-048",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Responsible AI - Bias Detection",
+    "key_concept": "Responsible AI - Bias Detection, SageMaker Clarify를 통한 편향 탐지 및 설명가능성",
+    "question_en": "A bank wants to audit its automated credit scoring model to ensure it does not discriminate against applicants based on age or gender, and needs to calculate SHAP values to explain loan approval decisions. Which AWS service should be used?",
+    "question_kr": "은행에서 자동 신용 평가 모델이 연령이나 성별과 같은 보호 속성을 기준으로 대출 신청자를 차별하지 않는지 감사하고, 대출 승인 결정 이유를 설명하기 위해 SHAP 값을 산출하고자 합니다. 어떤 AWS 서비스를 사용해야 합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon SageMaker Clarify",
+        "text_kr": "Amazon SageMaker Clarify"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon SageMaker JumpStart",
+        "text_kr": "Amazon SageMaker JumpStart"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon Rekognition Video",
+        "text_kr": "Amazon Rekognition Video"
+      },
+      {
+        "key": "D",
+        "text_en": "AWS Cloud9",
+        "text_kr": "AWS Cloud9"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Amazon SageMaker Clarify는 훈련 전후 데이터셋과 모델의 잠재적 편향(Bias)을 탐지하고, 게임 이론 기반의 SHAP 가치를 계산하여 모델의 예측 결과에 대한 설명가능성(Explainability)을 제공하는 전용 서비스입니다."
+  },
+  {
+    "id": "MOCK1-004",
+    "domain": "Domain 1",
+    "domain_name": "도메인 1: AI 및 머신러닝의 기초 (Fundamentals of AI and ML)",
+    "topic_category": "Classification Metrics - Precision vs False Positive",
+    "key_concept": "Classification Metrics - Precision vs False Positive, 스팸 필터링과 정밀도(Precision) 최적화",
+    "question_en": "An enterprise email filtering system must ensure that critical client business emails are never mistakenly classified as spam and moved to the junk folder. Which metric is most critical to maximize in this scenario?",
+    "question_kr": "기업 이메일 필터링 시스템에서 중요한 고객의 비즈니스 이메일이 스팸으로 오분류되어 정크 폴더로 격리되는 일(False Positive)이 절대 발생하지 않도록 해야 합니다. 이 시나리오에서 가장 우선적으로 극대화해야 하는 평가 지표는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Precision",
+        "text_kr": "정밀도 (Precision)"
+      },
+      {
+        "key": "B",
+        "text_en": "Recall",
+        "text_kr": "재현율 (Recall)"
+      },
+      {
+        "key": "C",
+        "text_en": "Root Mean Squared Error (RMSE)",
+        "text_kr": "평균 제곱근 오차 (RMSE)"
+      },
+      {
+        "key": "D",
+        "text_en": "Perplexity",
+        "text_kr": "펄플렉서티 (Perplexity)"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: 정밀도(Precision = TP / (TP + FP))는 모델이 양성(스팸)이라고 판정한 것 중 실제 양성인 비율입니다. 정상 메일을 스팸으로 오분류하는 False Positive를 최소화하려면 Precision을 극대화해야 합니다."
+  },
+  {
+    "id": "MOCK1-015",
+    "domain": "Domain 2",
+    "domain_name": "도메인 2: 생성형 AI의 기초 (Fundamentals of Generative AI)",
+    "topic_category": "Inference Parameters - Temperature",
+    "key_concept": "Inference Parameters - Temperature, Temperature 하이퍼파라미터 조절과 결정론적 출력",
+    "question_en": "A company is using an LLM to generate precise JSON structures for financial transactions where creativity and randomness must be strictly minimized. How should the temperature parameter be configured?",
+    "question_kr": "금융 거래 데이터를 처리하기 위해 LLM을 사용하여 엄격한 JSON 구조를 생성하려 합니다. 모델의 창의성이나 무작위성을 극도로 배제하고 가장 일관되고 예측 가능한 답변을 얻으려면 Temperature 파라미터를 어떻게 설정해야 합니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Set temperature to a value close to 0 (e.g., 0.0 to 0.2)",
+        "text_kr": "온도(Temperature)를 0에 가까운 값(예: 0.0~0.2)으로 설정한다"
+      },
+      {
+        "key": "B",
+        "text_en": "Set temperature to the maximum supported value (e.g., 1.0 or 2.0)",
+        "text_kr": "온도를 지원되는 최댓값(예: 1.0~2.0)으로 설정한다"
+      },
+      {
+        "key": "C",
+        "text_en": "Increase Top-P to 1.0 while leaving temperature unset",
+        "text_kr": "온도는 비워두고 Top-P만 1.0으로 높인다"
+      },
+      {
+        "key": "D",
+        "text_en": "Decrease the context window size to 10 tokens",
+        "text_kr": "컨텍스트 윈도우 크기를 10토큰으로 줄인다"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Temperature 파라미터는 모델의 무작위성(창의성)을 제어합니다. 값이 0에 가까울수록(0.0~0.2) 가장 확률이 높은 단어만 선택하는 결정론적(Deterministic)이고 사실적인 출력을 생성하므로, JSON 파싱이나 금융/법률 작업에 필수적입니다."
+  }
+]
