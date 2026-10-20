@@ -1,7 +1,7 @@
 # AWS Certified AI Practitioner (AIF-C01) 학습 & CBT 플랫폼
 
 > **한국어 사용자를 위한 AIF-C01 시험 대비 올인원(All-in-One) 학습 공간 및 실전 CBT 가상 실습 시스템**  
-> 공식 가이드 기준 도메인 1~5 완벽 반영 | 한·영 듀얼 트랙 학습 | 65문항 실전 모의고사 & 도메인별 집중 실습 | 동적 무작위 출제 & 오답노트 지원
+> 공식 가이드 기준 도메인 1~5 완벽 반영 (도메인당 72~192문항, 총 696문항 대규모 문제은행) | 한·영 듀얼 트랙 학습 | 65문항 실전 모의고사 & 도메인별 집중 실습 | 동적 무작위 출제 & 오답노트 지원
 
 🌐 **온라인 실시간 포털 바로가기**: **[https://sungkyu-pm.github.io/aws-aif-c01-study-cbt/](https://sungkyu-pm.github.io/aws-aif-c01-study-cbt/)**
 
@@ -61,12 +61,12 @@ AIF_AWS/
 │   ├── 06_DOMAIN_5_SECURITY_GOVERNANCE.md # 도메인 5: AI 보안, 컴플라이언스 및 거버넌스 (14%)
 │   └── 07_AWS_AI_SERVICES_CHEAT_SHEET.md  # Bedrock/SageMaker/Q/턴키 AI 서비스 종합 치트시트
 │
-├── questions/                             # 📝 실전 수준 문제은행 (JSON 포맷)
-│   ├── questions_domain1.json             # 도메인 1 전용 문제은행 & 상세 한국어 해설
-│   ├── questions_domain2.json             # 도메인 2 전용 문제은행 & 상세 한국어 해설
-│   ├── questions_domain3.json             # 도메인 3 전용 문제은행 & 상세 한국어 해설
-│   ├── questions_domain4.json             # 도메인 4 전용 문제은행 & 상세 한국어 해설
-│   ├── questions_domain5.json             # 도메인 5 전용 문제은행 & 상세 한국어 해설
+├── questions/                             # 📝 실전 수준 대규모 문제은행 (JSON 포맷, 총 696문항)
+│   ├── questions_domain1.json             # 도메인 1 전용 문제은행 (192문항) & 상세 한국어 해설
+│   ├── questions_domain2.json             # 도메인 2 전용 문제은행 (156문항) & 상세 한국어 해설
+│   ├── questions_domain3.json             # 도메인 3 전용 문제은행 (180문항) & 상세 한국어 해설
+│   ├── questions_domain4.json             # 도메인 4 전용 문제은행 (72문항) & 상세 한국어 해설
+│   ├── questions_domain5.json             # 도메인 5 전용 문제은행 (96문항) & 상세 한국어 해설
 │   └── mock_exam_1.json                   # 공식 비중 맞춤 실전 모의고사 세트 (65문항)
 │
 ├── index.html                             # 모던 인터랙티브 통합 포털 웹 애플리케이션

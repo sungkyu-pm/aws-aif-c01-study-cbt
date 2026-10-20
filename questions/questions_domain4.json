@@ -3,10 +3,472 @@
     "id": "D4-Q001",
     "domain": "Domain 4",
     "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
-    "topic_category": "Responsible AI - Bias Detection",
-    "key_concept": "Responsible AI - Bias Detection, SageMaker Clarify를 통한 편향 탐지 및 설명가능성",
-    "question_en": "A bank wants to audit its automated credit scoring model to ensure it does not discriminate against applicants based on age or gender, and needs to calculate SHAP values to explain loan approval decisions. Which AWS service should be used?",
-    "question_kr": "은행에서 자동 신용 평가 모델이 연령이나 성별과 같은 보호 속성을 기준으로 대출 신청자를 차별하지 않는지 감사하고, 대출 승인 결정 이유를 설명하기 위해 SHAP 값을 산출하고자 합니다. 어떤 AWS 서비스를 사용해야 합니까?",
+    "topic_category": "Responsible AI - 5 Pillars",
+    "key_concept": "Responsible AI - 5 Pillars, 책임 있는 AI의 5대 기둥",
+    "question_en": "[global FinTech & tier-1 investment bank] An enterprise operating with real-time credit card fraud telemetry and underwriting application data is modernizing its operations with AWS AI solutions. What are the five core pillars defining Responsible AI governance across the model lifecycle according to AWS guidelines?",
+    "question_kr": "[글로벌 금융 및 핀테크 기업] 실시간 신용 카드 이상 거래 탐지 및 대출 심사 로그을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. AWS Well-Architected Framework에서 규정하는 책임 있는 AI(Responsible AI)의 5대 핵심 원칙 구성 요소는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Public web scraping, disabling CloudTrail, unvetted training",
+        "text_kr": "단일 테넌트 격리 배제, 공개 데이터 무단 수집, 로그 삭제"
+      },
+      {
+        "key": "B",
+        "text_en": "Fairness, Explainability, Transparency, Robustness, Privacy & Safety",
+        "text_kr": "공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성"
+      },
+      {
+        "key": "C",
+        "text_en": "Maximum token count, high temperature, disabling encryption",
+        "text_kr": "최대 토큰 생성, 온도 극대화, 암호화 비활성화, 수동 감사 생략"
+      },
+      {
+        "key": "D",
+        "text_en": "Cost cutting, serverless, fast shipping, multi-cloud, open source",
+        "text_kr": "비용 최소화, 서버리스 전환, 빠른 배포, 멀티 클라우드, 오픈소스화"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념 해설**: 책임 있는 AI의 5대 기둥은 공정성(Fairness), 설명가능성(Explainability), 투명성(Transparency), 견고성(Robustness), 개인정보 보호 및 안전성(Privacy & Safety)입니다.\n\n• **실무 비즈니스 분석**: [글로벌 금융 및 핀테크 기업] 시나리오에서는 실시간 신용 카드 이상 거래 탐지 및 대출 심사 로그의 요구조건과 제약사항을 만족하기 위해 '책임 있는 AI의 5대 기둥' 관점에서 '공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q002",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Responsible AI - 5 Pillars",
+    "key_concept": "Responsible AI - 5 Pillars, 책임 있는 AI의 5대 기둥",
+    "question_en": "[hyperscale e-commerce & retail marketplace] An enterprise operating with tens of millions of product reviews, clickstream logs, and order histories is modernizing its operations with AWS AI solutions. What are the five core pillars defining Responsible AI governance across the model lifecycle according to AWS guidelines?",
+    "question_kr": "[대형 전자상거래 및 온라인 리테일 플랫폼] 수천만 건의 상품 리뷰, 장바구니 클릭스트림 및 구매 이력을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. AWS Well-Architected Framework에서 규정하는 책임 있는 AI(Responsible AI)의 5대 핵심 원칙 구성 요소는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Public web scraping, disabling CloudTrail, unvetted training",
+        "text_kr": "단일 테넌트 격리 배제, 공개 데이터 무단 수집, 로그 삭제"
+      },
+      {
+        "key": "B",
+        "text_en": "Maximum token count, high temperature, disabling encryption",
+        "text_kr": "최대 토큰 생성, 온도 극대화, 암호화 비활성화, 수동 감사 생략"
+      },
+      {
+        "key": "C",
+        "text_en": "Cost cutting, serverless, fast shipping, multi-cloud, open source",
+        "text_kr": "비용 최소화, 서버리스 전환, 빠른 배포, 멀티 클라우드, 오픈소스화"
+      },
+      {
+        "key": "D",
+        "text_en": "Fairness, Explainability, Transparency, Robustness, Privacy & Safety",
+        "text_kr": "공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_kr": "정답은 D입니다.\n\n• **핵심 개념 해설**: 책임 있는 AI의 5대 기둥은 공정성(Fairness), 설명가능성(Explainability), 투명성(Transparency), 견고성(Robustness), 개인정보 보호 및 안전성(Privacy & Safety)입니다.\n\n• **실무 비즈니스 분석**: [대형 전자상거래 및 온라인 리테일 플랫폼] 시나리오에서는 수천만 건의 상품 리뷰, 장바구니 클릭스트림 및 구매 이력의 요구조건과 제약사항을 만족하기 위해 '책임 있는 AI의 5대 기둥' 관점에서 '공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q003",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Responsible AI - 5 Pillars",
+    "key_concept": "Responsible AI - 5 Pillars, 책임 있는 AI의 5대 기둥",
+    "question_en": "[academic medical center and clinical trials research institute] An enterprise operating with unstructured Electronic Medical Records (EMR), medical imaging, and pathology charts is modernizing its operations with AWS AI solutions. What are the five core pillars defining Responsible AI governance across the model lifecycle according to AWS guidelines?",
+    "question_kr": "[대학 부속 종합병원 및 임상 연구원] 비정형 전자의무기록(EMR), 의학 영상 및 환자 진료 차트을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. AWS Well-Architected Framework에서 규정하는 책임 있는 AI(Responsible AI)의 5대 핵심 원칙 구성 요소는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Maximum token count, high temperature, disabling encryption",
+        "text_kr": "최대 토큰 생성, 온도 극대화, 암호화 비활성화, 수동 감사 생략"
+      },
+      {
+        "key": "B",
+        "text_en": "Public web scraping, disabling CloudTrail, unvetted training",
+        "text_kr": "단일 테넌트 격리 배제, 공개 데이터 무단 수집, 로그 삭제"
+      },
+      {
+        "key": "C",
+        "text_en": "Cost cutting, serverless, fast shipping, multi-cloud, open source",
+        "text_kr": "비용 최소화, 서버리스 전환, 빠른 배포, 멀티 클라우드, 오픈소스화"
+      },
+      {
+        "key": "D",
+        "text_en": "Fairness, Explainability, Transparency, Robustness, Privacy & Safety",
+        "text_kr": "공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_kr": "정답은 D입니다.\n\n• **핵심 개념 해설**: 책임 있는 AI의 5대 기둥은 공정성(Fairness), 설명가능성(Explainability), 투명성(Transparency), 견고성(Robustness), 개인정보 보호 및 안전성(Privacy & Safety)입니다.\n\n• **실무 비즈니스 분석**: [대학 부속 종합병원 및 임상 연구원] 시나리오에서는 비정형 전자의무기록(EMR), 의학 영상 및 환자 진료 차트의 요구조건과 제약사항을 만족하기 위해 '책임 있는 AI의 5대 기둥' 관점에서 '공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q004",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Responsible AI - 5 Pillars",
+    "key_concept": "Responsible AI - 5 Pillars, 책임 있는 AI의 5대 기둥",
+    "question_en": "[international airline and global travel booking platform] An enterprise operating with real-time flight telemetry, baggage tracking streams, and passenger inquiries is modernizing its operations with AWS AI solutions. What are the five core pillars defining Responsible AI governance across the model lifecycle according to AWS guidelines?",
+    "question_kr": "[글로벌 항공사 및 여행 예약 플랫폼] 실시간 항공편 스케줄, 승객 수하물 추적 및 고객 서비스 문의을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. AWS Well-Architected Framework에서 규정하는 책임 있는 AI(Responsible AI)의 5대 핵심 원칙 구성 요소는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Maximum token count, high temperature, disabling encryption",
+        "text_kr": "최대 토큰 생성, 온도 극대화, 암호화 비활성화, 수동 감사 생략"
+      },
+      {
+        "key": "B",
+        "text_en": "Fairness, Explainability, Transparency, Robustness, Privacy & Safety",
+        "text_kr": "공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성"
+      },
+      {
+        "key": "C",
+        "text_en": "Public web scraping, disabling CloudTrail, unvetted training",
+        "text_kr": "단일 테넌트 격리 배제, 공개 데이터 무단 수집, 로그 삭제"
+      },
+      {
+        "key": "D",
+        "text_en": "Cost cutting, serverless, fast shipping, multi-cloud, open source",
+        "text_kr": "비용 최소화, 서버리스 전환, 빠른 배포, 멀티 클라우드, 오픈소스화"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념 해설**: 책임 있는 AI의 5대 기둥은 공정성(Fairness), 설명가능성(Explainability), 투명성(Transparency), 견고성(Robustness), 개인정보 보호 및 안전성(Privacy & Safety)입니다.\n\n• **실무 비즈니스 분석**: [글로벌 항공사 및 여행 예약 플랫폼] 시나리오에서는 실시간 항공편 스케줄, 승객 수하물 추적 및 고객 서비스 문의의 요구조건과 제약사항을 만족하기 위해 '책임 있는 AI의 5대 기둥' 관점에서 '공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q005",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Responsible AI - 5 Pillars",
+    "key_concept": "Responsible AI - 5 Pillars, 책임 있는 AI의 5대 기둥",
+    "question_en": "[advanced semiconductor fabrication & smart manufacturing facility] An enterprise operating with tens of thousands of factory equipment IoT vibration and temperature telemetry streams is modernizing its operations with AWS AI solutions. What are the five core pillars defining Responsible AI governance across the model lifecycle according to AWS guidelines?",
+    "question_kr": "[첨단 반도체 및 스마트 제조 공장] 수만 개의 공장 설비 IoT 진동/온도 시계열 센서 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. AWS Well-Architected Framework에서 규정하는 책임 있는 AI(Responsible AI)의 5대 핵심 원칙 구성 요소는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Fairness, Explainability, Transparency, Robustness, Privacy & Safety",
+        "text_kr": "공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성"
+      },
+      {
+        "key": "B",
+        "text_en": "Maximum token count, high temperature, disabling encryption",
+        "text_kr": "최대 토큰 생성, 온도 극대화, 암호화 비활성화, 수동 감사 생략"
+      },
+      {
+        "key": "C",
+        "text_en": "Public web scraping, disabling CloudTrail, unvetted training",
+        "text_kr": "단일 테넌트 격리 배제, 공개 데이터 무단 수집, 로그 삭제"
+      },
+      {
+        "key": "D",
+        "text_en": "Cost cutting, serverless, fast shipping, multi-cloud, open source",
+        "text_kr": "비용 최소화, 서버리스 전환, 빠른 배포, 멀티 클라우드, 오픈소스화"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념 해설**: 책임 있는 AI의 5대 기둥은 공정성(Fairness), 설명가능성(Explainability), 투명성(Transparency), 견고성(Robustness), 개인정보 보호 및 안전성(Privacy & Safety)입니다.\n\n• **실무 비즈니스 분석**: [첨단 반도체 및 스마트 제조 공장] 시나리오에서는 수만 개의 공장 설비 IoT 진동/온도 시계열 센서 데이터의 요구조건과 제약사항을 만족하기 위해 '책임 있는 AI의 5대 기둥' 관점에서 '공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q006",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Responsible AI - 5 Pillars",
+    "key_concept": "Responsible AI - 5 Pillars, 책임 있는 AI의 5대 기둥",
+    "question_en": "[enterprise B2B SaaS software provider] An enterprise operating with millions of technical support tickets, knowledge articles, and API access logs is modernizing its operations with AWS AI solutions. What are the five core pillars defining Responsible AI governance across the model lifecycle according to AWS guidelines?",
+    "question_kr": "[엔터프라이즈 B2B SaaS 소프트웨어 기업] 수백만 건의 고객 기술 지원 티켓, 지식베이스 문서 및 API 로그을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. AWS Well-Architected Framework에서 규정하는 책임 있는 AI(Responsible AI)의 5대 핵심 원칙 구성 요소는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Cost cutting, serverless, fast shipping, multi-cloud, open source",
+        "text_kr": "비용 최소화, 서버리스 전환, 빠른 배포, 멀티 클라우드, 오픈소스화"
+      },
+      {
+        "key": "B",
+        "text_en": "Maximum token count, high temperature, disabling encryption",
+        "text_kr": "최대 토큰 생성, 온도 극대화, 암호화 비활성화, 수동 감사 생략"
+      },
+      {
+        "key": "C",
+        "text_en": "Fairness, Explainability, Transparency, Robustness, Privacy & Safety",
+        "text_kr": "공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성"
+      },
+      {
+        "key": "D",
+        "text_en": "Public web scraping, disabling CloudTrail, unvetted training",
+        "text_kr": "단일 테넌트 격리 배제, 공개 데이터 무단 수집, 로그 삭제"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_kr": "정답은 C입니다.\n\n• **핵심 개념 해설**: 책임 있는 AI의 5대 기둥은 공정성(Fairness), 설명가능성(Explainability), 투명성(Transparency), 견고성(Robustness), 개인정보 보호 및 안전성(Privacy & Safety)입니다.\n\n• **실무 비즈니스 분석**: [엔터프라이즈 B2B SaaS 소프트웨어 기업] 시나리오에서는 수백만 건의 고객 기술 지원 티켓, 지식베이스 문서 및 API 로그의 요구조건과 제약사항을 만족하기 위해 '책임 있는 AI의 5대 기둥' 관점에서 '공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q007",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Responsible AI - 5 Pillars",
+    "key_concept": "Responsible AI - 5 Pillars, 책임 있는 AI의 5대 기둥",
+    "question_en": "[nationwide 5G telecommunications carrier] An enterprise operating with cell tower network congestion metrics and customer churn propensity event logs is modernizing its operations with AWS AI solutions. What are the five core pillars defining Responsible AI governance across the model lifecycle according to AWS guidelines?",
+    "question_kr": "[전국망 통신 서비스 사업자] 기지국 네트워크 트래픽 혼잡도 로그 및 고객 서비스 해지 위험 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. AWS Well-Architected Framework에서 규정하는 책임 있는 AI(Responsible AI)의 5대 핵심 원칙 구성 요소는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Fairness, Explainability, Transparency, Robustness, Privacy & Safety",
+        "text_kr": "공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성"
+      },
+      {
+        "key": "B",
+        "text_en": "Cost cutting, serverless, fast shipping, multi-cloud, open source",
+        "text_kr": "비용 최소화, 서버리스 전환, 빠른 배포, 멀티 클라우드, 오픈소스화"
+      },
+      {
+        "key": "C",
+        "text_en": "Public web scraping, disabling CloudTrail, unvetted training",
+        "text_kr": "단일 테넌트 격리 배제, 공개 데이터 무단 수집, 로그 삭제"
+      },
+      {
+        "key": "D",
+        "text_en": "Maximum token count, high temperature, disabling encryption",
+        "text_kr": "최대 토큰 생성, 온도 극대화, 암호화 비활성화, 수동 감사 생략"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념 해설**: 책임 있는 AI의 5대 기둥은 공정성(Fairness), 설명가능성(Explainability), 투명성(Transparency), 견고성(Robustness), 개인정보 보호 및 안전성(Privacy & Safety)입니다.\n\n• **실무 비즈니스 분석**: [전국망 통신 서비스 사업자] 시나리오에서는 기지국 네트워크 트래픽 혼잡도 로그 및 고객 서비스 해지 위험 데이터의 요구조건과 제약사항을 만족하기 위해 '책임 있는 AI의 5대 기둥' 관점에서 '공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q008",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Responsible AI - 5 Pillars",
+    "key_concept": "Responsible AI - 5 Pillars, 책임 있는 AI의 5대 기둥",
+    "question_en": "[global property and casualty insurance enterprise] An enterprise operating with accident damage appraisal reports, field photographs, and claim documentation is modernizing its operations with AWS AI solutions. What are the five core pillars defining Responsible AI governance across the model lifecycle according to AWS guidelines?",
+    "question_kr": "[글로벌 손해보험 및 손해사정 전문사] 사고 현장 손해사정 보고서, 현장 증빙 사진 및 보상 청구 서류을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. AWS Well-Architected Framework에서 규정하는 책임 있는 AI(Responsible AI)의 5대 핵심 원칙 구성 요소는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Cost cutting, serverless, fast shipping, multi-cloud, open source",
+        "text_kr": "비용 최소화, 서버리스 전환, 빠른 배포, 멀티 클라우드, 오픈소스화"
+      },
+      {
+        "key": "B",
+        "text_en": "Fairness, Explainability, Transparency, Robustness, Privacy & Safety",
+        "text_kr": "공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성"
+      },
+      {
+        "key": "C",
+        "text_en": "Public web scraping, disabling CloudTrail, unvetted training",
+        "text_kr": "단일 테넌트 격리 배제, 공개 데이터 무단 수집, 로그 삭제"
+      },
+      {
+        "key": "D",
+        "text_en": "Maximum token count, high temperature, disabling encryption",
+        "text_kr": "최대 토큰 생성, 온도 극대화, 암호화 비활성화, 수동 감사 생략"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념 해설**: 책임 있는 AI의 5대 기둥은 공정성(Fairness), 설명가능성(Explainability), 투명성(Transparency), 견고성(Robustness), 개인정보 보호 및 안전성(Privacy & Safety)입니다.\n\n• **실무 비즈니스 분석**: [글로벌 손해보험 및 손해사정 전문사] 시나리오에서는 사고 현장 손해사정 보고서, 현장 증빙 사진 및 보상 청구 서류의 요구조건과 제약사항을 만족하기 위해 '책임 있는 AI의 5대 기둥' 관점에서 '공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q009",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Responsible AI - 5 Pillars",
+    "key_concept": "Responsible AI - 5 Pillars, 책임 있는 AI의 5대 기둥",
+    "question_en": "[metropolitan municipal government and citizen service center] An enterprise operating with civic welfare petition transcripts and municipal regulatory administrative archives is modernizing its operations with AWS AI solutions. What are the five core pillars defining Responsible AI governance across the model lifecycle according to AWS guidelines?",
+    "question_kr": "[공공 행정 및 지자체 스마트 민원 센터] 시민 복지 정책 민원 상담 내역 및 공공 행정 조례 문서을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. AWS Well-Architected Framework에서 규정하는 책임 있는 AI(Responsible AI)의 5대 핵심 원칙 구성 요소는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Cost cutting, serverless, fast shipping, multi-cloud, open source",
+        "text_kr": "비용 최소화, 서버리스 전환, 빠른 배포, 멀티 클라우드, 오픈소스화"
+      },
+      {
+        "key": "B",
+        "text_en": "Maximum token count, high temperature, disabling encryption",
+        "text_kr": "최대 토큰 생성, 온도 극대화, 암호화 비활성화, 수동 감사 생략"
+      },
+      {
+        "key": "C",
+        "text_en": "Public web scraping, disabling CloudTrail, unvetted training",
+        "text_kr": "단일 테넌트 격리 배제, 공개 데이터 무단 수집, 로그 삭제"
+      },
+      {
+        "key": "D",
+        "text_en": "Fairness, Explainability, Transparency, Robustness, Privacy & Safety",
+        "text_kr": "공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_kr": "정답은 D입니다.\n\n• **핵심 개념 해설**: 책임 있는 AI의 5대 기둥은 공정성(Fairness), 설명가능성(Explainability), 투명성(Transparency), 견고성(Robustness), 개인정보 보호 및 안전성(Privacy & Safety)입니다.\n\n• **실무 비즈니스 분석**: [공공 행정 및 지자체 스마트 민원 센터] 시나리오에서는 시민 복지 정책 민원 상담 내역 및 공공 행정 조례 문서의 요구조건과 제약사항을 만족하기 위해 '책임 있는 AI의 5대 기둥' 관점에서 '공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q010",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Responsible AI - 5 Pillars",
+    "key_concept": "Responsible AI - 5 Pillars, 책임 있는 AI의 5대 기둥",
+    "question_en": "[global media & over-the-top streaming platform] An enterprise operating with massive digital video catalog, audio stems, and multilingual subtitle assets is modernizing its operations with AWS AI solutions. What are the five core pillars defining Responsible AI governance across the model lifecycle according to AWS guidelines?",
+    "question_kr": "[글로벌 미디어 및 영상 스트리밍 플랫폼] 방대한 비디오 아카이브, 오디오 사운드트랙 및 다국어 자막 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. AWS Well-Architected Framework에서 규정하는 책임 있는 AI(Responsible AI)의 5대 핵심 원칙 구성 요소는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Cost cutting, serverless, fast shipping, multi-cloud, open source",
+        "text_kr": "비용 최소화, 서버리스 전환, 빠른 배포, 멀티 클라우드, 오픈소스화"
+      },
+      {
+        "key": "B",
+        "text_en": "Public web scraping, disabling CloudTrail, unvetted training",
+        "text_kr": "단일 테넌트 격리 배제, 공개 데이터 무단 수집, 로그 삭제"
+      },
+      {
+        "key": "C",
+        "text_en": "Fairness, Explainability, Transparency, Robustness, Privacy & Safety",
+        "text_kr": "공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성"
+      },
+      {
+        "key": "D",
+        "text_en": "Maximum token count, high temperature, disabling encryption",
+        "text_kr": "최대 토큰 생성, 온도 극대화, 암호화 비활성화, 수동 감사 생략"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_kr": "정답은 C입니다.\n\n• **핵심 개념 해설**: 책임 있는 AI의 5대 기둥은 공정성(Fairness), 설명가능성(Explainability), 투명성(Transparency), 견고성(Robustness), 개인정보 보호 및 안전성(Privacy & Safety)입니다.\n\n• **실무 비즈니스 분석**: [글로벌 미디어 및 영상 스트리밍 플랫폼] 시나리오에서는 방대한 비디오 아카이브, 오디오 사운드트랙 및 다국어 자막 데이터의 요구조건과 제약사항을 만족하기 위해 '책임 있는 AI의 5대 기둥' 관점에서 '공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q011",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Responsible AI - 5 Pillars",
+    "key_concept": "Responsible AI - 5 Pillars, 책임 있는 AI의 5대 기둥",
+    "question_en": "[multinational automotive OEM and connected fleet platform] An enterprise operating with vehicular telematics telemetry and advanced driver assistance sensor streams is modernizing its operations with AWS AI solutions. What are the five core pillars defining Responsible AI governance across the model lifecycle according to AWS guidelines?",
+    "question_kr": "[글로벌 자동차 제조 및 커넥티드카 기업] 차량 텔레매틱스 주행 센서 로그 및 운전자 보조 시스템(ADAS) 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. AWS Well-Architected Framework에서 규정하는 책임 있는 AI(Responsible AI)의 5대 핵심 원칙 구성 요소는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Public web scraping, disabling CloudTrail, unvetted training",
+        "text_kr": "단일 테넌트 격리 배제, 공개 데이터 무단 수집, 로그 삭제"
+      },
+      {
+        "key": "B",
+        "text_en": "Cost cutting, serverless, fast shipping, multi-cloud, open source",
+        "text_kr": "비용 최소화, 서버리스 전환, 빠른 배포, 멀티 클라우드, 오픈소스화"
+      },
+      {
+        "key": "C",
+        "text_en": "Maximum token count, high temperature, disabling encryption",
+        "text_kr": "최대 토큰 생성, 온도 극대화, 암호화 비활성화, 수동 감사 생략"
+      },
+      {
+        "key": "D",
+        "text_en": "Fairness, Explainability, Transparency, Robustness, Privacy & Safety",
+        "text_kr": "공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_kr": "정답은 D입니다.\n\n• **핵심 개념 해설**: 책임 있는 AI의 5대 기둥은 공정성(Fairness), 설명가능성(Explainability), 투명성(Transparency), 견고성(Robustness), 개인정보 보호 및 안전성(Privacy & Safety)입니다.\n\n• **실무 비즈니스 분석**: [글로벌 자동차 제조 및 커넥티드카 기업] 시나리오에서는 차량 텔레매틱스 주행 센서 로그 및 운전자 보조 시스템(ADAS) 데이터의 요구조건과 제약사항을 만족하기 위해 '책임 있는 AI의 5대 기둥' 관점에서 '공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q012",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Responsible AI - 5 Pillars",
+    "key_concept": "Responsible AI - 5 Pillars, 책임 있는 AI의 5대 기둥",
+    "question_en": "[global biopharmaceutical and drug discovery laboratory] An enterprise operating with molecular docking simulations and pre-clinical assay screening datasets is modernizing its operations with AWS AI solutions. What are the five core pillars defining Responsible AI governance across the model lifecycle according to AWS guidelines?",
+    "question_kr": "[글로벌 바이오제약 및 신약 개발 연구소] 단백질 분자 구조 시뮬레이션 및 전임상 실험 스크리닝 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. AWS Well-Architected Framework에서 규정하는 책임 있는 AI(Responsible AI)의 5대 핵심 원칙 구성 요소는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Cost cutting, serverless, fast shipping, multi-cloud, open source",
+        "text_kr": "비용 최소화, 서버리스 전환, 빠른 배포, 멀티 클라우드, 오픈소스화"
+      },
+      {
+        "key": "B",
+        "text_en": "Public web scraping, disabling CloudTrail, unvetted training",
+        "text_kr": "단일 테넌트 격리 배제, 공개 데이터 무단 수집, 로그 삭제"
+      },
+      {
+        "key": "C",
+        "text_en": "Fairness, Explainability, Transparency, Robustness, Privacy & Safety",
+        "text_kr": "공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성"
+      },
+      {
+        "key": "D",
+        "text_en": "Maximum token count, high temperature, disabling encryption",
+        "text_kr": "최대 토큰 생성, 온도 극대화, 암호화 비활성화, 수동 감사 생략"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_kr": "정답은 C입니다.\n\n• **핵심 개념 해설**: 책임 있는 AI의 5대 기둥은 공정성(Fairness), 설명가능성(Explainability), 투명성(Transparency), 견고성(Robustness), 개인정보 보호 및 안전성(Privacy & Safety)입니다.\n\n• **실무 비즈니스 분석**: [글로벌 바이오제약 및 신약 개발 연구소] 시나리오에서는 단백질 분자 구조 시뮬레이션 및 전임상 실험 스크리닝 데이터의 요구조건과 제약사항을 만족하기 위해 '책임 있는 AI의 5대 기둥' 관점에서 '공정성, 설명가능성, 투명성, 견고성, 개인정보 보호 및 안전성' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q013",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Clarify - Bias Detection",
+    "key_concept": "SageMaker Clarify - Bias Detection, SageMaker Clarify: 편향(Bias) 탐지",
+    "question_en": "[global FinTech & tier-1 investment bank] An enterprise operating with real-time credit card fraud telemetry and underwriting application data is modernizing its operations with AWS AI solutions. Which Amazon SageMaker feature audits datasets before training and evaluates trained models to detect potential bias across demographic protected groups?",
+    "question_kr": "[글로벌 금융 및 핀테크 기업] 실시간 신용 카드 이상 거래 탐지 및 대출 심사 로그을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 학습 데이터셋 및 훈련된 모델에서 성별, 연령, 인종 등 보호 속성(Protected Attributes)에 따른 편향(Class Imbalance, Disparate Impact)을 측정하는 전용 AWS 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Elastic File System (EFS)",
+        "text_kr": "Amazon Elastic File System"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon SageMaker Clarify",
+        "text_kr": "Amazon SageMaker Clarify"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS CodeBuild",
+        "text_kr": "AWS CodeBuild"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon SageMaker HyperPod",
+        "text_kr": "Amazon SageMaker HyperPod"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Clarify는 데이터 준비 단계와 모델 훈련 후 단계 모두에서 다양한 통계적 공정성 메트릭을 계산하여 잠재적 편향(Bias)을 탐지합니다.\n\n• **실무 비즈니스 분석**: [글로벌 금융 및 핀테크 기업] 시나리오에서는 실시간 신용 카드 이상 거래 탐지 및 대출 심사 로그의 요구조건과 제약사항을 만족하기 위해 'SageMaker Clarify: 편향(Bias) 탐지' 관점에서 'Amazon SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q014",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Clarify - Bias Detection",
+    "key_concept": "SageMaker Clarify - Bias Detection, SageMaker Clarify: 편향(Bias) 탐지",
+    "question_en": "[hyperscale e-commerce & retail marketplace] An enterprise operating with tens of millions of product reviews, clickstream logs, and order histories is modernizing its operations with AWS AI solutions. Which Amazon SageMaker feature audits datasets before training and evaluates trained models to detect potential bias across demographic protected groups?",
+    "question_kr": "[대형 전자상거래 및 온라인 리테일 플랫폼] 수천만 건의 상품 리뷰, 장바구니 클릭스트림 및 구매 이력을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 학습 데이터셋 및 훈련된 모델에서 성별, 연령, 인종 등 보호 속성(Protected Attributes)에 따른 편향(Class Imbalance, Disparate Impact)을 측정하는 전용 AWS 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon SageMaker HyperPod",
+        "text_kr": "Amazon SageMaker HyperPod"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Elastic File System (EFS)",
+        "text_kr": "Amazon Elastic File System"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon SageMaker Clarify",
+        "text_kr": "Amazon SageMaker Clarify"
+      },
+      {
+        "key": "D",
+        "text_en": "AWS CodeBuild",
+        "text_kr": "AWS CodeBuild"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_kr": "정답은 C입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Clarify는 데이터 준비 단계와 모델 훈련 후 단계 모두에서 다양한 통계적 공정성 메트릭을 계산하여 잠재적 편향(Bias)을 탐지합니다.\n\n• **실무 비즈니스 분석**: [대형 전자상거래 및 온라인 리테일 플랫폼] 시나리오에서는 수천만 건의 상품 리뷰, 장바구니 클릭스트림 및 구매 이력의 요구조건과 제약사항을 만족하기 위해 'SageMaker Clarify: 편향(Bias) 탐지' 관점에서 'Amazon SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q015",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Clarify - Bias Detection",
+    "key_concept": "SageMaker Clarify - Bias Detection, SageMaker Clarify: 편향(Bias) 탐지",
+    "question_en": "[academic medical center and clinical trials research institute] An enterprise operating with unstructured Electronic Medical Records (EMR), medical imaging, and pathology charts is modernizing its operations with AWS AI solutions. Which Amazon SageMaker feature audits datasets before training and evaluates trained models to detect potential bias across demographic protected groups?",
+    "question_kr": "[대학 부속 종합병원 및 임상 연구원] 비정형 전자의무기록(EMR), 의학 영상 및 환자 진료 차트을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 학습 데이터셋 및 훈련된 모델에서 성별, 연령, 인종 등 보호 속성(Protected Attributes)에 따른 편향(Class Imbalance, Disparate Impact)을 측정하는 전용 AWS 도구는 무엇입니까?",
     "options": [
       {
         "key": "A",
@@ -15,31 +477,724 @@
       },
       {
         "key": "B",
-        "text_en": "Amazon SageMaker JumpStart",
-        "text_kr": "Amazon SageMaker JumpStart"
+        "text_en": "AWS CodeBuild",
+        "text_kr": "AWS CodeBuild"
       },
       {
         "key": "C",
-        "text_en": "Amazon Rekognition Video",
-        "text_kr": "Amazon Rekognition Video"
+        "text_en": "Amazon Elastic File System (EFS)",
+        "text_kr": "Amazon Elastic File System"
       },
       {
         "key": "D",
-        "text_en": "AWS Cloud9",
-        "text_kr": "AWS Cloud9"
+        "text_en": "Amazon SageMaker HyperPod",
+        "text_kr": "Amazon SageMaker HyperPod"
       }
     ],
     "correct_answer": "A",
-    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Amazon SageMaker Clarify는 훈련 전후 데이터셋과 모델의 잠재적 편향(Bias)을 탐지하고, 게임 이론 기반의 SHAP 가치를 계산하여 모델의 예측 결과에 대한 설명가능성(Explainability)을 제공하는 전용 서비스입니다."
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Clarify는 데이터 준비 단계와 모델 훈련 후 단계 모두에서 다양한 통계적 공정성 메트릭을 계산하여 잠재적 편향(Bias)을 탐지합니다.\n\n• **실무 비즈니스 분석**: [대학 부속 종합병원 및 임상 연구원] 시나리오에서는 비정형 전자의무기록(EMR), 의학 영상 및 환자 진료 차트의 요구조건과 제약사항을 만족하기 위해 'SageMaker Clarify: 편향(Bias) 탐지' 관점에서 'Amazon SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
   },
   {
-    "id": "D4-Q002",
+    "id": "D4-Q016",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Clarify - Bias Detection",
+    "key_concept": "SageMaker Clarify - Bias Detection, SageMaker Clarify: 편향(Bias) 탐지",
+    "question_en": "[international airline and global travel booking platform] An enterprise operating with real-time flight telemetry, baggage tracking streams, and passenger inquiries is modernizing its operations with AWS AI solutions. Which Amazon SageMaker feature audits datasets before training and evaluates trained models to detect potential bias across demographic protected groups?",
+    "question_kr": "[글로벌 항공사 및 여행 예약 플랫폼] 실시간 항공편 스케줄, 승객 수하물 추적 및 고객 서비스 문의을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 학습 데이터셋 및 훈련된 모델에서 성별, 연령, 인종 등 보호 속성(Protected Attributes)에 따른 편향(Class Imbalance, Disparate Impact)을 측정하는 전용 AWS 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon SageMaker HyperPod",
+        "text_kr": "Amazon SageMaker HyperPod"
+      },
+      {
+        "key": "B",
+        "text_en": "AWS CodeBuild",
+        "text_kr": "AWS CodeBuild"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon SageMaker Clarify",
+        "text_kr": "Amazon SageMaker Clarify"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Elastic File System (EFS)",
+        "text_kr": "Amazon Elastic File System"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_kr": "정답은 C입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Clarify는 데이터 준비 단계와 모델 훈련 후 단계 모두에서 다양한 통계적 공정성 메트릭을 계산하여 잠재적 편향(Bias)을 탐지합니다.\n\n• **실무 비즈니스 분석**: [글로벌 항공사 및 여행 예약 플랫폼] 시나리오에서는 실시간 항공편 스케줄, 승객 수하물 추적 및 고객 서비스 문의의 요구조건과 제약사항을 만족하기 위해 'SageMaker Clarify: 편향(Bias) 탐지' 관점에서 'Amazon SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q017",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Clarify - Bias Detection",
+    "key_concept": "SageMaker Clarify - Bias Detection, SageMaker Clarify: 편향(Bias) 탐지",
+    "question_en": "[advanced semiconductor fabrication & smart manufacturing facility] An enterprise operating with tens of thousands of factory equipment IoT vibration and temperature telemetry streams is modernizing its operations with AWS AI solutions. Which Amazon SageMaker feature audits datasets before training and evaluates trained models to detect potential bias across demographic protected groups?",
+    "question_kr": "[첨단 반도체 및 스마트 제조 공장] 수만 개의 공장 설비 IoT 진동/온도 시계열 센서 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 학습 데이터셋 및 훈련된 모델에서 성별, 연령, 인종 등 보호 속성(Protected Attributes)에 따른 편향(Class Imbalance, Disparate Impact)을 측정하는 전용 AWS 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Elastic File System (EFS)",
+        "text_kr": "Amazon Elastic File System"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon SageMaker Clarify",
+        "text_kr": "Amazon SageMaker Clarify"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS CodeBuild",
+        "text_kr": "AWS CodeBuild"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon SageMaker HyperPod",
+        "text_kr": "Amazon SageMaker HyperPod"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Clarify는 데이터 준비 단계와 모델 훈련 후 단계 모두에서 다양한 통계적 공정성 메트릭을 계산하여 잠재적 편향(Bias)을 탐지합니다.\n\n• **실무 비즈니스 분석**: [첨단 반도체 및 스마트 제조 공장] 시나리오에서는 수만 개의 공장 설비 IoT 진동/온도 시계열 센서 데이터의 요구조건과 제약사항을 만족하기 위해 'SageMaker Clarify: 편향(Bias) 탐지' 관점에서 'Amazon SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q018",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Clarify - Bias Detection",
+    "key_concept": "SageMaker Clarify - Bias Detection, SageMaker Clarify: 편향(Bias) 탐지",
+    "question_en": "[enterprise B2B SaaS software provider] An enterprise operating with millions of technical support tickets, knowledge articles, and API access logs is modernizing its operations with AWS AI solutions. Which Amazon SageMaker feature audits datasets before training and evaluates trained models to detect potential bias across demographic protected groups?",
+    "question_kr": "[엔터프라이즈 B2B SaaS 소프트웨어 기업] 수백만 건의 고객 기술 지원 티켓, 지식베이스 문서 및 API 로그을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 학습 데이터셋 및 훈련된 모델에서 성별, 연령, 인종 등 보호 속성(Protected Attributes)에 따른 편향(Class Imbalance, Disparate Impact)을 측정하는 전용 AWS 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "AWS CodeBuild",
+        "text_kr": "AWS CodeBuild"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Elastic File System (EFS)",
+        "text_kr": "Amazon Elastic File System"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon SageMaker Clarify",
+        "text_kr": "Amazon SageMaker Clarify"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon SageMaker HyperPod",
+        "text_kr": "Amazon SageMaker HyperPod"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_kr": "정답은 C입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Clarify는 데이터 준비 단계와 모델 훈련 후 단계 모두에서 다양한 통계적 공정성 메트릭을 계산하여 잠재적 편향(Bias)을 탐지합니다.\n\n• **실무 비즈니스 분석**: [엔터프라이즈 B2B SaaS 소프트웨어 기업] 시나리오에서는 수백만 건의 고객 기술 지원 티켓, 지식베이스 문서 및 API 로그의 요구조건과 제약사항을 만족하기 위해 'SageMaker Clarify: 편향(Bias) 탐지' 관점에서 'Amazon SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q019",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Clarify - Bias Detection",
+    "key_concept": "SageMaker Clarify - Bias Detection, SageMaker Clarify: 편향(Bias) 탐지",
+    "question_en": "[nationwide 5G telecommunications carrier] An enterprise operating with cell tower network congestion metrics and customer churn propensity event logs is modernizing its operations with AWS AI solutions. Which Amazon SageMaker feature audits datasets before training and evaluates trained models to detect potential bias across demographic protected groups?",
+    "question_kr": "[전국망 통신 서비스 사업자] 기지국 네트워크 트래픽 혼잡도 로그 및 고객 서비스 해지 위험 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 학습 데이터셋 및 훈련된 모델에서 성별, 연령, 인종 등 보호 속성(Protected Attributes)에 따른 편향(Class Imbalance, Disparate Impact)을 측정하는 전용 AWS 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon SageMaker Clarify",
+        "text_kr": "Amazon SageMaker Clarify"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon SageMaker HyperPod",
+        "text_kr": "Amazon SageMaker HyperPod"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS CodeBuild",
+        "text_kr": "AWS CodeBuild"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Elastic File System (EFS)",
+        "text_kr": "Amazon Elastic File System"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Clarify는 데이터 준비 단계와 모델 훈련 후 단계 모두에서 다양한 통계적 공정성 메트릭을 계산하여 잠재적 편향(Bias)을 탐지합니다.\n\n• **실무 비즈니스 분석**: [전국망 통신 서비스 사업자] 시나리오에서는 기지국 네트워크 트래픽 혼잡도 로그 및 고객 서비스 해지 위험 데이터의 요구조건과 제약사항을 만족하기 위해 'SageMaker Clarify: 편향(Bias) 탐지' 관점에서 'Amazon SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q020",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Clarify - Bias Detection",
+    "key_concept": "SageMaker Clarify - Bias Detection, SageMaker Clarify: 편향(Bias) 탐지",
+    "question_en": "[global property and casualty insurance enterprise] An enterprise operating with accident damage appraisal reports, field photographs, and claim documentation is modernizing its operations with AWS AI solutions. Which Amazon SageMaker feature audits datasets before training and evaluates trained models to detect potential bias across demographic protected groups?",
+    "question_kr": "[글로벌 손해보험 및 손해사정 전문사] 사고 현장 손해사정 보고서, 현장 증빙 사진 및 보상 청구 서류을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 학습 데이터셋 및 훈련된 모델에서 성별, 연령, 인종 등 보호 속성(Protected Attributes)에 따른 편향(Class Imbalance, Disparate Impact)을 측정하는 전용 AWS 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "AWS CodeBuild",
+        "text_kr": "AWS CodeBuild"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon SageMaker Clarify",
+        "text_kr": "Amazon SageMaker Clarify"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon SageMaker HyperPod",
+        "text_kr": "Amazon SageMaker HyperPod"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Elastic File System (EFS)",
+        "text_kr": "Amazon Elastic File System"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Clarify는 데이터 준비 단계와 모델 훈련 후 단계 모두에서 다양한 통계적 공정성 메트릭을 계산하여 잠재적 편향(Bias)을 탐지합니다.\n\n• **실무 비즈니스 분석**: [글로벌 손해보험 및 손해사정 전문사] 시나리오에서는 사고 현장 손해사정 보고서, 현장 증빙 사진 및 보상 청구 서류의 요구조건과 제약사항을 만족하기 위해 'SageMaker Clarify: 편향(Bias) 탐지' 관점에서 'Amazon SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q021",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Clarify - Bias Detection",
+    "key_concept": "SageMaker Clarify - Bias Detection, SageMaker Clarify: 편향(Bias) 탐지",
+    "question_en": "[metropolitan municipal government and citizen service center] An enterprise operating with civic welfare petition transcripts and municipal regulatory administrative archives is modernizing its operations with AWS AI solutions. Which Amazon SageMaker feature audits datasets before training and evaluates trained models to detect potential bias across demographic protected groups?",
+    "question_kr": "[공공 행정 및 지자체 스마트 민원 센터] 시민 복지 정책 민원 상담 내역 및 공공 행정 조례 문서을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 학습 데이터셋 및 훈련된 모델에서 성별, 연령, 인종 등 보호 속성(Protected Attributes)에 따른 편향(Class Imbalance, Disparate Impact)을 측정하는 전용 AWS 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon SageMaker HyperPod",
+        "text_kr": "Amazon SageMaker HyperPod"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Elastic File System (EFS)",
+        "text_kr": "Amazon Elastic File System"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon SageMaker Clarify",
+        "text_kr": "Amazon SageMaker Clarify"
+      },
+      {
+        "key": "D",
+        "text_en": "AWS CodeBuild",
+        "text_kr": "AWS CodeBuild"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_kr": "정답은 C입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Clarify는 데이터 준비 단계와 모델 훈련 후 단계 모두에서 다양한 통계적 공정성 메트릭을 계산하여 잠재적 편향(Bias)을 탐지합니다.\n\n• **실무 비즈니스 분석**: [공공 행정 및 지자체 스마트 민원 센터] 시나리오에서는 시민 복지 정책 민원 상담 내역 및 공공 행정 조례 문서의 요구조건과 제약사항을 만족하기 위해 'SageMaker Clarify: 편향(Bias) 탐지' 관점에서 'Amazon SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q022",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Clarify - Bias Detection",
+    "key_concept": "SageMaker Clarify - Bias Detection, SageMaker Clarify: 편향(Bias) 탐지",
+    "question_en": "[global media & over-the-top streaming platform] An enterprise operating with massive digital video catalog, audio stems, and multilingual subtitle assets is modernizing its operations with AWS AI solutions. Which Amazon SageMaker feature audits datasets before training and evaluates trained models to detect potential bias across demographic protected groups?",
+    "question_kr": "[글로벌 미디어 및 영상 스트리밍 플랫폼] 방대한 비디오 아카이브, 오디오 사운드트랙 및 다국어 자막 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 학습 데이터셋 및 훈련된 모델에서 성별, 연령, 인종 등 보호 속성(Protected Attributes)에 따른 편향(Class Imbalance, Disparate Impact)을 측정하는 전용 AWS 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "AWS CodeBuild",
+        "text_kr": "AWS CodeBuild"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Elastic File System (EFS)",
+        "text_kr": "Amazon Elastic File System"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon SageMaker HyperPod",
+        "text_kr": "Amazon SageMaker HyperPod"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon SageMaker Clarify",
+        "text_kr": "Amazon SageMaker Clarify"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_kr": "정답은 D입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Clarify는 데이터 준비 단계와 모델 훈련 후 단계 모두에서 다양한 통계적 공정성 메트릭을 계산하여 잠재적 편향(Bias)을 탐지합니다.\n\n• **실무 비즈니스 분석**: [글로벌 미디어 및 영상 스트리밍 플랫폼] 시나리오에서는 방대한 비디오 아카이브, 오디오 사운드트랙 및 다국어 자막 데이터의 요구조건과 제약사항을 만족하기 위해 'SageMaker Clarify: 편향(Bias) 탐지' 관점에서 'Amazon SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q023",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Clarify - Bias Detection",
+    "key_concept": "SageMaker Clarify - Bias Detection, SageMaker Clarify: 편향(Bias) 탐지",
+    "question_en": "[multinational automotive OEM and connected fleet platform] An enterprise operating with vehicular telematics telemetry and advanced driver assistance sensor streams is modernizing its operations with AWS AI solutions. Which Amazon SageMaker feature audits datasets before training and evaluates trained models to detect potential bias across demographic protected groups?",
+    "question_kr": "[글로벌 자동차 제조 및 커넥티드카 기업] 차량 텔레매틱스 주행 센서 로그 및 운전자 보조 시스템(ADAS) 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 학습 데이터셋 및 훈련된 모델에서 성별, 연령, 인종 등 보호 속성(Protected Attributes)에 따른 편향(Class Imbalance, Disparate Impact)을 측정하는 전용 AWS 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon SageMaker HyperPod",
+        "text_kr": "Amazon SageMaker HyperPod"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon SageMaker Clarify",
+        "text_kr": "Amazon SageMaker Clarify"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS CodeBuild",
+        "text_kr": "AWS CodeBuild"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Elastic File System (EFS)",
+        "text_kr": "Amazon Elastic File System"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Clarify는 데이터 준비 단계와 모델 훈련 후 단계 모두에서 다양한 통계적 공정성 메트릭을 계산하여 잠재적 편향(Bias)을 탐지합니다.\n\n• **실무 비즈니스 분석**: [글로벌 자동차 제조 및 커넥티드카 기업] 시나리오에서는 차량 텔레매틱스 주행 센서 로그 및 운전자 보조 시스템(ADAS) 데이터의 요구조건과 제약사항을 만족하기 위해 'SageMaker Clarify: 편향(Bias) 탐지' 관점에서 'Amazon SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q024",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Clarify - Bias Detection",
+    "key_concept": "SageMaker Clarify - Bias Detection, SageMaker Clarify: 편향(Bias) 탐지",
+    "question_en": "[global biopharmaceutical and drug discovery laboratory] An enterprise operating with molecular docking simulations and pre-clinical assay screening datasets is modernizing its operations with AWS AI solutions. Which Amazon SageMaker feature audits datasets before training and evaluates trained models to detect potential bias across demographic protected groups?",
+    "question_kr": "[글로벌 바이오제약 및 신약 개발 연구소] 단백질 분자 구조 시뮬레이션 및 전임상 실험 스크리닝 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 학습 데이터셋 및 훈련된 모델에서 성별, 연령, 인종 등 보호 속성(Protected Attributes)에 따른 편향(Class Imbalance, Disparate Impact)을 측정하는 전용 AWS 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "AWS CodeBuild",
+        "text_kr": "AWS CodeBuild"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon SageMaker Clarify",
+        "text_kr": "Amazon SageMaker Clarify"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon SageMaker HyperPod",
+        "text_kr": "Amazon SageMaker HyperPod"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Elastic File System (EFS)",
+        "text_kr": "Amazon Elastic File System"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Clarify는 데이터 준비 단계와 모델 훈련 후 단계 모두에서 다양한 통계적 공정성 메트릭을 계산하여 잠재적 편향(Bias)을 탐지합니다.\n\n• **실무 비즈니스 분석**: [글로벌 바이오제약 및 신약 개발 연구소] 시나리오에서는 단백질 분자 구조 시뮬레이션 및 전임상 실험 스크리닝 데이터의 요구조건과 제약사항을 만족하기 위해 'SageMaker Clarify: 편향(Bias) 탐지' 관점에서 'Amazon SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q025",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Explainability - SHAP Values",
+    "key_concept": "Explainability - SHAP Values, 설명가능성(Explainability)과 SHAP 분석",
+    "question_en": "[global FinTech & tier-1 investment bank] An enterprise operating with real-time credit card fraud telemetry and underwriting application data is modernizing its operations with AWS AI solutions. Which game-theoretic explainability method computes feature attributions (SHAP values) to explain why a black-box model made a specific prediction?",
+    "question_kr": "[글로벌 금융 및 핀테크 기업] 실시간 신용 카드 이상 거래 탐지 및 대출 심사 로그을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 대출 승인/거절과 같은 복잡한 비선형 딥러닝 모델의 예측에 대해 각 입력 특성(소득, 신용점수, 부채)이 결과에 미친 기여도를 공정하게 수치화하는 게임 이론 기반 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "K-Means centroid distance calculation",
+        "text_kr": "단순 K-평균 군집화 거리 계산"
+      },
+      {
+        "key": "B",
+        "text_en": "Static linear interpolation",
+        "text_kr": "정적 선형 보간법"
+      },
+      {
+        "key": "C",
+        "text_en": "Random dropout activation frequency",
+        "text_kr": "무작위 노드 드롭아웃 확률 계산"
+      },
+      {
+        "key": "D",
+        "text_en": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify",
+        "text_kr": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_kr": "정답은 D입니다.\n\n• **핵심 개념 해설**: SHAP(Shapley Additive exPlanations)는 게임 이론의 섀플리 가치에 기반하여 개별 예측에 대한 각 특성의 양수/음수 기여도를 정확히 계산하여 설명가능성을 제공합니다.\n\n• **실무 비즈니스 분석**: [글로벌 금융 및 핀테크 기업] 시나리오에서는 실시간 신용 카드 이상 거래 탐지 및 대출 심사 로그의 요구조건과 제약사항을 만족하기 위해 '설명가능성(Explainability)과 SHAP 분석' 관점에서 'SHAP (Shapley Additive exPlanations) via SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q026",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Explainability - SHAP Values",
+    "key_concept": "Explainability - SHAP Values, 설명가능성(Explainability)과 SHAP 분석",
+    "question_en": "[hyperscale e-commerce & retail marketplace] An enterprise operating with tens of millions of product reviews, clickstream logs, and order histories is modernizing its operations with AWS AI solutions. Which game-theoretic explainability method computes feature attributions (SHAP values) to explain why a black-box model made a specific prediction?",
+    "question_kr": "[대형 전자상거래 및 온라인 리테일 플랫폼] 수천만 건의 상품 리뷰, 장바구니 클릭스트림 및 구매 이력을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 대출 승인/거절과 같은 복잡한 비선형 딥러닝 모델의 예측에 대해 각 입력 특성(소득, 신용점수, 부채)이 결과에 미친 기여도를 공정하게 수치화하는 게임 이론 기반 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Static linear interpolation",
+        "text_kr": "정적 선형 보간법"
+      },
+      {
+        "key": "B",
+        "text_en": "K-Means centroid distance calculation",
+        "text_kr": "단순 K-평균 군집화 거리 계산"
+      },
+      {
+        "key": "C",
+        "text_en": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify",
+        "text_kr": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify"
+      },
+      {
+        "key": "D",
+        "text_en": "Random dropout activation frequency",
+        "text_kr": "무작위 노드 드롭아웃 확률 계산"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_kr": "정답은 C입니다.\n\n• **핵심 개념 해설**: SHAP(Shapley Additive exPlanations)는 게임 이론의 섀플리 가치에 기반하여 개별 예측에 대한 각 특성의 양수/음수 기여도를 정확히 계산하여 설명가능성을 제공합니다.\n\n• **실무 비즈니스 분석**: [대형 전자상거래 및 온라인 리테일 플랫폼] 시나리오에서는 수천만 건의 상품 리뷰, 장바구니 클릭스트림 및 구매 이력의 요구조건과 제약사항을 만족하기 위해 '설명가능성(Explainability)과 SHAP 분석' 관점에서 'SHAP (Shapley Additive exPlanations) via SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q027",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Explainability - SHAP Values",
+    "key_concept": "Explainability - SHAP Values, 설명가능성(Explainability)과 SHAP 분석",
+    "question_en": "[academic medical center and clinical trials research institute] An enterprise operating with unstructured Electronic Medical Records (EMR), medical imaging, and pathology charts is modernizing its operations with AWS AI solutions. Which game-theoretic explainability method computes feature attributions (SHAP values) to explain why a black-box model made a specific prediction?",
+    "question_kr": "[대학 부속 종합병원 및 임상 연구원] 비정형 전자의무기록(EMR), 의학 영상 및 환자 진료 차트을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 대출 승인/거절과 같은 복잡한 비선형 딥러닝 모델의 예측에 대해 각 입력 특성(소득, 신용점수, 부채)이 결과에 미친 기여도를 공정하게 수치화하는 게임 이론 기반 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify",
+        "text_kr": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify"
+      },
+      {
+        "key": "B",
+        "text_en": "Static linear interpolation",
+        "text_kr": "정적 선형 보간법"
+      },
+      {
+        "key": "C",
+        "text_en": "Random dropout activation frequency",
+        "text_kr": "무작위 노드 드롭아웃 확률 계산"
+      },
+      {
+        "key": "D",
+        "text_en": "K-Means centroid distance calculation",
+        "text_kr": "단순 K-평균 군집화 거리 계산"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념 해설**: SHAP(Shapley Additive exPlanations)는 게임 이론의 섀플리 가치에 기반하여 개별 예측에 대한 각 특성의 양수/음수 기여도를 정확히 계산하여 설명가능성을 제공합니다.\n\n• **실무 비즈니스 분석**: [대학 부속 종합병원 및 임상 연구원] 시나리오에서는 비정형 전자의무기록(EMR), 의학 영상 및 환자 진료 차트의 요구조건과 제약사항을 만족하기 위해 '설명가능성(Explainability)과 SHAP 분석' 관점에서 'SHAP (Shapley Additive exPlanations) via SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q028",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Explainability - SHAP Values",
+    "key_concept": "Explainability - SHAP Values, 설명가능성(Explainability)과 SHAP 분석",
+    "question_en": "[international airline and global travel booking platform] An enterprise operating with real-time flight telemetry, baggage tracking streams, and passenger inquiries is modernizing its operations with AWS AI solutions. Which game-theoretic explainability method computes feature attributions (SHAP values) to explain why a black-box model made a specific prediction?",
+    "question_kr": "[글로벌 항공사 및 여행 예약 플랫폼] 실시간 항공편 스케줄, 승객 수하물 추적 및 고객 서비스 문의을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 대출 승인/거절과 같은 복잡한 비선형 딥러닝 모델의 예측에 대해 각 입력 특성(소득, 신용점수, 부채)이 결과에 미친 기여도를 공정하게 수치화하는 게임 이론 기반 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "K-Means centroid distance calculation",
+        "text_kr": "단순 K-평균 군집화 거리 계산"
+      },
+      {
+        "key": "B",
+        "text_en": "Random dropout activation frequency",
+        "text_kr": "무작위 노드 드롭아웃 확률 계산"
+      },
+      {
+        "key": "C",
+        "text_en": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify",
+        "text_kr": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify"
+      },
+      {
+        "key": "D",
+        "text_en": "Static linear interpolation",
+        "text_kr": "정적 선형 보간법"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_kr": "정답은 C입니다.\n\n• **핵심 개념 해설**: SHAP(Shapley Additive exPlanations)는 게임 이론의 섀플리 가치에 기반하여 개별 예측에 대한 각 특성의 양수/음수 기여도를 정확히 계산하여 설명가능성을 제공합니다.\n\n• **실무 비즈니스 분석**: [글로벌 항공사 및 여행 예약 플랫폼] 시나리오에서는 실시간 항공편 스케줄, 승객 수하물 추적 및 고객 서비스 문의의 요구조건과 제약사항을 만족하기 위해 '설명가능성(Explainability)과 SHAP 분석' 관점에서 'SHAP (Shapley Additive exPlanations) via SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q029",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Explainability - SHAP Values",
+    "key_concept": "Explainability - SHAP Values, 설명가능성(Explainability)과 SHAP 분석",
+    "question_en": "[advanced semiconductor fabrication & smart manufacturing facility] An enterprise operating with tens of thousands of factory equipment IoT vibration and temperature telemetry streams is modernizing its operations with AWS AI solutions. Which game-theoretic explainability method computes feature attributions (SHAP values) to explain why a black-box model made a specific prediction?",
+    "question_kr": "[첨단 반도체 및 스마트 제조 공장] 수만 개의 공장 설비 IoT 진동/온도 시계열 센서 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 대출 승인/거절과 같은 복잡한 비선형 딥러닝 모델의 예측에 대해 각 입력 특성(소득, 신용점수, 부채)이 결과에 미친 기여도를 공정하게 수치화하는 게임 이론 기반 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Static linear interpolation",
+        "text_kr": "정적 선형 보간법"
+      },
+      {
+        "key": "B",
+        "text_en": "K-Means centroid distance calculation",
+        "text_kr": "단순 K-평균 군집화 거리 계산"
+      },
+      {
+        "key": "C",
+        "text_en": "Random dropout activation frequency",
+        "text_kr": "무작위 노드 드롭아웃 확률 계산"
+      },
+      {
+        "key": "D",
+        "text_en": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify",
+        "text_kr": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_kr": "정답은 D입니다.\n\n• **핵심 개념 해설**: SHAP(Shapley Additive exPlanations)는 게임 이론의 섀플리 가치에 기반하여 개별 예측에 대한 각 특성의 양수/음수 기여도를 정확히 계산하여 설명가능성을 제공합니다.\n\n• **실무 비즈니스 분석**: [첨단 반도체 및 스마트 제조 공장] 시나리오에서는 수만 개의 공장 설비 IoT 진동/온도 시계열 센서 데이터의 요구조건과 제약사항을 만족하기 위해 '설명가능성(Explainability)과 SHAP 분석' 관점에서 'SHAP (Shapley Additive exPlanations) via SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q030",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Explainability - SHAP Values",
+    "key_concept": "Explainability - SHAP Values, 설명가능성(Explainability)과 SHAP 분석",
+    "question_en": "[enterprise B2B SaaS software provider] An enterprise operating with millions of technical support tickets, knowledge articles, and API access logs is modernizing its operations with AWS AI solutions. Which game-theoretic explainability method computes feature attributions (SHAP values) to explain why a black-box model made a specific prediction?",
+    "question_kr": "[엔터프라이즈 B2B SaaS 소프트웨어 기업] 수백만 건의 고객 기술 지원 티켓, 지식베이스 문서 및 API 로그을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 대출 승인/거절과 같은 복잡한 비선형 딥러닝 모델의 예측에 대해 각 입력 특성(소득, 신용점수, 부채)이 결과에 미친 기여도를 공정하게 수치화하는 게임 이론 기반 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Random dropout activation frequency",
+        "text_kr": "무작위 노드 드롭아웃 확률 계산"
+      },
+      {
+        "key": "B",
+        "text_en": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify",
+        "text_kr": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify"
+      },
+      {
+        "key": "C",
+        "text_en": "K-Means centroid distance calculation",
+        "text_kr": "단순 K-평균 군집화 거리 계산"
+      },
+      {
+        "key": "D",
+        "text_en": "Static linear interpolation",
+        "text_kr": "정적 선형 보간법"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념 해설**: SHAP(Shapley Additive exPlanations)는 게임 이론의 섀플리 가치에 기반하여 개별 예측에 대한 각 특성의 양수/음수 기여도를 정확히 계산하여 설명가능성을 제공합니다.\n\n• **실무 비즈니스 분석**: [엔터프라이즈 B2B SaaS 소프트웨어 기업] 시나리오에서는 수백만 건의 고객 기술 지원 티켓, 지식베이스 문서 및 API 로그의 요구조건과 제약사항을 만족하기 위해 '설명가능성(Explainability)과 SHAP 분석' 관점에서 'SHAP (Shapley Additive exPlanations) via SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q031",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Explainability - SHAP Values",
+    "key_concept": "Explainability - SHAP Values, 설명가능성(Explainability)과 SHAP 분석",
+    "question_en": "[nationwide 5G telecommunications carrier] An enterprise operating with cell tower network congestion metrics and customer churn propensity event logs is modernizing its operations with AWS AI solutions. Which game-theoretic explainability method computes feature attributions (SHAP values) to explain why a black-box model made a specific prediction?",
+    "question_kr": "[전국망 통신 서비스 사업자] 기지국 네트워크 트래픽 혼잡도 로그 및 고객 서비스 해지 위험 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 대출 승인/거절과 같은 복잡한 비선형 딥러닝 모델의 예측에 대해 각 입력 특성(소득, 신용점수, 부채)이 결과에 미친 기여도를 공정하게 수치화하는 게임 이론 기반 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify",
+        "text_kr": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify"
+      },
+      {
+        "key": "B",
+        "text_en": "K-Means centroid distance calculation",
+        "text_kr": "단순 K-평균 군집화 거리 계산"
+      },
+      {
+        "key": "C",
+        "text_en": "Static linear interpolation",
+        "text_kr": "정적 선형 보간법"
+      },
+      {
+        "key": "D",
+        "text_en": "Random dropout activation frequency",
+        "text_kr": "무작위 노드 드롭아웃 확률 계산"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념 해설**: SHAP(Shapley Additive exPlanations)는 게임 이론의 섀플리 가치에 기반하여 개별 예측에 대한 각 특성의 양수/음수 기여도를 정확히 계산하여 설명가능성을 제공합니다.\n\n• **실무 비즈니스 분석**: [전국망 통신 서비스 사업자] 시나리오에서는 기지국 네트워크 트래픽 혼잡도 로그 및 고객 서비스 해지 위험 데이터의 요구조건과 제약사항을 만족하기 위해 '설명가능성(Explainability)과 SHAP 분석' 관점에서 'SHAP (Shapley Additive exPlanations) via SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q032",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Explainability - SHAP Values",
+    "key_concept": "Explainability - SHAP Values, 설명가능성(Explainability)과 SHAP 분석",
+    "question_en": "[global property and casualty insurance enterprise] An enterprise operating with accident damage appraisal reports, field photographs, and claim documentation is modernizing its operations with AWS AI solutions. Which game-theoretic explainability method computes feature attributions (SHAP values) to explain why a black-box model made a specific prediction?",
+    "question_kr": "[글로벌 손해보험 및 손해사정 전문사] 사고 현장 손해사정 보고서, 현장 증빙 사진 및 보상 청구 서류을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 대출 승인/거절과 같은 복잡한 비선형 딥러닝 모델의 예측에 대해 각 입력 특성(소득, 신용점수, 부채)이 결과에 미친 기여도를 공정하게 수치화하는 게임 이론 기반 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Static linear interpolation",
+        "text_kr": "정적 선형 보간법"
+      },
+      {
+        "key": "B",
+        "text_en": "Random dropout activation frequency",
+        "text_kr": "무작위 노드 드롭아웃 확률 계산"
+      },
+      {
+        "key": "C",
+        "text_en": "K-Means centroid distance calculation",
+        "text_kr": "단순 K-평균 군집화 거리 계산"
+      },
+      {
+        "key": "D",
+        "text_en": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify",
+        "text_kr": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_kr": "정답은 D입니다.\n\n• **핵심 개념 해설**: SHAP(Shapley Additive exPlanations)는 게임 이론의 섀플리 가치에 기반하여 개별 예측에 대한 각 특성의 양수/음수 기여도를 정확히 계산하여 설명가능성을 제공합니다.\n\n• **실무 비즈니스 분석**: [글로벌 손해보험 및 손해사정 전문사] 시나리오에서는 사고 현장 손해사정 보고서, 현장 증빙 사진 및 보상 청구 서류의 요구조건과 제약사항을 만족하기 위해 '설명가능성(Explainability)과 SHAP 분석' 관점에서 'SHAP (Shapley Additive exPlanations) via SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q033",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Explainability - SHAP Values",
+    "key_concept": "Explainability - SHAP Values, 설명가능성(Explainability)과 SHAP 분석",
+    "question_en": "[metropolitan municipal government and citizen service center] An enterprise operating with civic welfare petition transcripts and municipal regulatory administrative archives is modernizing its operations with AWS AI solutions. Which game-theoretic explainability method computes feature attributions (SHAP values) to explain why a black-box model made a specific prediction?",
+    "question_kr": "[공공 행정 및 지자체 스마트 민원 센터] 시민 복지 정책 민원 상담 내역 및 공공 행정 조례 문서을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 대출 승인/거절과 같은 복잡한 비선형 딥러닝 모델의 예측에 대해 각 입력 특성(소득, 신용점수, 부채)이 결과에 미친 기여도를 공정하게 수치화하는 게임 이론 기반 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "K-Means centroid distance calculation",
+        "text_kr": "단순 K-평균 군집화 거리 계산"
+      },
+      {
+        "key": "B",
+        "text_en": "Random dropout activation frequency",
+        "text_kr": "무작위 노드 드롭아웃 확률 계산"
+      },
+      {
+        "key": "C",
+        "text_en": "Static linear interpolation",
+        "text_kr": "정적 선형 보간법"
+      },
+      {
+        "key": "D",
+        "text_en": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify",
+        "text_kr": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_kr": "정답은 D입니다.\n\n• **핵심 개념 해설**: SHAP(Shapley Additive exPlanations)는 게임 이론의 섀플리 가치에 기반하여 개별 예측에 대한 각 특성의 양수/음수 기여도를 정확히 계산하여 설명가능성을 제공합니다.\n\n• **실무 비즈니스 분석**: [공공 행정 및 지자체 스마트 민원 센터] 시나리오에서는 시민 복지 정책 민원 상담 내역 및 공공 행정 조례 문서의 요구조건과 제약사항을 만족하기 위해 '설명가능성(Explainability)과 SHAP 분석' 관점에서 'SHAP (Shapley Additive exPlanations) via SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q034",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Explainability - SHAP Values",
+    "key_concept": "Explainability - SHAP Values, 설명가능성(Explainability)과 SHAP 분석",
+    "question_en": "[global media & over-the-top streaming platform] An enterprise operating with massive digital video catalog, audio stems, and multilingual subtitle assets is modernizing its operations with AWS AI solutions. Which game-theoretic explainability method computes feature attributions (SHAP values) to explain why a black-box model made a specific prediction?",
+    "question_kr": "[글로벌 미디어 및 영상 스트리밍 플랫폼] 방대한 비디오 아카이브, 오디오 사운드트랙 및 다국어 자막 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 대출 승인/거절과 같은 복잡한 비선형 딥러닝 모델의 예측에 대해 각 입력 특성(소득, 신용점수, 부채)이 결과에 미친 기여도를 공정하게 수치화하는 게임 이론 기반 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "K-Means centroid distance calculation",
+        "text_kr": "단순 K-평균 군집화 거리 계산"
+      },
+      {
+        "key": "B",
+        "text_en": "Static linear interpolation",
+        "text_kr": "정적 선형 보간법"
+      },
+      {
+        "key": "C",
+        "text_en": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify",
+        "text_kr": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify"
+      },
+      {
+        "key": "D",
+        "text_en": "Random dropout activation frequency",
+        "text_kr": "무작위 노드 드롭아웃 확률 계산"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_kr": "정답은 C입니다.\n\n• **핵심 개념 해설**: SHAP(Shapley Additive exPlanations)는 게임 이론의 섀플리 가치에 기반하여 개별 예측에 대한 각 특성의 양수/음수 기여도를 정확히 계산하여 설명가능성을 제공합니다.\n\n• **실무 비즈니스 분석**: [글로벌 미디어 및 영상 스트리밍 플랫폼] 시나리오에서는 방대한 비디오 아카이브, 오디오 사운드트랙 및 다국어 자막 데이터의 요구조건과 제약사항을 만족하기 위해 '설명가능성(Explainability)과 SHAP 분석' 관점에서 'SHAP (Shapley Additive exPlanations) via SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q035",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Explainability - SHAP Values",
+    "key_concept": "Explainability - SHAP Values, 설명가능성(Explainability)과 SHAP 분석",
+    "question_en": "[multinational automotive OEM and connected fleet platform] An enterprise operating with vehicular telematics telemetry and advanced driver assistance sensor streams is modernizing its operations with AWS AI solutions. Which game-theoretic explainability method computes feature attributions (SHAP values) to explain why a black-box model made a specific prediction?",
+    "question_kr": "[글로벌 자동차 제조 및 커넥티드카 기업] 차량 텔레매틱스 주행 센서 로그 및 운전자 보조 시스템(ADAS) 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 대출 승인/거절과 같은 복잡한 비선형 딥러닝 모델의 예측에 대해 각 입력 특성(소득, 신용점수, 부채)이 결과에 미친 기여도를 공정하게 수치화하는 게임 이론 기반 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Random dropout activation frequency",
+        "text_kr": "무작위 노드 드롭아웃 확률 계산"
+      },
+      {
+        "key": "B",
+        "text_en": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify",
+        "text_kr": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify"
+      },
+      {
+        "key": "C",
+        "text_en": "Static linear interpolation",
+        "text_kr": "정적 선형 보간법"
+      },
+      {
+        "key": "D",
+        "text_en": "K-Means centroid distance calculation",
+        "text_kr": "단순 K-평균 군집화 거리 계산"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념 해설**: SHAP(Shapley Additive exPlanations)는 게임 이론의 섀플리 가치에 기반하여 개별 예측에 대한 각 특성의 양수/음수 기여도를 정확히 계산하여 설명가능성을 제공합니다.\n\n• **실무 비즈니스 분석**: [글로벌 자동차 제조 및 커넥티드카 기업] 시나리오에서는 차량 텔레매틱스 주행 센서 로그 및 운전자 보조 시스템(ADAS) 데이터의 요구조건과 제약사항을 만족하기 위해 '설명가능성(Explainability)과 SHAP 분석' 관점에서 'SHAP (Shapley Additive exPlanations) via SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q036",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Explainability - SHAP Values",
+    "key_concept": "Explainability - SHAP Values, 설명가능성(Explainability)과 SHAP 분석",
+    "question_en": "[global biopharmaceutical and drug discovery laboratory] An enterprise operating with molecular docking simulations and pre-clinical assay screening datasets is modernizing its operations with AWS AI solutions. Which game-theoretic explainability method computes feature attributions (SHAP values) to explain why a black-box model made a specific prediction?",
+    "question_kr": "[글로벌 바이오제약 및 신약 개발 연구소] 단백질 분자 구조 시뮬레이션 및 전임상 실험 스크리닝 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 대출 승인/거절과 같은 복잡한 비선형 딥러닝 모델의 예측에 대해 각 입력 특성(소득, 신용점수, 부채)이 결과에 미친 기여도를 공정하게 수치화하는 게임 이론 기반 기법은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Static linear interpolation",
+        "text_kr": "정적 선형 보간법"
+      },
+      {
+        "key": "B",
+        "text_en": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify",
+        "text_kr": "SHAP (Shapley Additive exPlanations) via SageMaker Clarify"
+      },
+      {
+        "key": "C",
+        "text_en": "K-Means centroid distance calculation",
+        "text_kr": "단순 K-평균 군집화 거리 계산"
+      },
+      {
+        "key": "D",
+        "text_en": "Random dropout activation frequency",
+        "text_kr": "무작위 노드 드롭아웃 확률 계산"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념 해설**: SHAP(Shapley Additive exPlanations)는 게임 이론의 섀플리 가치에 기반하여 개별 예측에 대한 각 특성의 양수/음수 기여도를 정확히 계산하여 설명가능성을 제공합니다.\n\n• **실무 비즈니스 분석**: [글로벌 바이오제약 및 신약 개발 연구소] 시나리오에서는 단백질 분자 구조 시뮬레이션 및 전임상 실험 스크리닝 데이터의 요구조건과 제약사항을 만족하기 위해 '설명가능성(Explainability)과 SHAP 분석' 관점에서 'SHAP (Shapley Additive exPlanations) via SageMaker Clarify' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q037",
     "domain": "Domain 4",
     "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
     "topic_category": "Human-in-the-Loop - Amazon A2I",
-    "key_concept": "Human-in-the-Loop - Amazon A2I, Amazon Augmented AI (A2I)를 통한 신뢰도 기반 인간 검토",
-    "question_en": "An insurance company uses Amazon Textract to process claims automatically. However, when the prediction confidence score falls below 90%, the document must be routed to human claims adjusters for manual review. Which AWS service manages this workflow?",
-    "question_kr": "보험 회사에서 Amazon Textract를 사용하여 보험금 청구서를 자동 처리하고 있습니다. 그러나 모델의 예측 신뢰도 점수(Confidence Score)가 90% 미만으로 떨어지는 경우, 해당 문서를 사람(전문 손해사정사)에게 자동으로 라우팅하여 수동 검토하도록 해야 합니다. 이 워크플로를 관리하는 AWS 서비스는 무엇입니까?",
+    "key_concept": "Human-in-the-Loop - Amazon A2I, 인간 참여 루프: Amazon Augmented AI (A2I)",
+    "question_en": "[global FinTech & tier-1 investment bank] An enterprise operating with real-time credit card fraud telemetry and underwriting application data is modernizing its operations with AWS AI solutions. Which service orchestrates Human-in-the-Loop (HITL) review workflows, automatically routing low-confidence model predictions to human review teams?",
+    "question_kr": "[글로벌 금융 및 핀테크 기업] 실시간 신용 카드 이상 거래 탐지 및 대출 심사 로그을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. Amazon Textract나 Rekognition의 예측 신뢰도 점수가 사전 정의된 임계값(예: 90%) 미만으로 떨어졌을 때, 작업을 인간 검토자 팀으로 자동 라우팅하는 서비스는 무엇입니까?",
     "options": [
       {
         "key": "A",
@@ -48,87 +1203,1176 @@
       },
       {
         "key": "B",
-        "text_en": "Amazon Simple Queue Service (SQS)",
-        "text_kr": "Amazon Simple Queue Service (SQS)"
+        "text_en": "AWS Step Functions Express Workflows alone",
+        "text_kr": "AWS Step Functions Express Workflows only"
       },
       {
         "key": "C",
-        "text_en": "AWS Lambda Dead Letter Queues",
-        "text_kr": "AWS Lambda 데드 레터 큐 (DLQ)"
+        "text_en": "Amazon CloudWatch Logs Insights",
+        "text_kr": "Amazon CloudWatch Logs Insights"
       },
       {
         "key": "D",
-        "text_en": "Amazon Comprehend Medical",
-        "text_kr": "Amazon Comprehend Medical"
+        "text_en": "Amazon Simple Queue Service (SQS) Dead-Letter Queues",
+        "text_kr": "Amazon Simple Queue Service (SQS) DLQ"
       }
     ],
     "correct_answer": "A",
-    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Amazon Augmented AI (Amazon A2I)는 AI 모델의 신뢰도가 낮거나 비즈니스 규칙에 부합하지 않을 때 인간 검토자(Human-in-the-Loop)에게 작업을 자동으로 전달하고 검토 결과를 통합하는 완전관리형 서비스입니다."
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념 해설**: Amazon Augmented AI(Amazon A2I)는 AI 모델의 예측 신뢰도가 낮거나 위험도가 높은 비즈니스 시나리오에서 사람(사내 비공개 작업자 풀 등)의 검토와 승인을 거치도록 자동화하는 HITL 서비스입니다.\n\n• **실무 비즈니스 분석**: [글로벌 금융 및 핀테크 기업] 시나리오에서는 실시간 신용 카드 이상 거래 탐지 및 대출 심사 로그의 요구조건과 제약사항을 만족하기 위해 '인간 참여 루프: Amazon Augmented AI (A2I)' 관점에서 'Amazon Augmented AI (Amazon A2I)' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
   },
   {
-    "id": "D4-Q003",
+    "id": "D4-Q038",
     "domain": "Domain 4",
     "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
-    "topic_category": "Transparency - Model Cards",
-    "key_concept": "Transparency - Model Cards, SageMaker Model Cards를 통한 모델 투명성 및 감사",
-    "question_en": "A healthcare provider must document the intended use, training dataset distribution, evaluation metrics, and ethical limitations for all production ML models in a standardized format for regulatory audits. Which tool should they utilize?",
-    "question_kr": "의료 서비스 제공업체가 규제 기관의 감사를 받기 위해, 프로덕션 환경의 모든 머신러닝 모델에 대한 의도된 용도, 학습 데이터 분포, 평가 메트릭, 윤리적 한계점을 표준화된 형식으로 문서화하고 관리해야 합니다. 어떤 도구를 활용해야 합니까?",
+    "topic_category": "Human-in-the-Loop - Amazon A2I",
+    "key_concept": "Human-in-the-Loop - Amazon A2I, 인간 참여 루프: Amazon Augmented AI (A2I)",
+    "question_en": "[hyperscale e-commerce & retail marketplace] An enterprise operating with tens of millions of product reviews, clickstream logs, and order histories is modernizing its operations with AWS AI solutions. Which service orchestrates Human-in-the-Loop (HITL) review workflows, automatically routing low-confidence model predictions to human review teams?",
+    "question_kr": "[대형 전자상거래 및 온라인 리테일 플랫폼] 수천만 건의 상품 리뷰, 장바구니 클릭스트림 및 구매 이력을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. Amazon Textract나 Rekognition의 예측 신뢰도 점수가 사전 정의된 임계값(예: 90%) 미만으로 떨어졌을 때, 작업을 인간 검토자 팀으로 자동 라우팅하는 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Augmented AI (Amazon A2I)",
+        "text_kr": "Amazon Augmented AI (Amazon A2I)"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon CloudWatch Logs Insights",
+        "text_kr": "Amazon CloudWatch Logs Insights"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon Simple Queue Service (SQS) Dead-Letter Queues",
+        "text_kr": "Amazon Simple Queue Service (SQS) DLQ"
+      },
+      {
+        "key": "D",
+        "text_en": "AWS Step Functions Express Workflows alone",
+        "text_kr": "AWS Step Functions Express Workflows only"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념 해설**: Amazon Augmented AI(Amazon A2I)는 AI 모델의 예측 신뢰도가 낮거나 위험도가 높은 비즈니스 시나리오에서 사람(사내 비공개 작업자 풀 등)의 검토와 승인을 거치도록 자동화하는 HITL 서비스입니다.\n\n• **실무 비즈니스 분석**: [대형 전자상거래 및 온라인 리테일 플랫폼] 시나리오에서는 수천만 건의 상품 리뷰, 장바구니 클릭스트림 및 구매 이력의 요구조건과 제약사항을 만족하기 위해 '인간 참여 루프: Amazon Augmented AI (A2I)' 관점에서 'Amazon Augmented AI (Amazon A2I)' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q039",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Human-in-the-Loop - Amazon A2I",
+    "key_concept": "Human-in-the-Loop - Amazon A2I, 인간 참여 루프: Amazon Augmented AI (A2I)",
+    "question_en": "[academic medical center and clinical trials research institute] An enterprise operating with unstructured Electronic Medical Records (EMR), medical imaging, and pathology charts is modernizing its operations with AWS AI solutions. Which service orchestrates Human-in-the-Loop (HITL) review workflows, automatically routing low-confidence model predictions to human review teams?",
+    "question_kr": "[대학 부속 종합병원 및 임상 연구원] 비정형 전자의무기록(EMR), 의학 영상 및 환자 진료 차트을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. Amazon Textract나 Rekognition의 예측 신뢰도 점수가 사전 정의된 임계값(예: 90%) 미만으로 떨어졌을 때, 작업을 인간 검토자 팀으로 자동 라우팅하는 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon CloudWatch Logs Insights",
+        "text_kr": "Amazon CloudWatch Logs Insights"
+      },
+      {
+        "key": "B",
+        "text_en": "AWS Step Functions Express Workflows alone",
+        "text_kr": "AWS Step Functions Express Workflows only"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon Simple Queue Service (SQS) Dead-Letter Queues",
+        "text_kr": "Amazon Simple Queue Service (SQS) DLQ"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Augmented AI (Amazon A2I)",
+        "text_kr": "Amazon Augmented AI (Amazon A2I)"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_kr": "정답은 D입니다.\n\n• **핵심 개념 해설**: Amazon Augmented AI(Amazon A2I)는 AI 모델의 예측 신뢰도가 낮거나 위험도가 높은 비즈니스 시나리오에서 사람(사내 비공개 작업자 풀 등)의 검토와 승인을 거치도록 자동화하는 HITL 서비스입니다.\n\n• **실무 비즈니스 분석**: [대학 부속 종합병원 및 임상 연구원] 시나리오에서는 비정형 전자의무기록(EMR), 의학 영상 및 환자 진료 차트의 요구조건과 제약사항을 만족하기 위해 '인간 참여 루프: Amazon Augmented AI (A2I)' 관점에서 'Amazon Augmented AI (Amazon A2I)' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q040",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Human-in-the-Loop - Amazon A2I",
+    "key_concept": "Human-in-the-Loop - Amazon A2I, 인간 참여 루프: Amazon Augmented AI (A2I)",
+    "question_en": "[international airline and global travel booking platform] An enterprise operating with real-time flight telemetry, baggage tracking streams, and passenger inquiries is modernizing its operations with AWS AI solutions. Which service orchestrates Human-in-the-Loop (HITL) review workflows, automatically routing low-confidence model predictions to human review teams?",
+    "question_kr": "[글로벌 항공사 및 여행 예약 플랫폼] 실시간 항공편 스케줄, 승객 수하물 추적 및 고객 서비스 문의을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. Amazon Textract나 Rekognition의 예측 신뢰도 점수가 사전 정의된 임계값(예: 90%) 미만으로 떨어졌을 때, 작업을 인간 검토자 팀으로 자동 라우팅하는 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Simple Queue Service (SQS) Dead-Letter Queues",
+        "text_kr": "Amazon Simple Queue Service (SQS) DLQ"
+      },
+      {
+        "key": "B",
+        "text_en": "AWS Step Functions Express Workflows alone",
+        "text_kr": "AWS Step Functions Express Workflows only"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon Augmented AI (Amazon A2I)",
+        "text_kr": "Amazon Augmented AI (Amazon A2I)"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon CloudWatch Logs Insights",
+        "text_kr": "Amazon CloudWatch Logs Insights"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_kr": "정답은 C입니다.\n\n• **핵심 개념 해설**: Amazon Augmented AI(Amazon A2I)는 AI 모델의 예측 신뢰도가 낮거나 위험도가 높은 비즈니스 시나리오에서 사람(사내 비공개 작업자 풀 등)의 검토와 승인을 거치도록 자동화하는 HITL 서비스입니다.\n\n• **실무 비즈니스 분석**: [글로벌 항공사 및 여행 예약 플랫폼] 시나리오에서는 실시간 항공편 스케줄, 승객 수하물 추적 및 고객 서비스 문의의 요구조건과 제약사항을 만족하기 위해 '인간 참여 루프: Amazon Augmented AI (A2I)' 관점에서 'Amazon Augmented AI (Amazon A2I)' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q041",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Human-in-the-Loop - Amazon A2I",
+    "key_concept": "Human-in-the-Loop - Amazon A2I, 인간 참여 루프: Amazon Augmented AI (A2I)",
+    "question_en": "[advanced semiconductor fabrication & smart manufacturing facility] An enterprise operating with tens of thousands of factory equipment IoT vibration and temperature telemetry streams is modernizing its operations with AWS AI solutions. Which service orchestrates Human-in-the-Loop (HITL) review workflows, automatically routing low-confidence model predictions to human review teams?",
+    "question_kr": "[첨단 반도체 및 스마트 제조 공장] 수만 개의 공장 설비 IoT 진동/온도 시계열 센서 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. Amazon Textract나 Rekognition의 예측 신뢰도 점수가 사전 정의된 임계값(예: 90%) 미만으로 떨어졌을 때, 작업을 인간 검토자 팀으로 자동 라우팅하는 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "AWS Step Functions Express Workflows alone",
+        "text_kr": "AWS Step Functions Express Workflows only"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Simple Queue Service (SQS) Dead-Letter Queues",
+        "text_kr": "Amazon Simple Queue Service (SQS) DLQ"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon CloudWatch Logs Insights",
+        "text_kr": "Amazon CloudWatch Logs Insights"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Augmented AI (Amazon A2I)",
+        "text_kr": "Amazon Augmented AI (Amazon A2I)"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_kr": "정답은 D입니다.\n\n• **핵심 개념 해설**: Amazon Augmented AI(Amazon A2I)는 AI 모델의 예측 신뢰도가 낮거나 위험도가 높은 비즈니스 시나리오에서 사람(사내 비공개 작업자 풀 등)의 검토와 승인을 거치도록 자동화하는 HITL 서비스입니다.\n\n• **실무 비즈니스 분석**: [첨단 반도체 및 스마트 제조 공장] 시나리오에서는 수만 개의 공장 설비 IoT 진동/온도 시계열 센서 데이터의 요구조건과 제약사항을 만족하기 위해 '인간 참여 루프: Amazon Augmented AI (A2I)' 관점에서 'Amazon Augmented AI (Amazon A2I)' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q042",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Human-in-the-Loop - Amazon A2I",
+    "key_concept": "Human-in-the-Loop - Amazon A2I, 인간 참여 루프: Amazon Augmented AI (A2I)",
+    "question_en": "[enterprise B2B SaaS software provider] An enterprise operating with millions of technical support tickets, knowledge articles, and API access logs is modernizing its operations with AWS AI solutions. Which service orchestrates Human-in-the-Loop (HITL) review workflows, automatically routing low-confidence model predictions to human review teams?",
+    "question_kr": "[엔터프라이즈 B2B SaaS 소프트웨어 기업] 수백만 건의 고객 기술 지원 티켓, 지식베이스 문서 및 API 로그을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. Amazon Textract나 Rekognition의 예측 신뢰도 점수가 사전 정의된 임계값(예: 90%) 미만으로 떨어졌을 때, 작업을 인간 검토자 팀으로 자동 라우팅하는 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon CloudWatch Logs Insights",
+        "text_kr": "Amazon CloudWatch Logs Insights"
+      },
+      {
+        "key": "B",
+        "text_en": "AWS Step Functions Express Workflows alone",
+        "text_kr": "AWS Step Functions Express Workflows only"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon Simple Queue Service (SQS) Dead-Letter Queues",
+        "text_kr": "Amazon Simple Queue Service (SQS) DLQ"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Augmented AI (Amazon A2I)",
+        "text_kr": "Amazon Augmented AI (Amazon A2I)"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_kr": "정답은 D입니다.\n\n• **핵심 개념 해설**: Amazon Augmented AI(Amazon A2I)는 AI 모델의 예측 신뢰도가 낮거나 위험도가 높은 비즈니스 시나리오에서 사람(사내 비공개 작업자 풀 등)의 검토와 승인을 거치도록 자동화하는 HITL 서비스입니다.\n\n• **실무 비즈니스 분석**: [엔터프라이즈 B2B SaaS 소프트웨어 기업] 시나리오에서는 수백만 건의 고객 기술 지원 티켓, 지식베이스 문서 및 API 로그의 요구조건과 제약사항을 만족하기 위해 '인간 참여 루프: Amazon Augmented AI (A2I)' 관점에서 'Amazon Augmented AI (Amazon A2I)' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q043",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Human-in-the-Loop - Amazon A2I",
+    "key_concept": "Human-in-the-Loop - Amazon A2I, 인간 참여 루프: Amazon Augmented AI (A2I)",
+    "question_en": "[nationwide 5G telecommunications carrier] An enterprise operating with cell tower network congestion metrics and customer churn propensity event logs is modernizing its operations with AWS AI solutions. Which service orchestrates Human-in-the-Loop (HITL) review workflows, automatically routing low-confidence model predictions to human review teams?",
+    "question_kr": "[전국망 통신 서비스 사업자] 기지국 네트워크 트래픽 혼잡도 로그 및 고객 서비스 해지 위험 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. Amazon Textract나 Rekognition의 예측 신뢰도 점수가 사전 정의된 임계값(예: 90%) 미만으로 떨어졌을 때, 작업을 인간 검토자 팀으로 자동 라우팅하는 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Simple Queue Service (SQS) Dead-Letter Queues",
+        "text_kr": "Amazon Simple Queue Service (SQS) DLQ"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon Augmented AI (Amazon A2I)",
+        "text_kr": "Amazon Augmented AI (Amazon A2I)"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS Step Functions Express Workflows alone",
+        "text_kr": "AWS Step Functions Express Workflows only"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon CloudWatch Logs Insights",
+        "text_kr": "Amazon CloudWatch Logs Insights"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념 해설**: Amazon Augmented AI(Amazon A2I)는 AI 모델의 예측 신뢰도가 낮거나 위험도가 높은 비즈니스 시나리오에서 사람(사내 비공개 작업자 풀 등)의 검토와 승인을 거치도록 자동화하는 HITL 서비스입니다.\n\n• **실무 비즈니스 분석**: [전국망 통신 서비스 사업자] 시나리오에서는 기지국 네트워크 트래픽 혼잡도 로그 및 고객 서비스 해지 위험 데이터의 요구조건과 제약사항을 만족하기 위해 '인간 참여 루프: Amazon Augmented AI (A2I)' 관점에서 'Amazon Augmented AI (Amazon A2I)' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q044",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Human-in-the-Loop - Amazon A2I",
+    "key_concept": "Human-in-the-Loop - Amazon A2I, 인간 참여 루프: Amazon Augmented AI (A2I)",
+    "question_en": "[global property and casualty insurance enterprise] An enterprise operating with accident damage appraisal reports, field photographs, and claim documentation is modernizing its operations with AWS AI solutions. Which service orchestrates Human-in-the-Loop (HITL) review workflows, automatically routing low-confidence model predictions to human review teams?",
+    "question_kr": "[글로벌 손해보험 및 손해사정 전문사] 사고 현장 손해사정 보고서, 현장 증빙 사진 및 보상 청구 서류을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. Amazon Textract나 Rekognition의 예측 신뢰도 점수가 사전 정의된 임계값(예: 90%) 미만으로 떨어졌을 때, 작업을 인간 검토자 팀으로 자동 라우팅하는 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Simple Queue Service (SQS) Dead-Letter Queues",
+        "text_kr": "Amazon Simple Queue Service (SQS) DLQ"
+      },
+      {
+        "key": "B",
+        "text_en": "AWS Step Functions Express Workflows alone",
+        "text_kr": "AWS Step Functions Express Workflows only"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon CloudWatch Logs Insights",
+        "text_kr": "Amazon CloudWatch Logs Insights"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Augmented AI (Amazon A2I)",
+        "text_kr": "Amazon Augmented AI (Amazon A2I)"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_kr": "정답은 D입니다.\n\n• **핵심 개념 해설**: Amazon Augmented AI(Amazon A2I)는 AI 모델의 예측 신뢰도가 낮거나 위험도가 높은 비즈니스 시나리오에서 사람(사내 비공개 작업자 풀 등)의 검토와 승인을 거치도록 자동화하는 HITL 서비스입니다.\n\n• **실무 비즈니스 분석**: [글로벌 손해보험 및 손해사정 전문사] 시나리오에서는 사고 현장 손해사정 보고서, 현장 증빙 사진 및 보상 청구 서류의 요구조건과 제약사항을 만족하기 위해 '인간 참여 루프: Amazon Augmented AI (A2I)' 관점에서 'Amazon Augmented AI (Amazon A2I)' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q045",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Human-in-the-Loop - Amazon A2I",
+    "key_concept": "Human-in-the-Loop - Amazon A2I, 인간 참여 루프: Amazon Augmented AI (A2I)",
+    "question_en": "[metropolitan municipal government and citizen service center] An enterprise operating with civic welfare petition transcripts and municipal regulatory administrative archives is modernizing its operations with AWS AI solutions. Which service orchestrates Human-in-the-Loop (HITL) review workflows, automatically routing low-confidence model predictions to human review teams?",
+    "question_kr": "[공공 행정 및 지자체 스마트 민원 센터] 시민 복지 정책 민원 상담 내역 및 공공 행정 조례 문서을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. Amazon Textract나 Rekognition의 예측 신뢰도 점수가 사전 정의된 임계값(예: 90%) 미만으로 떨어졌을 때, 작업을 인간 검토자 팀으로 자동 라우팅하는 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Augmented AI (Amazon A2I)",
+        "text_kr": "Amazon Augmented AI (Amazon A2I)"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon CloudWatch Logs Insights",
+        "text_kr": "Amazon CloudWatch Logs Insights"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS Step Functions Express Workflows alone",
+        "text_kr": "AWS Step Functions Express Workflows only"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Simple Queue Service (SQS) Dead-Letter Queues",
+        "text_kr": "Amazon Simple Queue Service (SQS) DLQ"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념 해설**: Amazon Augmented AI(Amazon A2I)는 AI 모델의 예측 신뢰도가 낮거나 위험도가 높은 비즈니스 시나리오에서 사람(사내 비공개 작업자 풀 등)의 검토와 승인을 거치도록 자동화하는 HITL 서비스입니다.\n\n• **실무 비즈니스 분석**: [공공 행정 및 지자체 스마트 민원 센터] 시나리오에서는 시민 복지 정책 민원 상담 내역 및 공공 행정 조례 문서의 요구조건과 제약사항을 만족하기 위해 '인간 참여 루프: Amazon Augmented AI (A2I)' 관점에서 'Amazon Augmented AI (Amazon A2I)' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q046",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Human-in-the-Loop - Amazon A2I",
+    "key_concept": "Human-in-the-Loop - Amazon A2I, 인간 참여 루프: Amazon Augmented AI (A2I)",
+    "question_en": "[global media & over-the-top streaming platform] An enterprise operating with massive digital video catalog, audio stems, and multilingual subtitle assets is modernizing its operations with AWS AI solutions. Which service orchestrates Human-in-the-Loop (HITL) review workflows, automatically routing low-confidence model predictions to human review teams?",
+    "question_kr": "[글로벌 미디어 및 영상 스트리밍 플랫폼] 방대한 비디오 아카이브, 오디오 사운드트랙 및 다국어 자막 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. Amazon Textract나 Rekognition의 예측 신뢰도 점수가 사전 정의된 임계값(예: 90%) 미만으로 떨어졌을 때, 작업을 인간 검토자 팀으로 자동 라우팅하는 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Augmented AI (Amazon A2I)",
+        "text_kr": "Amazon Augmented AI (Amazon A2I)"
+      },
+      {
+        "key": "B",
+        "text_en": "AWS Step Functions Express Workflows alone",
+        "text_kr": "AWS Step Functions Express Workflows only"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon Simple Queue Service (SQS) Dead-Letter Queues",
+        "text_kr": "Amazon Simple Queue Service (SQS) DLQ"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon CloudWatch Logs Insights",
+        "text_kr": "Amazon CloudWatch Logs Insights"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념 해설**: Amazon Augmented AI(Amazon A2I)는 AI 모델의 예측 신뢰도가 낮거나 위험도가 높은 비즈니스 시나리오에서 사람(사내 비공개 작업자 풀 등)의 검토와 승인을 거치도록 자동화하는 HITL 서비스입니다.\n\n• **실무 비즈니스 분석**: [글로벌 미디어 및 영상 스트리밍 플랫폼] 시나리오에서는 방대한 비디오 아카이브, 오디오 사운드트랙 및 다국어 자막 데이터의 요구조건과 제약사항을 만족하기 위해 '인간 참여 루프: Amazon Augmented AI (A2I)' 관점에서 'Amazon Augmented AI (Amazon A2I)' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q047",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Human-in-the-Loop - Amazon A2I",
+    "key_concept": "Human-in-the-Loop - Amazon A2I, 인간 참여 루프: Amazon Augmented AI (A2I)",
+    "question_en": "[multinational automotive OEM and connected fleet platform] An enterprise operating with vehicular telematics telemetry and advanced driver assistance sensor streams is modernizing its operations with AWS AI solutions. Which service orchestrates Human-in-the-Loop (HITL) review workflows, automatically routing low-confidence model predictions to human review teams?",
+    "question_kr": "[글로벌 자동차 제조 및 커넥티드카 기업] 차량 텔레매틱스 주행 센서 로그 및 운전자 보조 시스템(ADAS) 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. Amazon Textract나 Rekognition의 예측 신뢰도 점수가 사전 정의된 임계값(예: 90%) 미만으로 떨어졌을 때, 작업을 인간 검토자 팀으로 자동 라우팅하는 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Simple Queue Service (SQS) Dead-Letter Queues",
+        "text_kr": "Amazon Simple Queue Service (SQS) DLQ"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon CloudWatch Logs Insights",
+        "text_kr": "Amazon CloudWatch Logs Insights"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon Augmented AI (Amazon A2I)",
+        "text_kr": "Amazon Augmented AI (Amazon A2I)"
+      },
+      {
+        "key": "D",
+        "text_en": "AWS Step Functions Express Workflows alone",
+        "text_kr": "AWS Step Functions Express Workflows only"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_kr": "정답은 C입니다.\n\n• **핵심 개념 해설**: Amazon Augmented AI(Amazon A2I)는 AI 모델의 예측 신뢰도가 낮거나 위험도가 높은 비즈니스 시나리오에서 사람(사내 비공개 작업자 풀 등)의 검토와 승인을 거치도록 자동화하는 HITL 서비스입니다.\n\n• **실무 비즈니스 분석**: [글로벌 자동차 제조 및 커넥티드카 기업] 시나리오에서는 차량 텔레매틱스 주행 센서 로그 및 운전자 보조 시스템(ADAS) 데이터의 요구조건과 제약사항을 만족하기 위해 '인간 참여 루프: Amazon Augmented AI (A2I)' 관점에서 'Amazon Augmented AI (Amazon A2I)' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q048",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Human-in-the-Loop - Amazon A2I",
+    "key_concept": "Human-in-the-Loop - Amazon A2I, 인간 참여 루프: Amazon Augmented AI (A2I)",
+    "question_en": "[global biopharmaceutical and drug discovery laboratory] An enterprise operating with molecular docking simulations and pre-clinical assay screening datasets is modernizing its operations with AWS AI solutions. Which service orchestrates Human-in-the-Loop (HITL) review workflows, automatically routing low-confidence model predictions to human review teams?",
+    "question_kr": "[글로벌 바이오제약 및 신약 개발 연구소] 단백질 분자 구조 시뮬레이션 및 전임상 실험 스크리닝 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. Amazon Textract나 Rekognition의 예측 신뢰도 점수가 사전 정의된 임계값(예: 90%) 미만으로 떨어졌을 때, 작업을 인간 검토자 팀으로 자동 라우팅하는 서비스는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon Augmented AI (Amazon A2I)",
+        "text_kr": "Amazon Augmented AI (Amazon A2I)"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon CloudWatch Logs Insights",
+        "text_kr": "Amazon CloudWatch Logs Insights"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS Step Functions Express Workflows alone",
+        "text_kr": "AWS Step Functions Express Workflows only"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon Simple Queue Service (SQS) Dead-Letter Queues",
+        "text_kr": "Amazon Simple Queue Service (SQS) DLQ"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념 해설**: Amazon Augmented AI(Amazon A2I)는 AI 모델의 예측 신뢰도가 낮거나 위험도가 높은 비즈니스 시나리오에서 사람(사내 비공개 작업자 풀 등)의 검토와 승인을 거치도록 자동화하는 HITL 서비스입니다.\n\n• **실무 비즈니스 분석**: [글로벌 바이오제약 및 신약 개발 연구소] 시나리오에서는 단백질 분자 구조 시뮬레이션 및 전임상 실험 스크리닝 데이터의 요구조건과 제약사항을 만족하기 위해 '인간 참여 루프: Amazon Augmented AI (A2I)' 관점에서 'Amazon Augmented AI (Amazon A2I)' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q049",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Model Cards",
+    "key_concept": "SageMaker Model Cards, SageMaker Model Cards: 표준 모델 명세서",
+    "question_en": "[global FinTech & tier-1 investment bank] An enterprise operating with real-time credit card fraud telemetry and underwriting application data is modernizing its operations with AWS AI solutions. Which governance capability documents model intended uses, training configurations, performance metrics, and ethical limitations into standardized audit records?",
+    "question_kr": "[글로벌 금융 및 핀테크 기업] 실시간 신용 카드 이상 거래 탐지 및 대출 심사 로그을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 모델의 의도된 비즈니스 목적, 훈련 데이터셋 분포, 성능 벤치마크 평가 결과, 윤리적 한계점을 단일 팩트 시트로 정형화하여 규제 감사를 지원하는 문서화 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon S3 Lifecycle Policies",
+        "text_kr": "Amazon S3 Lifecycle Policies"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon SageMaker Model Cards",
+        "text_kr": "Amazon SageMaker Model Cards"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon EC2 Launch Templates",
+        "text_kr": "Amazon EC2 Launch Templates"
+      },
+      {
+        "key": "D",
+        "text_en": "AWS Systems Manager Parameter Store",
+        "text_kr": "AWS Systems Manager Parameter Store"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Model Cards는 모델의 수명주기 전반에 걸친 의도된 용도, 한계, 평가 지표를 표준화된 문서로 기록하여 투명성(Transparency)과 감사 대응을 보장합니다.\n\n• **실무 비즈니스 분석**: [글로벌 금융 및 핀테크 기업] 시나리오에서는 실시간 신용 카드 이상 거래 탐지 및 대출 심사 로그의 요구조건과 제약사항을 만족하기 위해 'SageMaker Model Cards: 표준 모델 명세서' 관점에서 'Amazon SageMaker Model Cards' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q050",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Model Cards",
+    "key_concept": "SageMaker Model Cards, SageMaker Model Cards: 표준 모델 명세서",
+    "question_en": "[hyperscale e-commerce & retail marketplace] An enterprise operating with tens of millions of product reviews, clickstream logs, and order histories is modernizing its operations with AWS AI solutions. Which governance capability documents model intended uses, training configurations, performance metrics, and ethical limitations into standardized audit records?",
+    "question_kr": "[대형 전자상거래 및 온라인 리테일 플랫폼] 수천만 건의 상품 리뷰, 장바구니 클릭스트림 및 구매 이력을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 모델의 의도된 비즈니스 목적, 훈련 데이터셋 분포, 성능 벤치마크 평가 결과, 윤리적 한계점을 단일 팩트 시트로 정형화하여 규제 감사를 지원하는 문서화 도구는 무엇입니까?",
     "options": [
       {
         "key": "A",
         "text_en": "Amazon SageMaker Model Cards",
-        "text_kr": "Amazon SageMaker Model Cards (모델 카드)"
+        "text_kr": "Amazon SageMaker Model Cards"
       },
       {
         "key": "B",
-        "text_en": "Amazon S3 Glacier Deep Archive",
-        "text_kr": "Amazon S3 Glacier Deep Archive"
+        "text_en": "Amazon EC2 Launch Templates",
+        "text_kr": "Amazon EC2 Launch Templates"
       },
       {
         "key": "C",
-        "text_en": "Amazon CloudWatch Synthetics",
-        "text_kr": "Amazon CloudWatch Synthetics"
+        "text_en": "Amazon S3 Lifecycle Policies",
+        "text_kr": "Amazon S3 Lifecycle Policies"
       },
       {
         "key": "D",
-        "text_en": "AWS CodePipeline",
-        "text_kr": "AWS CodePipeline"
+        "text_en": "AWS Systems Manager Parameter Store",
+        "text_kr": "AWS Systems Manager Parameter Store"
       }
     ],
     "correct_answer": "A",
-    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념**: Amazon SageMaker Model Cards는 모델의 의도된 목적, 훈련 데이터 세부사항, 벤치마크 평가 결과, 한계점을 단일 팩트 시트로 표준화하여 문서화하고 규제 감사 및 거버넌스를 지원하는 도구입니다."
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Model Cards는 모델의 수명주기 전반에 걸친 의도된 용도, 한계, 평가 지표를 표준화된 문서로 기록하여 투명성(Transparency)과 감사 대응을 보장합니다.\n\n• **실무 비즈니스 분석**: [대형 전자상거래 및 온라인 리테일 플랫폼] 시나리오에서는 수천만 건의 상품 리뷰, 장바구니 클릭스트림 및 구매 이력의 요구조건과 제약사항을 만족하기 위해 'SageMaker Model Cards: 표준 모델 명세서' 관점에서 'Amazon SageMaker Model Cards' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
   },
   {
-    "id": "D4-Q004",
+    "id": "D4-Q051",
     "domain": "Domain 4",
     "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
-    "topic_category": "Bedrock Data Privacy",
-    "key_concept": "Bedrock Data Privacy, Amazon Bedrock의 고객 데이터 격리 및 모델 미학습 정책",
-    "question_en": "A financial client is concerned about submitting proprietary customer inquiries to foundation models hosted on Amazon Bedrock. What is AWS's official data privacy policy regarding customer prompts on Bedrock?",
-    "question_kr": "금융 고객사가 Amazon Bedrock에서 호스팅되는 파운데이션 모델에 고객의 민감한 질의 데이터를 전송하는 것에 대해 우려하고 있습니다. Bedrock에서 고객의 프롬프트 및 응답 데이터에 대한 AWS의 공식 데이터 프라이버시 정책은 무엇입니까?",
+    "topic_category": "SageMaker Model Cards",
+    "key_concept": "SageMaker Model Cards, SageMaker Model Cards: 표준 모델 명세서",
+    "question_en": "[academic medical center and clinical trials research institute] An enterprise operating with unstructured Electronic Medical Records (EMR), medical imaging, and pathology charts is modernizing its operations with AWS AI solutions. Which governance capability documents model intended uses, training configurations, performance metrics, and ethical limitations into standardized audit records?",
+    "question_kr": "[대학 부속 종합병원 및 임상 연구원] 비정형 전자의무기록(EMR), 의학 영상 및 환자 진료 차트을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 모델의 의도된 비즈니스 목적, 훈련 데이터셋 분포, 성능 벤치마크 평가 결과, 윤리적 한계점을 단일 팩트 시트로 정형화하여 규제 감사를 지원하는 문서화 도구는 무엇입니까?",
     "options": [
       {
         "key": "A",
-        "text_en": "Customer prompts are automatically used to pre-train future public models",
-        "text_kr": "고객의 프롬프트는 향후 공개 기본 모델을 사전 학습하는 데 자동으로 사용된다"
+        "text_en": "Amazon EC2 Launch Templates",
+        "text_kr": "Amazon EC2 Launch Templates"
       },
       {
         "key": "B",
-        "text_en": "Customer prompts and responses are NEVER used to train base foundation models and remain in the customer's secure environment",
-        "text_kr": "고객의 프롬프트와 응답은 기본 파운데이션 모델을 학습시키는 데 절대 사용되지 않으며, 고객의 안전한 환경 내에 격리된다"
+        "text_en": "Amazon S3 Lifecycle Policies",
+        "text_kr": "Amazon S3 Lifecycle Policies"
       },
       {
         "key": "C",
-        "text_en": "Customer prompts are shared across all tenants within the same AWS region",
-        "text_kr": "고객의 프롬프트는 동일한 AWS 리전 내의 모든 테넌트에게 공유된다"
+        "text_en": "AWS Systems Manager Parameter Store",
+        "text_kr": "AWS Systems Manager Parameter Store"
       },
       {
         "key": "D",
-        "text_en": "Prompts are logged publicly to the AWS Open Data repository",
-        "text_kr": "프롬프트는 AWS 오픈 데이터 저장소에 공개적으로 로깅된다"
+        "text_en": "Amazon SageMaker Model Cards",
+        "text_kr": "Amazon SageMaker Model Cards"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_kr": "정답은 D입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Model Cards는 모델의 수명주기 전반에 걸친 의도된 용도, 한계, 평가 지표를 표준화된 문서로 기록하여 투명성(Transparency)과 감사 대응을 보장합니다.\n\n• **실무 비즈니스 분석**: [대학 부속 종합병원 및 임상 연구원] 시나리오에서는 비정형 전자의무기록(EMR), 의학 영상 및 환자 진료 차트의 요구조건과 제약사항을 만족하기 위해 'SageMaker Model Cards: 표준 모델 명세서' 관점에서 'Amazon SageMaker Model Cards' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q052",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Model Cards",
+    "key_concept": "SageMaker Model Cards, SageMaker Model Cards: 표준 모델 명세서",
+    "question_en": "[international airline and global travel booking platform] An enterprise operating with real-time flight telemetry, baggage tracking streams, and passenger inquiries is modernizing its operations with AWS AI solutions. Which governance capability documents model intended uses, training configurations, performance metrics, and ethical limitations into standardized audit records?",
+    "question_kr": "[글로벌 항공사 및 여행 예약 플랫폼] 실시간 항공편 스케줄, 승객 수하물 추적 및 고객 서비스 문의을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 모델의 의도된 비즈니스 목적, 훈련 데이터셋 분포, 성능 벤치마크 평가 결과, 윤리적 한계점을 단일 팩트 시트로 정형화하여 규제 감사를 지원하는 문서화 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "AWS Systems Manager Parameter Store",
+        "text_kr": "AWS Systems Manager Parameter Store"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon SageMaker Model Cards",
+        "text_kr": "Amazon SageMaker Model Cards"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon EC2 Launch Templates",
+        "text_kr": "Amazon EC2 Launch Templates"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon S3 Lifecycle Policies",
+        "text_kr": "Amazon S3 Lifecycle Policies"
       }
     ],
     "correct_answer": "B",
-    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념**: Amazon Bedrock은 고객의 프롬프트 및 생성된 응답을 기본 파운데이션 모델을 훈련하거나 개선하는 데 절대 사용하지 않으며, 제3자 모델 제공자에게도 훈련 목적으로 공유되지 않습니다. 모든 데이터는 암호화되어 격리됩니다."
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Model Cards는 모델의 수명주기 전반에 걸친 의도된 용도, 한계, 평가 지표를 표준화된 문서로 기록하여 투명성(Transparency)과 감사 대응을 보장합니다.\n\n• **실무 비즈니스 분석**: [글로벌 항공사 및 여행 예약 플랫폼] 시나리오에서는 실시간 항공편 스케줄, 승객 수하물 추적 및 고객 서비스 문의의 요구조건과 제약사항을 만족하기 위해 'SageMaker Model Cards: 표준 모델 명세서' 관점에서 'Amazon SageMaker Model Cards' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q053",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Model Cards",
+    "key_concept": "SageMaker Model Cards, SageMaker Model Cards: 표준 모델 명세서",
+    "question_en": "[advanced semiconductor fabrication & smart manufacturing facility] An enterprise operating with tens of thousands of factory equipment IoT vibration and temperature telemetry streams is modernizing its operations with AWS AI solutions. Which governance capability documents model intended uses, training configurations, performance metrics, and ethical limitations into standardized audit records?",
+    "question_kr": "[첨단 반도체 및 스마트 제조 공장] 수만 개의 공장 설비 IoT 진동/온도 시계열 센서 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 모델의 의도된 비즈니스 목적, 훈련 데이터셋 분포, 성능 벤치마크 평가 결과, 윤리적 한계점을 단일 팩트 시트로 정형화하여 규제 감사를 지원하는 문서화 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon SageMaker Model Cards",
+        "text_kr": "Amazon SageMaker Model Cards"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon EC2 Launch Templates",
+        "text_kr": "Amazon EC2 Launch Templates"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon S3 Lifecycle Policies",
+        "text_kr": "Amazon S3 Lifecycle Policies"
+      },
+      {
+        "key": "D",
+        "text_en": "AWS Systems Manager Parameter Store",
+        "text_kr": "AWS Systems Manager Parameter Store"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Model Cards는 모델의 수명주기 전반에 걸친 의도된 용도, 한계, 평가 지표를 표준화된 문서로 기록하여 투명성(Transparency)과 감사 대응을 보장합니다.\n\n• **실무 비즈니스 분석**: [첨단 반도체 및 스마트 제조 공장] 시나리오에서는 수만 개의 공장 설비 IoT 진동/온도 시계열 센서 데이터의 요구조건과 제약사항을 만족하기 위해 'SageMaker Model Cards: 표준 모델 명세서' 관점에서 'Amazon SageMaker Model Cards' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q054",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Model Cards",
+    "key_concept": "SageMaker Model Cards, SageMaker Model Cards: 표준 모델 명세서",
+    "question_en": "[enterprise B2B SaaS software provider] An enterprise operating with millions of technical support tickets, knowledge articles, and API access logs is modernizing its operations with AWS AI solutions. Which governance capability documents model intended uses, training configurations, performance metrics, and ethical limitations into standardized audit records?",
+    "question_kr": "[엔터프라이즈 B2B SaaS 소프트웨어 기업] 수백만 건의 고객 기술 지원 티켓, 지식베이스 문서 및 API 로그을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 모델의 의도된 비즈니스 목적, 훈련 데이터셋 분포, 성능 벤치마크 평가 결과, 윤리적 한계점을 단일 팩트 시트로 정형화하여 규제 감사를 지원하는 문서화 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon S3 Lifecycle Policies",
+        "text_kr": "Amazon S3 Lifecycle Policies"
+      },
+      {
+        "key": "B",
+        "text_en": "AWS Systems Manager Parameter Store",
+        "text_kr": "AWS Systems Manager Parameter Store"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon SageMaker Model Cards",
+        "text_kr": "Amazon SageMaker Model Cards"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon EC2 Launch Templates",
+        "text_kr": "Amazon EC2 Launch Templates"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_kr": "정답은 C입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Model Cards는 모델의 수명주기 전반에 걸친 의도된 용도, 한계, 평가 지표를 표준화된 문서로 기록하여 투명성(Transparency)과 감사 대응을 보장합니다.\n\n• **실무 비즈니스 분석**: [엔터프라이즈 B2B SaaS 소프트웨어 기업] 시나리오에서는 수백만 건의 고객 기술 지원 티켓, 지식베이스 문서 및 API 로그의 요구조건과 제약사항을 만족하기 위해 'SageMaker Model Cards: 표준 모델 명세서' 관점에서 'Amazon SageMaker Model Cards' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q055",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Model Cards",
+    "key_concept": "SageMaker Model Cards, SageMaker Model Cards: 표준 모델 명세서",
+    "question_en": "[nationwide 5G telecommunications carrier] An enterprise operating with cell tower network congestion metrics and customer churn propensity event logs is modernizing its operations with AWS AI solutions. Which governance capability documents model intended uses, training configurations, performance metrics, and ethical limitations into standardized audit records?",
+    "question_kr": "[전국망 통신 서비스 사업자] 기지국 네트워크 트래픽 혼잡도 로그 및 고객 서비스 해지 위험 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 모델의 의도된 비즈니스 목적, 훈련 데이터셋 분포, 성능 벤치마크 평가 결과, 윤리적 한계점을 단일 팩트 시트로 정형화하여 규제 감사를 지원하는 문서화 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon SageMaker Model Cards",
+        "text_kr": "Amazon SageMaker Model Cards"
+      },
+      {
+        "key": "B",
+        "text_en": "AWS Systems Manager Parameter Store",
+        "text_kr": "AWS Systems Manager Parameter Store"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon S3 Lifecycle Policies",
+        "text_kr": "Amazon S3 Lifecycle Policies"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon EC2 Launch Templates",
+        "text_kr": "Amazon EC2 Launch Templates"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Model Cards는 모델의 수명주기 전반에 걸친 의도된 용도, 한계, 평가 지표를 표준화된 문서로 기록하여 투명성(Transparency)과 감사 대응을 보장합니다.\n\n• **실무 비즈니스 분석**: [전국망 통신 서비스 사업자] 시나리오에서는 기지국 네트워크 트래픽 혼잡도 로그 및 고객 서비스 해지 위험 데이터의 요구조건과 제약사항을 만족하기 위해 'SageMaker Model Cards: 표준 모델 명세서' 관점에서 'Amazon SageMaker Model Cards' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q056",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Model Cards",
+    "key_concept": "SageMaker Model Cards, SageMaker Model Cards: 표준 모델 명세서",
+    "question_en": "[global property and casualty insurance enterprise] An enterprise operating with accident damage appraisal reports, field photographs, and claim documentation is modernizing its operations with AWS AI solutions. Which governance capability documents model intended uses, training configurations, performance metrics, and ethical limitations into standardized audit records?",
+    "question_kr": "[글로벌 손해보험 및 손해사정 전문사] 사고 현장 손해사정 보고서, 현장 증빙 사진 및 보상 청구 서류을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 모델의 의도된 비즈니스 목적, 훈련 데이터셋 분포, 성능 벤치마크 평가 결과, 윤리적 한계점을 단일 팩트 시트로 정형화하여 규제 감사를 지원하는 문서화 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon EC2 Launch Templates",
+        "text_kr": "Amazon EC2 Launch Templates"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon S3 Lifecycle Policies",
+        "text_kr": "Amazon S3 Lifecycle Policies"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS Systems Manager Parameter Store",
+        "text_kr": "AWS Systems Manager Parameter Store"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon SageMaker Model Cards",
+        "text_kr": "Amazon SageMaker Model Cards"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_kr": "정답은 D입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Model Cards는 모델의 수명주기 전반에 걸친 의도된 용도, 한계, 평가 지표를 표준화된 문서로 기록하여 투명성(Transparency)과 감사 대응을 보장합니다.\n\n• **실무 비즈니스 분석**: [글로벌 손해보험 및 손해사정 전문사] 시나리오에서는 사고 현장 손해사정 보고서, 현장 증빙 사진 및 보상 청구 서류의 요구조건과 제약사항을 만족하기 위해 'SageMaker Model Cards: 표준 모델 명세서' 관점에서 'Amazon SageMaker Model Cards' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q057",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Model Cards",
+    "key_concept": "SageMaker Model Cards, SageMaker Model Cards: 표준 모델 명세서",
+    "question_en": "[metropolitan municipal government and citizen service center] An enterprise operating with civic welfare petition transcripts and municipal regulatory administrative archives is modernizing its operations with AWS AI solutions. Which governance capability documents model intended uses, training configurations, performance metrics, and ethical limitations into standardized audit records?",
+    "question_kr": "[공공 행정 및 지자체 스마트 민원 센터] 시민 복지 정책 민원 상담 내역 및 공공 행정 조례 문서을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 모델의 의도된 비즈니스 목적, 훈련 데이터셋 분포, 성능 벤치마크 평가 결과, 윤리적 한계점을 단일 팩트 시트로 정형화하여 규제 감사를 지원하는 문서화 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon EC2 Launch Templates",
+        "text_kr": "Amazon EC2 Launch Templates"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon SageMaker Model Cards",
+        "text_kr": "Amazon SageMaker Model Cards"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS Systems Manager Parameter Store",
+        "text_kr": "AWS Systems Manager Parameter Store"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon S3 Lifecycle Policies",
+        "text_kr": "Amazon S3 Lifecycle Policies"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Model Cards는 모델의 수명주기 전반에 걸친 의도된 용도, 한계, 평가 지표를 표준화된 문서로 기록하여 투명성(Transparency)과 감사 대응을 보장합니다.\n\n• **실무 비즈니스 분석**: [공공 행정 및 지자체 스마트 민원 센터] 시나리오에서는 시민 복지 정책 민원 상담 내역 및 공공 행정 조례 문서의 요구조건과 제약사항을 만족하기 위해 'SageMaker Model Cards: 표준 모델 명세서' 관점에서 'Amazon SageMaker Model Cards' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q058",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Model Cards",
+    "key_concept": "SageMaker Model Cards, SageMaker Model Cards: 표준 모델 명세서",
+    "question_en": "[global media & over-the-top streaming platform] An enterprise operating with massive digital video catalog, audio stems, and multilingual subtitle assets is modernizing its operations with AWS AI solutions. Which governance capability documents model intended uses, training configurations, performance metrics, and ethical limitations into standardized audit records?",
+    "question_kr": "[글로벌 미디어 및 영상 스트리밍 플랫폼] 방대한 비디오 아카이브, 오디오 사운드트랙 및 다국어 자막 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 모델의 의도된 비즈니스 목적, 훈련 데이터셋 분포, 성능 벤치마크 평가 결과, 윤리적 한계점을 단일 팩트 시트로 정형화하여 규제 감사를 지원하는 문서화 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "AWS Systems Manager Parameter Store",
+        "text_kr": "AWS Systems Manager Parameter Store"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon SageMaker Model Cards",
+        "text_kr": "Amazon SageMaker Model Cards"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon S3 Lifecycle Policies",
+        "text_kr": "Amazon S3 Lifecycle Policies"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon EC2 Launch Templates",
+        "text_kr": "Amazon EC2 Launch Templates"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Model Cards는 모델의 수명주기 전반에 걸친 의도된 용도, 한계, 평가 지표를 표준화된 문서로 기록하여 투명성(Transparency)과 감사 대응을 보장합니다.\n\n• **실무 비즈니스 분석**: [글로벌 미디어 및 영상 스트리밍 플랫폼] 시나리오에서는 방대한 비디오 아카이브, 오디오 사운드트랙 및 다국어 자막 데이터의 요구조건과 제약사항을 만족하기 위해 'SageMaker Model Cards: 표준 모델 명세서' 관점에서 'Amazon SageMaker Model Cards' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q059",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Model Cards",
+    "key_concept": "SageMaker Model Cards, SageMaker Model Cards: 표준 모델 명세서",
+    "question_en": "[multinational automotive OEM and connected fleet platform] An enterprise operating with vehicular telematics telemetry and advanced driver assistance sensor streams is modernizing its operations with AWS AI solutions. Which governance capability documents model intended uses, training configurations, performance metrics, and ethical limitations into standardized audit records?",
+    "question_kr": "[글로벌 자동차 제조 및 커넥티드카 기업] 차량 텔레매틱스 주행 센서 로그 및 운전자 보조 시스템(ADAS) 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 모델의 의도된 비즈니스 목적, 훈련 데이터셋 분포, 성능 벤치마크 평가 결과, 윤리적 한계점을 단일 팩트 시트로 정형화하여 규제 감사를 지원하는 문서화 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "AWS Systems Manager Parameter Store",
+        "text_kr": "AWS Systems Manager Parameter Store"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon SageMaker Model Cards",
+        "text_kr": "Amazon SageMaker Model Cards"
+      },
+      {
+        "key": "C",
+        "text_en": "Amazon EC2 Launch Templates",
+        "text_kr": "Amazon EC2 Launch Templates"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon S3 Lifecycle Policies",
+        "text_kr": "Amazon S3 Lifecycle Policies"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Model Cards는 모델의 수명주기 전반에 걸친 의도된 용도, 한계, 평가 지표를 표준화된 문서로 기록하여 투명성(Transparency)과 감사 대응을 보장합니다.\n\n• **실무 비즈니스 분석**: [글로벌 자동차 제조 및 커넥티드카 기업] 시나리오에서는 차량 텔레매틱스 주행 센서 로그 및 운전자 보조 시스템(ADAS) 데이터의 요구조건과 제약사항을 만족하기 위해 'SageMaker Model Cards: 표준 모델 명세서' 관점에서 'Amazon SageMaker Model Cards' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q060",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "SageMaker Model Cards",
+    "key_concept": "SageMaker Model Cards, SageMaker Model Cards: 표준 모델 명세서",
+    "question_en": "[global biopharmaceutical and drug discovery laboratory] An enterprise operating with molecular docking simulations and pre-clinical assay screening datasets is modernizing its operations with AWS AI solutions. Which governance capability documents model intended uses, training configurations, performance metrics, and ethical limitations into standardized audit records?",
+    "question_kr": "[글로벌 바이오제약 및 신약 개발 연구소] 단백질 분자 구조 시뮬레이션 및 전임상 실험 스크리닝 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 모델의 의도된 비즈니스 목적, 훈련 데이터셋 분포, 성능 벤치마크 평가 결과, 윤리적 한계점을 단일 팩트 시트로 정형화하여 규제 감사를 지원하는 문서화 도구는 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Amazon EC2 Launch Templates",
+        "text_kr": "Amazon EC2 Launch Templates"
+      },
+      {
+        "key": "B",
+        "text_en": "Amazon S3 Lifecycle Policies",
+        "text_kr": "Amazon S3 Lifecycle Policies"
+      },
+      {
+        "key": "C",
+        "text_en": "AWS Systems Manager Parameter Store",
+        "text_kr": "AWS Systems Manager Parameter Store"
+      },
+      {
+        "key": "D",
+        "text_en": "Amazon SageMaker Model Cards",
+        "text_kr": "Amazon SageMaker Model Cards"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_kr": "정답은 D입니다.\n\n• **핵심 개념 해설**: Amazon SageMaker Model Cards는 모델의 수명주기 전반에 걸친 의도된 용도, 한계, 평가 지표를 표준화된 문서로 기록하여 투명성(Transparency)과 감사 대응을 보장합니다.\n\n• **실무 비즈니스 분석**: [글로벌 바이오제약 및 신약 개발 연구소] 시나리오에서는 단백질 분자 구조 시뮬레이션 및 전임상 실험 스크리닝 데이터의 요구조건과 제약사항을 만족하기 위해 'SageMaker Model Cards: 표준 모델 명세서' 관점에서 'Amazon SageMaker Model Cards' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q061",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Bedrock Customer Data Privacy Policy",
+    "key_concept": "Bedrock Customer Data Privacy Policy, Bedrock 고객 데이터 비학습 및 격리 정책",
+    "question_en": "[global FinTech & tier-1 investment bank] An enterprise operating with real-time credit card fraud telemetry and underwriting application data is modernizing its operations with AWS AI solutions. What is AWS's official data privacy policy regarding customer prompts and responses processed through Amazon Bedrock foundation models?",
+    "question_kr": "[글로벌 금융 및 핀테크 기업] 실시간 신용 카드 이상 거래 탐지 및 대출 심사 로그을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 고객이 Amazon Bedrock에 입력한 프롬프트 및 모델 출력 데이터에 대한 AWS의 공식 데이터 프라이버시 및 보안 정책은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Prompts are publicly indexed into web search engines",
+        "text_kr": "프롬프트는 인터넷 검색엔진에 실시간 공개 인덱싱됨"
+      },
+      {
+        "key": "B",
+        "text_en": "Prompts are automatically harvested to train future public foundation models",
+        "text_kr": "모든 고객 프롬프트는 향후 공개 LLM 학습에 자동으로 재사용됨"
+      },
+      {
+        "key": "C",
+        "text_en": "Data is shared indiscriminately across all region tenants",
+        "text_kr": "모든 데이터는 동일 리전의 모든 고객에게 무작위 공유됨"
+      },
+      {
+        "key": "D",
+        "text_en": "Customer prompts and completions are NEVER used to train base foundation models and remain isolated",
+        "text_kr": "고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_kr": "정답은 D입니다.\n\n• **핵심 개념 해설**: Amazon Bedrock은 고객의 프롬프트와 모델 응답을 기본 파운데이션 모델을 훈련하는 데 절대 사용하지 않으며, 제3자 모델 제공자에게도 훈련 목적으로 공유되지 않습니다.\n\n• **실무 비즈니스 분석**: [글로벌 금융 및 핀테크 기업] 시나리오에서는 실시간 신용 카드 이상 거래 탐지 및 대출 심사 로그의 요구조건과 제약사항을 만족하기 위해 'Bedrock 고객 데이터 비학습 및 격리 정책' 관점에서 '고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q062",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Bedrock Customer Data Privacy Policy",
+    "key_concept": "Bedrock Customer Data Privacy Policy, Bedrock 고객 데이터 비학습 및 격리 정책",
+    "question_en": "[hyperscale e-commerce & retail marketplace] An enterprise operating with tens of millions of product reviews, clickstream logs, and order histories is modernizing its operations with AWS AI solutions. What is AWS's official data privacy policy regarding customer prompts and responses processed through Amazon Bedrock foundation models?",
+    "question_kr": "[대형 전자상거래 및 온라인 리테일 플랫폼] 수천만 건의 상품 리뷰, 장바구니 클릭스트림 및 구매 이력을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 고객이 Amazon Bedrock에 입력한 프롬프트 및 모델 출력 데이터에 대한 AWS의 공식 데이터 프라이버시 및 보안 정책은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Customer prompts and completions are NEVER used to train base foundation models and remain isolated",
+        "text_kr": "고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨"
+      },
+      {
+        "key": "B",
+        "text_en": "Prompts are automatically harvested to train future public foundation models",
+        "text_kr": "모든 고객 프롬프트는 향후 공개 LLM 학습에 자동으로 재사용됨"
+      },
+      {
+        "key": "C",
+        "text_en": "Prompts are publicly indexed into web search engines",
+        "text_kr": "프롬프트는 인터넷 검색엔진에 실시간 공개 인덱싱됨"
+      },
+      {
+        "key": "D",
+        "text_en": "Data is shared indiscriminately across all region tenants",
+        "text_kr": "모든 데이터는 동일 리전의 모든 고객에게 무작위 공유됨"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념 해설**: Amazon Bedrock은 고객의 프롬프트와 모델 응답을 기본 파운데이션 모델을 훈련하는 데 절대 사용하지 않으며, 제3자 모델 제공자에게도 훈련 목적으로 공유되지 않습니다.\n\n• **실무 비즈니스 분석**: [대형 전자상거래 및 온라인 리테일 플랫폼] 시나리오에서는 수천만 건의 상품 리뷰, 장바구니 클릭스트림 및 구매 이력의 요구조건과 제약사항을 만족하기 위해 'Bedrock 고객 데이터 비학습 및 격리 정책' 관점에서 '고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q063",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Bedrock Customer Data Privacy Policy",
+    "key_concept": "Bedrock Customer Data Privacy Policy, Bedrock 고객 데이터 비학습 및 격리 정책",
+    "question_en": "[academic medical center and clinical trials research institute] An enterprise operating with unstructured Electronic Medical Records (EMR), medical imaging, and pathology charts is modernizing its operations with AWS AI solutions. What is AWS's official data privacy policy regarding customer prompts and responses processed through Amazon Bedrock foundation models?",
+    "question_kr": "[대학 부속 종합병원 및 임상 연구원] 비정형 전자의무기록(EMR), 의학 영상 및 환자 진료 차트을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 고객이 Amazon Bedrock에 입력한 프롬프트 및 모델 출력 데이터에 대한 AWS의 공식 데이터 프라이버시 및 보안 정책은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Data is shared indiscriminately across all region tenants",
+        "text_kr": "모든 데이터는 동일 리전의 모든 고객에게 무작위 공유됨"
+      },
+      {
+        "key": "B",
+        "text_en": "Prompts are publicly indexed into web search engines",
+        "text_kr": "프롬프트는 인터넷 검색엔진에 실시간 공개 인덱싱됨"
+      },
+      {
+        "key": "C",
+        "text_en": "Customer prompts and completions are NEVER used to train base foundation models and remain isolated",
+        "text_kr": "고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨"
+      },
+      {
+        "key": "D",
+        "text_en": "Prompts are automatically harvested to train future public foundation models",
+        "text_kr": "모든 고객 프롬프트는 향후 공개 LLM 학습에 자동으로 재사용됨"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_kr": "정답은 C입니다.\n\n• **핵심 개념 해설**: Amazon Bedrock은 고객의 프롬프트와 모델 응답을 기본 파운데이션 모델을 훈련하는 데 절대 사용하지 않으며, 제3자 모델 제공자에게도 훈련 목적으로 공유되지 않습니다.\n\n• **실무 비즈니스 분석**: [대학 부속 종합병원 및 임상 연구원] 시나리오에서는 비정형 전자의무기록(EMR), 의학 영상 및 환자 진료 차트의 요구조건과 제약사항을 만족하기 위해 'Bedrock 고객 데이터 비학습 및 격리 정책' 관점에서 '고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q064",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Bedrock Customer Data Privacy Policy",
+    "key_concept": "Bedrock Customer Data Privacy Policy, Bedrock 고객 데이터 비학습 및 격리 정책",
+    "question_en": "[international airline and global travel booking platform] An enterprise operating with real-time flight telemetry, baggage tracking streams, and passenger inquiries is modernizing its operations with AWS AI solutions. What is AWS's official data privacy policy regarding customer prompts and responses processed through Amazon Bedrock foundation models?",
+    "question_kr": "[글로벌 항공사 및 여행 예약 플랫폼] 실시간 항공편 스케줄, 승객 수하물 추적 및 고객 서비스 문의을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 고객이 Amazon Bedrock에 입력한 프롬프트 및 모델 출력 데이터에 대한 AWS의 공식 데이터 프라이버시 및 보안 정책은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Prompts are automatically harvested to train future public foundation models",
+        "text_kr": "모든 고객 프롬프트는 향후 공개 LLM 학습에 자동으로 재사용됨"
+      },
+      {
+        "key": "B",
+        "text_en": "Customer prompts and completions are NEVER used to train base foundation models and remain isolated",
+        "text_kr": "고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨"
+      },
+      {
+        "key": "C",
+        "text_en": "Prompts are publicly indexed into web search engines",
+        "text_kr": "프롬프트는 인터넷 검색엔진에 실시간 공개 인덱싱됨"
+      },
+      {
+        "key": "D",
+        "text_en": "Data is shared indiscriminately across all region tenants",
+        "text_kr": "모든 데이터는 동일 리전의 모든 고객에게 무작위 공유됨"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념 해설**: Amazon Bedrock은 고객의 프롬프트와 모델 응답을 기본 파운데이션 모델을 훈련하는 데 절대 사용하지 않으며, 제3자 모델 제공자에게도 훈련 목적으로 공유되지 않습니다.\n\n• **실무 비즈니스 분석**: [글로벌 항공사 및 여행 예약 플랫폼] 시나리오에서는 실시간 항공편 스케줄, 승객 수하물 추적 및 고객 서비스 문의의 요구조건과 제약사항을 만족하기 위해 'Bedrock 고객 데이터 비학습 및 격리 정책' 관점에서 '고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q065",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Bedrock Customer Data Privacy Policy",
+    "key_concept": "Bedrock Customer Data Privacy Policy, Bedrock 고객 데이터 비학습 및 격리 정책",
+    "question_en": "[advanced semiconductor fabrication & smart manufacturing facility] An enterprise operating with tens of thousands of factory equipment IoT vibration and temperature telemetry streams is modernizing its operations with AWS AI solutions. What is AWS's official data privacy policy regarding customer prompts and responses processed through Amazon Bedrock foundation models?",
+    "question_kr": "[첨단 반도체 및 스마트 제조 공장] 수만 개의 공장 설비 IoT 진동/온도 시계열 센서 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 고객이 Amazon Bedrock에 입력한 프롬프트 및 모델 출력 데이터에 대한 AWS의 공식 데이터 프라이버시 및 보안 정책은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Prompts are automatically harvested to train future public foundation models",
+        "text_kr": "모든 고객 프롬프트는 향후 공개 LLM 학습에 자동으로 재사용됨"
+      },
+      {
+        "key": "B",
+        "text_en": "Data is shared indiscriminately across all region tenants",
+        "text_kr": "모든 데이터는 동일 리전의 모든 고객에게 무작위 공유됨"
+      },
+      {
+        "key": "C",
+        "text_en": "Prompts are publicly indexed into web search engines",
+        "text_kr": "프롬프트는 인터넷 검색엔진에 실시간 공개 인덱싱됨"
+      },
+      {
+        "key": "D",
+        "text_en": "Customer prompts and completions are NEVER used to train base foundation models and remain isolated",
+        "text_kr": "고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_kr": "정답은 D입니다.\n\n• **핵심 개념 해설**: Amazon Bedrock은 고객의 프롬프트와 모델 응답을 기본 파운데이션 모델을 훈련하는 데 절대 사용하지 않으며, 제3자 모델 제공자에게도 훈련 목적으로 공유되지 않습니다.\n\n• **실무 비즈니스 분석**: [첨단 반도체 및 스마트 제조 공장] 시나리오에서는 수만 개의 공장 설비 IoT 진동/온도 시계열 센서 데이터의 요구조건과 제약사항을 만족하기 위해 'Bedrock 고객 데이터 비학습 및 격리 정책' 관점에서 '고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q066",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Bedrock Customer Data Privacy Policy",
+    "key_concept": "Bedrock Customer Data Privacy Policy, Bedrock 고객 데이터 비학습 및 격리 정책",
+    "question_en": "[enterprise B2B SaaS software provider] An enterprise operating with millions of technical support tickets, knowledge articles, and API access logs is modernizing its operations with AWS AI solutions. What is AWS's official data privacy policy regarding customer prompts and responses processed through Amazon Bedrock foundation models?",
+    "question_kr": "[엔터프라이즈 B2B SaaS 소프트웨어 기업] 수백만 건의 고객 기술 지원 티켓, 지식베이스 문서 및 API 로그을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 고객이 Amazon Bedrock에 입력한 프롬프트 및 모델 출력 데이터에 대한 AWS의 공식 데이터 프라이버시 및 보안 정책은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Customer prompts and completions are NEVER used to train base foundation models and remain isolated",
+        "text_kr": "고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨"
+      },
+      {
+        "key": "B",
+        "text_en": "Prompts are automatically harvested to train future public foundation models",
+        "text_kr": "모든 고객 프롬프트는 향후 공개 LLM 학습에 자동으로 재사용됨"
+      },
+      {
+        "key": "C",
+        "text_en": "Data is shared indiscriminately across all region tenants",
+        "text_kr": "모든 데이터는 동일 리전의 모든 고객에게 무작위 공유됨"
+      },
+      {
+        "key": "D",
+        "text_en": "Prompts are publicly indexed into web search engines",
+        "text_kr": "프롬프트는 인터넷 검색엔진에 실시간 공개 인덱싱됨"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념 해설**: Amazon Bedrock은 고객의 프롬프트와 모델 응답을 기본 파운데이션 모델을 훈련하는 데 절대 사용하지 않으며, 제3자 모델 제공자에게도 훈련 목적으로 공유되지 않습니다.\n\n• **실무 비즈니스 분석**: [엔터프라이즈 B2B SaaS 소프트웨어 기업] 시나리오에서는 수백만 건의 고객 기술 지원 티켓, 지식베이스 문서 및 API 로그의 요구조건과 제약사항을 만족하기 위해 'Bedrock 고객 데이터 비학습 및 격리 정책' 관점에서 '고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q067",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Bedrock Customer Data Privacy Policy",
+    "key_concept": "Bedrock Customer Data Privacy Policy, Bedrock 고객 데이터 비학습 및 격리 정책",
+    "question_en": "[nationwide 5G telecommunications carrier] An enterprise operating with cell tower network congestion metrics and customer churn propensity event logs is modernizing its operations with AWS AI solutions. What is AWS's official data privacy policy regarding customer prompts and responses processed through Amazon Bedrock foundation models?",
+    "question_kr": "[전국망 통신 서비스 사업자] 기지국 네트워크 트래픽 혼잡도 로그 및 고객 서비스 해지 위험 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 고객이 Amazon Bedrock에 입력한 프롬프트 및 모델 출력 데이터에 대한 AWS의 공식 데이터 프라이버시 및 보안 정책은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Prompts are automatically harvested to train future public foundation models",
+        "text_kr": "모든 고객 프롬프트는 향후 공개 LLM 학습에 자동으로 재사용됨"
+      },
+      {
+        "key": "B",
+        "text_en": "Prompts are publicly indexed into web search engines",
+        "text_kr": "프롬프트는 인터넷 검색엔진에 실시간 공개 인덱싱됨"
+      },
+      {
+        "key": "C",
+        "text_en": "Customer prompts and completions are NEVER used to train base foundation models and remain isolated",
+        "text_kr": "고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨"
+      },
+      {
+        "key": "D",
+        "text_en": "Data is shared indiscriminately across all region tenants",
+        "text_kr": "모든 데이터는 동일 리전의 모든 고객에게 무작위 공유됨"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_kr": "정답은 C입니다.\n\n• **핵심 개념 해설**: Amazon Bedrock은 고객의 프롬프트와 모델 응답을 기본 파운데이션 모델을 훈련하는 데 절대 사용하지 않으며, 제3자 모델 제공자에게도 훈련 목적으로 공유되지 않습니다.\n\n• **실무 비즈니스 분석**: [전국망 통신 서비스 사업자] 시나리오에서는 기지국 네트워크 트래픽 혼잡도 로그 및 고객 서비스 해지 위험 데이터의 요구조건과 제약사항을 만족하기 위해 'Bedrock 고객 데이터 비학습 및 격리 정책' 관점에서 '고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q068",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Bedrock Customer Data Privacy Policy",
+    "key_concept": "Bedrock Customer Data Privacy Policy, Bedrock 고객 데이터 비학습 및 격리 정책",
+    "question_en": "[global property and casualty insurance enterprise] An enterprise operating with accident damage appraisal reports, field photographs, and claim documentation is modernizing its operations with AWS AI solutions. What is AWS's official data privacy policy regarding customer prompts and responses processed through Amazon Bedrock foundation models?",
+    "question_kr": "[글로벌 손해보험 및 손해사정 전문사] 사고 현장 손해사정 보고서, 현장 증빙 사진 및 보상 청구 서류을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 고객이 Amazon Bedrock에 입력한 프롬프트 및 모델 출력 데이터에 대한 AWS의 공식 데이터 프라이버시 및 보안 정책은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Prompts are publicly indexed into web search engines",
+        "text_kr": "프롬프트는 인터넷 검색엔진에 실시간 공개 인덱싱됨"
+      },
+      {
+        "key": "B",
+        "text_en": "Data is shared indiscriminately across all region tenants",
+        "text_kr": "모든 데이터는 동일 리전의 모든 고객에게 무작위 공유됨"
+      },
+      {
+        "key": "C",
+        "text_en": "Prompts are automatically harvested to train future public foundation models",
+        "text_kr": "모든 고객 프롬프트는 향후 공개 LLM 학습에 자동으로 재사용됨"
+      },
+      {
+        "key": "D",
+        "text_en": "Customer prompts and completions are NEVER used to train base foundation models and remain isolated",
+        "text_kr": "고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation_kr": "정답은 D입니다.\n\n• **핵심 개념 해설**: Amazon Bedrock은 고객의 프롬프트와 모델 응답을 기본 파운데이션 모델을 훈련하는 데 절대 사용하지 않으며, 제3자 모델 제공자에게도 훈련 목적으로 공유되지 않습니다.\n\n• **실무 비즈니스 분석**: [글로벌 손해보험 및 손해사정 전문사] 시나리오에서는 사고 현장 손해사정 보고서, 현장 증빙 사진 및 보상 청구 서류의 요구조건과 제약사항을 만족하기 위해 'Bedrock 고객 데이터 비학습 및 격리 정책' 관점에서 '고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q069",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Bedrock Customer Data Privacy Policy",
+    "key_concept": "Bedrock Customer Data Privacy Policy, Bedrock 고객 데이터 비학습 및 격리 정책",
+    "question_en": "[metropolitan municipal government and citizen service center] An enterprise operating with civic welfare petition transcripts and municipal regulatory administrative archives is modernizing its operations with AWS AI solutions. What is AWS's official data privacy policy regarding customer prompts and responses processed through Amazon Bedrock foundation models?",
+    "question_kr": "[공공 행정 및 지자체 스마트 민원 센터] 시민 복지 정책 민원 상담 내역 및 공공 행정 조례 문서을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 고객이 Amazon Bedrock에 입력한 프롬프트 및 모델 출력 데이터에 대한 AWS의 공식 데이터 프라이버시 및 보안 정책은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Prompts are publicly indexed into web search engines",
+        "text_kr": "프롬프트는 인터넷 검색엔진에 실시간 공개 인덱싱됨"
+      },
+      {
+        "key": "B",
+        "text_en": "Customer prompts and completions are NEVER used to train base foundation models and remain isolated",
+        "text_kr": "고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨"
+      },
+      {
+        "key": "C",
+        "text_en": "Prompts are automatically harvested to train future public foundation models",
+        "text_kr": "모든 고객 프롬프트는 향후 공개 LLM 학습에 자동으로 재사용됨"
+      },
+      {
+        "key": "D",
+        "text_en": "Data is shared indiscriminately across all region tenants",
+        "text_kr": "모든 데이터는 동일 리전의 모든 고객에게 무작위 공유됨"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation_kr": "정답은 B입니다.\n\n• **핵심 개념 해설**: Amazon Bedrock은 고객의 프롬프트와 모델 응답을 기본 파운데이션 모델을 훈련하는 데 절대 사용하지 않으며, 제3자 모델 제공자에게도 훈련 목적으로 공유되지 않습니다.\n\n• **실무 비즈니스 분석**: [공공 행정 및 지자체 스마트 민원 센터] 시나리오에서는 시민 복지 정책 민원 상담 내역 및 공공 행정 조례 문서의 요구조건과 제약사항을 만족하기 위해 'Bedrock 고객 데이터 비학습 및 격리 정책' 관점에서 '고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q070",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Bedrock Customer Data Privacy Policy",
+    "key_concept": "Bedrock Customer Data Privacy Policy, Bedrock 고객 데이터 비학습 및 격리 정책",
+    "question_en": "[global media & over-the-top streaming platform] An enterprise operating with massive digital video catalog, audio stems, and multilingual subtitle assets is modernizing its operations with AWS AI solutions. What is AWS's official data privacy policy regarding customer prompts and responses processed through Amazon Bedrock foundation models?",
+    "question_kr": "[글로벌 미디어 및 영상 스트리밍 플랫폼] 방대한 비디오 아카이브, 오디오 사운드트랙 및 다국어 자막 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 고객이 Amazon Bedrock에 입력한 프롬프트 및 모델 출력 데이터에 대한 AWS의 공식 데이터 프라이버시 및 보안 정책은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Customer prompts and completions are NEVER used to train base foundation models and remain isolated",
+        "text_kr": "고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨"
+      },
+      {
+        "key": "B",
+        "text_en": "Prompts are publicly indexed into web search engines",
+        "text_kr": "프롬프트는 인터넷 검색엔진에 실시간 공개 인덱싱됨"
+      },
+      {
+        "key": "C",
+        "text_en": "Prompts are automatically harvested to train future public foundation models",
+        "text_kr": "모든 고객 프롬프트는 향후 공개 LLM 학습에 자동으로 재사용됨"
+      },
+      {
+        "key": "D",
+        "text_en": "Data is shared indiscriminately across all region tenants",
+        "text_kr": "모든 데이터는 동일 리전의 모든 고객에게 무작위 공유됨"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념 해설**: Amazon Bedrock은 고객의 프롬프트와 모델 응답을 기본 파운데이션 모델을 훈련하는 데 절대 사용하지 않으며, 제3자 모델 제공자에게도 훈련 목적으로 공유되지 않습니다.\n\n• **실무 비즈니스 분석**: [글로벌 미디어 및 영상 스트리밍 플랫폼] 시나리오에서는 방대한 비디오 아카이브, 오디오 사운드트랙 및 다국어 자막 데이터의 요구조건과 제약사항을 만족하기 위해 'Bedrock 고객 데이터 비학습 및 격리 정책' 관점에서 '고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q071",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Bedrock Customer Data Privacy Policy",
+    "key_concept": "Bedrock Customer Data Privacy Policy, Bedrock 고객 데이터 비학습 및 격리 정책",
+    "question_en": "[multinational automotive OEM and connected fleet platform] An enterprise operating with vehicular telematics telemetry and advanced driver assistance sensor streams is modernizing its operations with AWS AI solutions. What is AWS's official data privacy policy regarding customer prompts and responses processed through Amazon Bedrock foundation models?",
+    "question_kr": "[글로벌 자동차 제조 및 커넥티드카 기업] 차량 텔레매틱스 주행 센서 로그 및 운전자 보조 시스템(ADAS) 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 고객이 Amazon Bedrock에 입력한 프롬프트 및 모델 출력 데이터에 대한 AWS의 공식 데이터 프라이버시 및 보안 정책은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Customer prompts and completions are NEVER used to train base foundation models and remain isolated",
+        "text_kr": "고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨"
+      },
+      {
+        "key": "B",
+        "text_en": "Prompts are publicly indexed into web search engines",
+        "text_kr": "프롬프트는 인터넷 검색엔진에 실시간 공개 인덱싱됨"
+      },
+      {
+        "key": "C",
+        "text_en": "Prompts are automatically harvested to train future public foundation models",
+        "text_kr": "모든 고객 프롬프트는 향후 공개 LLM 학습에 자동으로 재사용됨"
+      },
+      {
+        "key": "D",
+        "text_en": "Data is shared indiscriminately across all region tenants",
+        "text_kr": "모든 데이터는 동일 리전의 모든 고객에게 무작위 공유됨"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation_kr": "정답은 A입니다.\n\n• **핵심 개념 해설**: Amazon Bedrock은 고객의 프롬프트와 모델 응답을 기본 파운데이션 모델을 훈련하는 데 절대 사용하지 않으며, 제3자 모델 제공자에게도 훈련 목적으로 공유되지 않습니다.\n\n• **실무 비즈니스 분석**: [글로벌 자동차 제조 및 커넥티드카 기업] 시나리오에서는 차량 텔레매틱스 주행 센서 로그 및 운전자 보조 시스템(ADAS) 데이터의 요구조건과 제약사항을 만족하기 위해 'Bedrock 고객 데이터 비학습 및 격리 정책' 관점에서 '고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
+  },
+  {
+    "id": "D4-Q072",
+    "domain": "Domain 4",
+    "domain_name": "도메인 4: 책임 있는 AI 가이드라인 (Guidelines for Responsible AI)",
+    "topic_category": "Bedrock Customer Data Privacy Policy",
+    "key_concept": "Bedrock Customer Data Privacy Policy, Bedrock 고객 데이터 비학습 및 격리 정책",
+    "question_en": "[global biopharmaceutical and drug discovery laboratory] An enterprise operating with molecular docking simulations and pre-clinical assay screening datasets is modernizing its operations with AWS AI solutions. What is AWS's official data privacy policy regarding customer prompts and responses processed through Amazon Bedrock foundation models?",
+    "question_kr": "[글로벌 바이오제약 및 신약 개발 연구소] 단백질 분자 구조 시뮬레이션 및 전임상 실험 스크리닝 데이터을(를) 다루는 엔터프라이즈 환경에서 AWS AI 솔루션을 도입하고자 합니다. 고객이 Amazon Bedrock에 입력한 프롬프트 및 모델 출력 데이터에 대한 AWS의 공식 데이터 프라이버시 및 보안 정책은 무엇입니까?",
+    "options": [
+      {
+        "key": "A",
+        "text_en": "Prompts are publicly indexed into web search engines",
+        "text_kr": "프롬프트는 인터넷 검색엔진에 실시간 공개 인덱싱됨"
+      },
+      {
+        "key": "B",
+        "text_en": "Prompts are automatically harvested to train future public foundation models",
+        "text_kr": "모든 고객 프롬프트는 향후 공개 LLM 학습에 자동으로 재사용됨"
+      },
+      {
+        "key": "C",
+        "text_en": "Customer prompts and completions are NEVER used to train base foundation models and remain isolated",
+        "text_kr": "고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨"
+      },
+      {
+        "key": "D",
+        "text_en": "Data is shared indiscriminately across all region tenants",
+        "text_kr": "모든 데이터는 동일 리전의 모든 고객에게 무작위 공유됨"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation_kr": "정답은 C입니다.\n\n• **핵심 개념 해설**: Amazon Bedrock은 고객의 프롬프트와 모델 응답을 기본 파운데이션 모델을 훈련하는 데 절대 사용하지 않으며, 제3자 모델 제공자에게도 훈련 목적으로 공유되지 않습니다.\n\n• **실무 비즈니스 분석**: [글로벌 바이오제약 및 신약 개발 연구소] 시나리오에서는 단백질 분자 구조 시뮬레이션 및 전임상 실험 스크리닝 데이터의 요구조건과 제약사항을 만족하기 위해 'Bedrock 고객 데이터 비학습 및 격리 정책' 관점에서 '고객 데이터는 기본 파운데이션 모델 학습에 절대 사용되지 않으며 고객의 안전한 환경 내에 격리됨' 방안이 가장 적합하고 AWS Well-Architected 원칙에 부합합니다.\n• 다른 보기들은 문제의 핵심 요구조건을 충족하지 못하거나, 과도한 인프라 관리 오버헤드 또는 보안/거버넌스 위험을 초래합니다."
   }
 ]

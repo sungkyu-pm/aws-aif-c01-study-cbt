@@ -462,7 +462,7 @@ class PortalApp {
           if (selectedScope === 'canonical') {
             rawQuestions = (selectedSet === 'mock1') ? fetched : fetched.slice(0, 15);
           } else if (selectedSet === 'mock1') {
-            rawQuestions = this.sampleDistinctByCategory(fetched, 60);
+            rawQuestions = this.sampleDistinctByCategory(fetched, 65);
           } else if (selectedScope === 'full') {
             rawQuestions = this.shuffleArray(fetched);
           } else {
